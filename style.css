@@ -25,6 +25,10 @@
     padding-left: 5%;
     margin-top: 0%;
 }
+.half-width img{
+    margin-left: 100px;
+    width: 55%;
+}
 .link-button{
     text-decoration: none;
     padding: 12px 50px;
@@ -33,8 +37,4 @@
     background-image: linear-gradient(orange,tomato);
     color: white;
     font-weight: 700;
-}
-.half-width img{
-    margin-left: 100px;
-    width: 55%;
 }
