@@ -30,13 +30,9 @@
     padding: 12px 50px;
     border-radius: 10px;
     margin-top: 40px;
-    /* background-color: orange; */
     background-image: linear-gradient(orange,tomato);
     color: white;
     font-weight: 700;
-}
-.link-button a:hover{
-    background-color: #EAEDF0;
 }
 .half-width img{
     margin-left: 100px;
