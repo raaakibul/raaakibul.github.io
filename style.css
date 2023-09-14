@@ -28,6 +28,7 @@
 .half-width img{
     margin-left: 100px;
     width: 55%;
+    border-radius: 10px;
 }
 .link-button{
     text-decoration: none;
