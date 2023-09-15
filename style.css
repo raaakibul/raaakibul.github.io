@@ -18,16 +18,16 @@
     display: flex;
     margin-top: 60px;
     margin-left: 108px;
-    margin-bottom: 150px;
+    margin-bottom: 282px;
 }
 .half-width{
-    width: 50%;
+    width: 65%;
     padding-left: 5%;
     margin-top: 0%;
 }
 .half-width img{
     margin-left: 100px;
-    width: 55%;
+    width: 45%;
     border-radius: 10px;
 }
 .link-button{
@@ -39,3 +39,14 @@
     color: white;
     font-weight: 700;
 }
+.about-me{
+    text-align: center;
+    color: #6C757D;
+    font-size: 30px;
+}
+.about-me-half-width{
+    width: 27%;
+    padding-left: 5%;
+    margin-top: 0%;
+}
+ 
