@@ -90,6 +90,10 @@ nav a {
     color: #474747;
     margin-bottom: 0;
 }
+.research{
+    color: #474747;
+    font-size: 18px;
+}
 
 .banner-title {
     font-size: 35px;
@@ -100,20 +104,21 @@ nav a {
 
 /* main section styles */
 main {
-    max-width: 1140px;
+    max-width: 1260px;
     margin: 0 auto;
 }
 
 main section {
-    margin-top: 130px;
+    margin-top: 13px;
 }
 
 /* about section styles */
 .about {
-    padding: 130px;
+    padding-top: 5px;
+    padding-bottom: 2px;
     border-radius: 10px;
     background: #FFF8F3;
-    margin: 130px 0;
+    margin-top: 25px;
 }
 
 .about-info-container {
