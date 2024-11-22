@@ -1,181 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Developer Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@400;700;800&display=swap"
-        rel="stylesheet">
-
+    <title>Responsive Design with Image</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/f056a62cc9.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
-    <header class="header">
-        <nav>
-            <h3 class="nav-title">Ra<span class="text-primary">kibu</span>l</h3>
-            <ul>
-                <li><a href="">Experience </a></li>
-                 <li><a href="">Resume</a></li>
-                <li><button class="btn-primary"> <a href="">Hire Me</a> </button></li>
-            </ul>
-        </nav>
-        <div class="banner">
-            <div class="banner-content">
-                <h3 class="banner-greeting">Hi, I am</h3>
-                <h1 class="banner-title">Rakibul Islam</h1>
-                <p class="banner-description "> Looking for the MS/PhD opportunity.<br> <br>
-                 <span class="research">Research Interest:</span> Artificial Intelligence, Image Processing and Computer Vision, Machine Learning, Deep Learning, Natural Language processing </p>
-                <button class="btn-primary"><i class="fa-solid fa-download"></i> Download CV</button>
-                <!-- <button class="btn-primary"><i class="fa-solid fa-phone"></i> Contact</button> -->
-            </div>
-            <img class="profile-pic" src="images/Rakibul.jpg" alt="">
+    <!-- header section -->
+    <header>
+        <div class="container">
+            <h1>Rakibul Islam</h1>
+            <p>ML and Data Science Enthusiast</p>
         </div>
     </header>
+
+    <!-- navbar section -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">About Me</a></li>
+            <li><a href="index.html">Publications</a></li>
+            <li><a href="index.html">Education&Training</a></li>
+            <li><a href="index.html">Projects</a></li>
+            <li><a href="index.html">Experience</a></li>
+            <li><a href="index.html">Contact</a></li>
+        </ul>
+    </nav>
+
+
     <main>
-        <section class="about">
-            <h3 class="section-title">About Me</h3>
-            <p class="section-description">
-                As a dedicated learner, I investigate the possible benefits of AI technology to enhance human life. With a focusing on research in Artificial Intelligence, Machine Learning, Deep Learning and Natural Language processing.  My areas are include machine learning, deep learning, computer vision in the design and implementation of research tools.  My primary purpose is to develop widely implementable machine and deep learning-based solutions for real scenarios.
-            </p>
-            <div class="about-info-container">
-                <!-- .about-info*4>h4.info-title+p.info-description -->
-                <div class="about-info">
-                    <h4 class="info-title">Name:</h4>
-                    <p class="info-description">Rakibul Islam </p>
-                </div>
-                <div class="about-info">
-                    <h4 class="info-title">Email:</h4>
-                    <p class="info-description">raakibul.uap@gmail.com</p>
-                </div>
-                 
-                <div class="about-info">
-                    <h4 class="info-title">From:</h4>
-                    <p class="info-description">Dhaka, Bangladesh</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- what i do section start -->
-        <section>
-            <h3 class="section-title">What I do</h3>
-            <p id="what-i-do-description" class="section-description">
-                My areas are include machine learning, deep learning, computer vision in the design and implementation of research tools.  My primary purpose is to develop widely implementable machine and deep learning-based solutions for real scenarios.
-            </p>
-            <div class="skills-container">
-                <div class="skill">
-                    <img src="images/web-design.svg" alt="">
-                    <h3 class="skill-title">Web Design</h3>
-                    <p class="skill-description">List skill/technologies here. You can change the icon above to any of
-                        the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
-                </div>
-                <div class="skill">
-                    <img src="images/development.svg" alt="">
-                    <h3 class="skill-title">Web Development</h3>
-                    <p class="skill-description">List skill/technologies here. You can change the icon above to any of
-                        the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
-                </div>
-                <div class="skill">
-                    <img src="images/nlp.svg" alt="">
-                    <h3 class="skill-title">Machine Learning</h3>
-                    <p class="skill-description">List skill/technologies here. You can change the icon above to any of
-                        the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
-                </div>
-                <div class="skill">
-                    <img src="images/nlp.svg" alt="">
-                    <h3 class="skill-title">Artificial Intelligence</h3>
-                    <p class="skill-description">List skill/technologies here. You can change the icon above to any of
-                        the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
-                </div>
-            </div>
-        </section>
-        <!-- Resume Section -->
-        <section>
-            <h3 class="section-title">A summary of My Resume</h3>
-
-            <div class="resume-container">
-                <!-- .resume-column*2>h3.resume-column-title -->
-                <div class="resume-column">
-                    <h3 class="resume-column-title">My Education</h3>
-
-                    <div class="resume-item">
-                        <h2 class="resume-item-title">Bachelor in Computer Engineering</h2>
-                        <h3 class="resume-item-institute">University of Asia Paciffic/ 2019 - 2023</h3>
-                        <p class="resume-item-description"> Publication: Deep Learning-Based Background Noise Classification and Reduction for Audio Enhancement. – under review
-                        </p>
-                    </div>
-                    <hr>
-                    <div class="resume-item">
-                        <h2 class="resume-item-title">Higher Secondary Education</h2>
-                        <h3 class="resume-item-institute">Govt. Science College / 2014 - 2016</h3>
-                        <p class="resume-item-description"> 
-                        </p>
-                    </div>
-                    <hr>
-                    <div class="resume-item">
-                        <h2 class="resume-item-title">High Scool Education</h2>
-                        <h3 class="resume-item-institute">Secondary level / 2009 - 2014</h3>
-                        <p class="resume-item-description"> 
-                        </p>
-                    </div>
+        <section class="top-banner">
+            <div class="banner">
+                <div class="banner-content">
+                    <h3 class="banner-greeting">Welcome</h3>
+                    <p class="banner-description">As a dedicated learner, I investigate the possible benefits of Artificial Intelligence technology to enhance human life. My research interest areas are including machine learning, deep learning and artificial intelligence in the design and implementation of research tools.  My primary purpose is to develop widely implementable machine and deep learning-based solutions for real scenarios in artificial technology.</p>
                     
-
                 </div>
-                <div class="resume-column">
-                    <h3 class="resume-column-title">My Experience</h3>
-
-                    <div class="resume-item">
-                        <h2 class="resume-item-title">Professional Activities</h2>
-                        <h3 class="resume-item-institute">Teaching at CareTutors / October 2023 – Present</h3>
-                        <p class="resume-item-description"> Largest online and offline based tutoring platform
-                            <br>
-                        Gave in-person lessons on physics, chemistry, mathematics and programming Languages (Python, C, C++ and JavaScript) to high school and college level students.
-
-                        </p>
-                    </div>
-                    <hr>
-                    <div class="resume-item">
-                        <h2 class="resume-item-title">Thesis Experience</h2>
-                        <h3 class="resume-item-institute">Topic: Deep Learning-Based Background Noise Classification and Reduction for Audio
-                            Enhancement.</h3>
-                        <p class="resume-item-description">Supervisor: Rashik Rahman, Lecturer; University of Asia Pacific
-                        </p>
-                    </div>
-                    <hr>
-                    <div class="resume-item">
-                        <h2 class="resume-item-title">Research Experience</h2>
-                        <h3 class="resume-item-institute">Bdian Research Trainee / 2022 - 2023</h3>
-                        <p class="resume-item-description">Understanding the research methodology. How to proposed the research topic, design and methodology.
-                        <br>Instructor: Md. Fazle Rabbi Afsar, Researcher at Youth society For Research and Action
-                        </p>
-                    </div>
-                    <hr>
-                    <div class="resume-item">
-                        <h2 class="resume-item-title">Industrial Experience</h2>
-                        <h3 class="resume-item-institute">Industrial Trainee, BrogrammersLab / January 2023 - May 2023</h3>
-                        <p class="resume-item-description">Software Engr Intern
-                            <br>Supervisor: Rafi Rahman,
-                        </p>
-                    </div>
-                  
-                    
-
-                </div>
+                <img class="profile-pic" src="profile.jpg" alt="profile picture">
             </div>
-            <div class="download-cv">
-                <button class="btn-primary"><i class="fa-solid fa-download"></i> Download CV</button>
+
+            <div class="research">
+                    <h3 class="research-title">Research Interests</h3>
+                    <ul class="list">
+                        <li>1.Artificial Intelligence</li>
+                        <li>2.Data Science</li>
+                        <li>3.Machine Learning</li>
+                        <li>4.Deep Learning</li>
+                        <li>5.Natural Language processing</li>
+                    </ul>
             </div>
         </section>
+
+        <!-- another section -->
     </main>
-    <!-- footer  -->
-    <footer>
-        
-    </footer>
 </body>
-
 </html>
