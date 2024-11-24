@@ -29,7 +29,7 @@ header h1 {
 
 header p {
     font-size: 1rem;
-    color: #666;
+    color: #c37b7b;
 }
 
 /* Navigation Menu */
@@ -94,22 +94,27 @@ nav ul li a:hover {
     font-size: 16px;
     color: #666;
 }
+
 .research{
     padding-top: 20px;
 }
+
 .research-title{
     font-size: 22px;
     color: #474747;
     margin-bottom: 10px;
 }
+
 .list{
     list-style-type: none;
     margin-left: 5px;
+    color: #666;
 }
 
 
 
 /* Responsive Design */
+
 @media (max-width: 768px) {
     header h1 {
         font-size: 2rem;
