@@ -88,6 +88,23 @@ nav ul li a:hover {
     transition: background-color 0.3s, color 0.3s;
 }
 
+/* .upper-section{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+} */
+
+
+.img{
+  display: flex;
+  justify-content: center; /* Horizontal alignment */
+  align-items: center;    /* Vertical alignment */
+ }
+.profile-picture{
+     max-width: 100%; /* Optional: Ensure the image is responsive */
+  height: auto;    
+}
 #home.dark-mode {
     background-color: #333;
     color: #f4f4f4;
@@ -134,6 +151,11 @@ nav ul li a:hover {
     text-align: center;
 }
 
+.social-media-p{
+    text-align: center;
+
+}
+
 .social-media a {
     color: #000;
     text-decoration: none;
@@ -141,7 +163,8 @@ nav ul li a:hover {
 }
 
 .social-media a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    color: tomato;
 }
 
 /* Theme Toggle Button */
