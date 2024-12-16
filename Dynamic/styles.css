@@ -18,22 +18,32 @@ header {
     color: #fff;
     padding: 1rem 2rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensures it stays on top of other elements */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional for a subtle shadow */
 }
 
 header .logo {
     font-size: 1.5rem;
     font-weight: bold;
+    margin-bottom: 0.5rem;
+    text-align: center;
 }
 
 .nav-links {
     list-style: none;
     display: flex;
+    justify-content: center;
+    gap: 2rem; /* Adjust spacing between links */
+    margin-top: 0.5rem;
 }
 
 .nav-links li {
-    margin: 0 1rem;
+    position: relative;
 }
 
 .nav-links a {
@@ -51,6 +61,7 @@ header .logo {
     display: none;
     font-size: 1.5rem;
     cursor: pointer;
+    margin-top: 1rem;
 }
 
 /* Sections */
@@ -101,14 +112,9 @@ footer {
 /* Responsive Design */
 @media (max-width: 768px) {
     .nav-links {
-        display: none;
         flex-direction: column;
-        background: #0077b6;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        width: 50%;
-        border-radius: 4px;
+        gap: 1rem;
+        display: none;
     }
 
     .nav-links.active {
@@ -120,7 +126,7 @@ footer {
     }
 
     header {
-        justify-content: space-between;
+        flex-direction: column;
     }
 }
 
