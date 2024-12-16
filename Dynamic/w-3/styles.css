@@ -1,0 +1,121 @@
+/* General Reset and Box Model */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  /* Navbar Styles */
+  nav {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #333;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 1000;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  nav ul li {
+    margin: 0 15px;
+  }
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  nav ul li a:hover {
+    color: #ddd;
+  }
+  
+  /* Toggle Button for Mobile */
+  .toggle-btn {
+    display: none;
+  }
+  @media screen and (max-width: 768px) {
+    .toggle-btn {
+      display: block;
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+    }
+    nav ul {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      background-color: #333;
+    }
+    nav ul.active {
+      display: flex;
+    }
+  }
+  
+  /* Header Section */
+  header {
+    text-align: center;
+    padding: 100px 20px 50px;
+    background: #5f6368;
+    color: white;
+    margin-top: 60px;
+  }
+  header h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+  header p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+  }
+  
+  /* Main Content */
+  .content {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  .content h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  /* Social Media Section */
+  .socials {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+  }
+  .socials a {
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 2em;
+    color: #333;
+  }
+  .socials a:hover {
+    color: #0077b5; /* LinkedIn */
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+    margin-top: 40px;
+  }
+  
