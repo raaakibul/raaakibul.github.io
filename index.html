@@ -17,13 +17,14 @@
     <header>
         <div class="container">
             <h1>Rakibul Islam</h1>
-            <p>ML and Data Science Enthusiast</p>
+            <p>ML and Data Science Enthusiast</p> 
+            <button class="theme-toggle" onclick="toggleTheme()">Switch Theme</button>
         </div>
     </header>
 
     <!-- navbar section -->
     <nav>
-        <ul>
+        <ul id="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About Me</a></li>
             <li><a href="index.html">Publications</a></li>
@@ -32,11 +33,18 @@
             <li><a href="index.html">Experience</a></li>
             <li><a href="index.html">Contact</a></li>
         </ul>
+
+        <!-- Hamburger Menu Toggle Button -->
+        <div id="toggle-button" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </nav>
 
 
     <main>
-        <section class="top-banner">
+        <!-- <section class="top-banner">
             <div class="banner">
                 <div class="banner-content">
                     <h3 class="banner-greeting">Welcome</h3>
@@ -56,9 +64,52 @@
                         <li>5.Natural Language processing</li>
                     </ul>
             </div>
-        </section>
+        </section> -->
 
         <!-- another section -->
+
+        <section id="home">
+            <h2>Welcome!</h2>
+            <p>As a dedicated learner, I investigate the possible benefits of Artificial Intelligence technology to enhance human life. My research interest areas are including machine learning, deep learning and artificial intelligence in the design and implementation of research tools.  My primary purpose is to develop widely implementable machine and deep learning-based solutions for real scenarios in artificial technology.</p>
+            
+            <h3>My Research Interests</h3>
+                    <ul>
+                        <li>1.Artificial Intelligence</li>
+                        <li>2.Data Science</li>
+                        <li>3.Machine Learning</li>
+                        <li>4.Deep Learning</li>
+                        <li>5.Natural Language processing</li>
+                    </ul>
+                    <br>
+                    <br>
+            <ul>
+                <li><strong>Voice Activity Detection (VAD)</strong>: Exploring the role of machine learning in detecting voice in noisy environments.</li>
+                <li><strong>Data Science Applications in Healthcare</strong>: Developing predictive models for disease diagnosis and treatment planning.</li>
+                <li><strong>Natural Language Processing (NLP)</strong>: Investigating new techniques for improving human-computer communication through language.</li>
+            </ul>
+            
+            <h3>Upcoming Projects</h3>
+            <p>I am currently working on a project that aims to enhance the accuracy of speech recognition systems using advanced neural networks, with applications in medical diagnostics.</p>
+    
+            <div class="call-to-action">
+                <h4>Interested in collaborating?</h4>
+                <p>Feel free to <a href="contact.html">contact me</a> if you are interested in any of my research projects or if you'd like to discuss potential collaborations.</p>
+            </div>
+    
+            <h3>Social Media</h3>
+            <p>Connect with me on various platforms to stay updated on my work and research:</p>
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/your-profile" target="_blank">LinkedIn</a> | 
+                <a href="https://scholar.google.com/citations?user=your-profile" target="_blank">Twitter</a> | 
+                <a href="https://github.com/your-username" target="_blank">GitHub</a>|
+                <a href="https://github.com/your-username" target="_blank">Facebook</a>|
+                <a href="https://github.com/your-username" target="_blank">Bksy</a>
+
+
+
+            </div>
+
+        </section>
     </main>
 
 
