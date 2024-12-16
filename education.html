@@ -11,11 +11,15 @@
 
 <!-- bootstrap link -->
 
+<!-- FontAwesome -->
+<script src="https://kit.fontawesome.com/f056a62cc9.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <!-- header section -->
     <header>
         <div class="container">
+            <button class="theme-toggle" onclick="toggleTheme()">Switch Theme</button>
             <h1>Rakibul Islam</h1>
             <p>ML and Data Science Enthusiast</p>
         </div>
@@ -23,21 +27,95 @@
 
     <!-- navbar section -->
     <nav>
-        <ul>
+        <ul id="nav-links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Me</a></li>
             <li><a href="index.html">Publications</a></li>
             <li><a href="education.html">Education&Training</a></li>
             <li><a href="index.html">Projects</a></li>
-            <li><a href="index.html">Experience</a></li>
+            <li><a href="index.html">Research Experience</a></li>
+            <li><a href="index.html">Blog</a></li>
+
             <li><a href="index.html">Contact</a></li>
         </ul>
+
+        <!-- Hamburger Menu Toggle Button -->
+        <div id="toggle-button" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </nav>
 
 
     <main>
-        <!-- education section -->
+        <section id="home">
+          <h2>Eucation</h2>
+            <div>
+                <h3>Bachelor in Computer Science and Engineering</h3>
+                <h4>University of Asia Pacific / 2018 - 2023</h4>
+                <p>Thesis Topic:Deep Learning-Based Background Noise Classification         and Reduction for Audio Enhancement. </p>
+                <p>Thesis Supervisor: Supervisor: <a href="https://scholar.google.com/citations?user=20fAehwAAAAJ&hl=en">Rashik Rahman</a> , Lecturer; University of Asia Pacific</p>
+                <br>
+                <p>Major Courses: Structured Programming, Data Structure and Algorithms, Object Oriented Programming,
+                    Database, Software Engineering, Computer Networks, Machine Learning, Artificial Intelligence, Probability &
+                    Statistics, Data Communications, etc.</p>
+                <br>
+                 
+            </div>
+
+            <h2>Professional Training and Certificates</h2>
+            <div>
+                <h4>2024 - Mathematics for Machine Learning and Data Science (3 Courses) by Luis Serrano | DeepLearning.AI</h4>
+                <ul>
+                    <li>Linear Algebra for Machine Learning and Data Science</li>
+                    <li>Calculus for Machine Learning and Data Science</li>
+                    <li>Probability & Statistics for Machine Learning & Data Science</li>
+                </ul>
+
+                <h4>2024 - Machine Learning Specialization (3 Courses) by Andrew NG | DeepLearning.AI & Stanford University</h4>
+                <ul>
+                    <li>Supervised Machine Learning: Regression and Classification</li>
+                    <li>Advanced Learning Algorithms</li>
+                    <li>Unsupervised Learning, Recommenders, Reinforcement Learning</li>
+                </ul>
+
+                <h4>2024 - Learn SQL Basics for Data Science Specialization (1 Course) | University of California, Davis</h4>
+                <ul>
+                    <li>SQL for Data Science by Sadie St. Lawrence</li>
+                </ul>
+
+                <h4>2024 - IBM Data Analyst Professional Certificate (1 Course) | IBM</h4>
+                <ul>
+                    <li>Data Visualization with Python by Saishruthi Swaminathan and Dr. Pooja</li>
+                </ul>
+
+                <h4>2024 - Data Science Foundations Specialization (1 Course) | IBM</h4>
+                <ul>
+                    <li>What is Data Science by Alex Aklson</li>
+                </ul>
+
+                <h4>Google Data Analytics Professional Certificate (1 Course) | Google</h4>
+
+                <ul>
+                    <li>Foundations: Data, Data, Everywhere</li>
+                </ul>
+
+                <h4>2022 - Bdian Research Trainee certificate</h4>
+
+
+            </div>
+
+            <div class="download-cv">
+                <button class="btn-primary"><i class="fa-solid fa-download"></i> Download CV</button>
+            </div>
+
+        </section>
     </main>
+
+
+    <footer>
+        <p>&copy; 2024 My Academic Website. All rights reserved.</p>
+    </footer>
 
 
     <!-- javascript file -->
