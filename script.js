@@ -1,3 +1,4 @@
+// javascript code
 // Toggle the navigation menu in mobile view
 function toggleMenu() {
     const nav = document.querySelector('nav');
