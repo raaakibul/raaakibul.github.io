@@ -198,7 +198,9 @@ footer {
     text-align: center;
     padding: 20px;
     position: relative;
+
 }
+ 
 
 /* Responsive Styles */
 @media (max-width: 768px) {
