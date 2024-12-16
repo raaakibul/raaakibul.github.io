@@ -20,7 +20,7 @@
 /* Body Styles and basic styles */
 body {
     font-family: Arial, sans-serif,'Helvetica Neue';
-    background-color: #e6e6e6;
+    background-color: #866767;
     margin: 0;
     line-height: 1.6;
     padding: 0;
@@ -29,14 +29,15 @@ body {
 
 /* Header */
 header {
-    background-color: #E6E6E6;
-    padding: 5px 0;
-    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #faecec;
+    padding: 2px 0;
     text-align: center;
 }
 
 header h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: #d12c2c;
 }
 
@@ -47,8 +48,11 @@ header p {
 
 /* Navigation Menu */
 nav {
-    /* background-color: #fff; */
+    background-color: #101010;
     padding: 10px 0;
+    max-width: 900px;
+    margin: 0 auto;
+
     /* border-bottom: 1px solid #ddd; */
     /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
 }
