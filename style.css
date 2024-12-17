@@ -65,16 +65,16 @@ nav ul {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 13px;
     padding: 0;
 }
 
 nav ul li a {
     text-decoration: none;
     /* color: #d12c2c; */
-    color: #333359;
+    color: #000029;
     font-size: 16px;
-    font-weight: bold;
+    /* font-weight: bold; */
     padding: 8px 15px;
     border-radius: 4px;
     transition: background-color 0.3s ease;
@@ -107,13 +107,13 @@ nav ul li a:hover {
 
 
 .img{
-  display: flex;
-  justify-content: center; /* Horizontal alignment */
-  align-items: center;    /* Vertical alignment */
+    display: flex;
+    justify-content: center; /* Horizontal alignment */
+    align-items: center;    /* Vertical alignment */
  }
 .profile-picture{
-     max-width: 100%; /* Optional: Ensure the image is responsive */
-  height: auto;    
+    max-width: 100%; /* Optional: Ensure the image is responsive */
+    height: auto;    
 }
 #home.dark-mode {
     background-color: #333;

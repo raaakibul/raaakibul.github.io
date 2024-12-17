@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lianhui Qin | Academic Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <div class="navbar">
+            <div class="logo">Lianhui Qin</div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                    <li><a href="#teaching">Teaching</a></li>
+                    <li><a href="#photography">Photography</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="profile-image">
+                <img src="images/profile.jpg" alt="Profile Photo" />
+            </div>
+            <div class="hero-text">
+                <h1>Lianhui Qin</h1>
+                <p>
+                    <strong>Email:</strong> <a href="mailto:lianhui@ucsd.edu">lianhui@ucsd.edu</a> <br>
+                    <strong>Office:</strong> CSE 2116, UC San Diego <br>
+                    <strong>Department:</strong> Computer Science & Engineering
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Section -->
+    <section id="research" class="section">
+        <h2>Research</h2>
+        <p>I work on natural language processing (NLP) and machine learning (ML). Current interests include:</p>
+        <ul>
+            <li><strong>Machine reasoning and generation with large (language/multimodal) models:</strong> compositional generation, reasoning, and control.</li>
+            <li><strong>Understanding and improving large language/multi-modal models:</strong> evaluation, uncertainty, and benchmarking.</li>
+            <li><strong>AI/LLM for science, engineering, and health:</strong> interdisciplinary applications.</li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Lianhui Qin | All Rights Reserved.</p>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        mobileMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
