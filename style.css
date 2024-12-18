@@ -6,6 +6,9 @@
     scroll-behavior: smooth;
 }
 
+.btn{
+    text-decoration: none;
+}
 .btn-primary {
     background-color: #FD6E0A;
     border-radius: 5px;
