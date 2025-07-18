@@ -1,64 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <title>raakibul</title>
-    <!-- Css file -->
     <link rel="stylesheet" href="style.css">
-
-<!-- bootstrap link -->
-
+     <script src="https://kit.fontawesome.com/f056a62cc9.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- header section -->
-    <header>
-        <div class="container">
-            <h1>Rakibul Islam</h1>
-            <p>ML and Data Science Enthusiast</p>
-        </div>
-        
-    </header>
-
-    <!-- navbar section -->
-    <nav>
-        <ul id="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="publication.html">Publications</a></li>
-            <li><a href="education.html">Education&Training</a></li>
-            <li><a href="project.html">Projects</a></li>
-            <li><a href="research.html">Research Experience</a></li>
-            <li><a href="blog.html">Blog</a></li>
-
-            <li><a href="index.html">Contact</a></li>
-        </ul>
-
-        <!-- Hamburger Menu Toggle Button -->
-        <div id="toggle-button" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </nav>
-
-
     <main>
-        <section id="home">
-            <h3 >Research Publications</h3>
+        <section class="profile-header">
+            <div class="profile-pic">
+                <img src="profile.jpg" alt="Profile" />
+            </div>
+            <div class="profine-name">
+                <h1>Rakibul Islam</h1>
+                <p>ML and Data Science Enthusiast</p>
+            </div>
+            <div class="profile-info">
+                <ul>
+                    <li>
+                        <span> <i class="fas fa-envelope" style="color: #ff5733;"></i></span>
+                       Email: raakibul.uap@gmail.com
+                    </li>
+                    <li>
+                        Computer Science &amp; Engineering
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <nav class="main-nav">
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <a class="active" href="#">Home</a>
+                <a href="publication.html">Publications</a>
+                <a href="education.html">Education & Training</a>
+                <a href="project.html">Projects</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+        <section class="content" id="mainContent">
+            <h2>Welcome!</h2>
+            <p>
+                Hi there!! I'm Rakibul Islam. I work at the Largest online and offline based tutoring platform <a class="highlight" href="https://caretutors.com/">CareTutor</a> in Bangladesh. I Gave in-person lessons on physics, mathematics and programming Languages (Python, C, C++ and JavaScript) to high school and college level students.
+            </p>
+
+            <br>I aim to become a research scientist at a prestigious university or research institution. I am particularly interested in combining academic research with industrial collaboration. I aspire to establish my lab to conduct cutting-edge research that advances science and benefits academia and industry. As a dedicated learner, I investigate the possible benefits of Artificial Intelligence technology to enhance human life. My research interest areas are including machine learning, deep learning and artificial intelligence in the design and implementation of research tools.  My primary purpose is to develop widely implementable machine and deep learning-based solutions for real scenarios in artificial technology. <span class="highlight">I'm looking for funded graduate opportunity for fall 2025.</span>
+            <br>
+            <br>
+            Previously, I completed my Bachelor’s in <a class="highlight" href="https://cse.uap-bd.edu/">Computer Science</a> at <a class="highlight" href="https://www.uap-bd.edu/">University of Asia Pacific.</a>  Where I was advised by <a class="highlight" href="https://cse.uap-bd.edu/faculty/faculty_details/11">Assistant Professor Tanjina Helaly.</a> I did my undergraduate thesis on Deep Learning-Based Background Noise Classification
+            and Reduction for Audio Enhancement. where i was advised by <a class="highlight" href="https://scholar.google.com/citations?user=20fAehwAAAAJ&hl=en">Rashik Rahman.</a>
+            <h2>Research Interests</h2>
+            <hr>
+            <p>My main research interest lies in Machine Learning and deep learning-based Artificial Intelligence systems. I want to research next-generation Machine Learning and Deep Learning-based AI systems. The Research interest that i have--</p>
+                    <ul>
+                        <li>Artificial Intelligence</li>
+                        <li>Data Science</li>
+                        <li>Machine Learning</li>
+                        <li>Deep Learning</li>
+                    </ul>
+            <br>
+            
             <div class="call-to-action">
-                <h4>Undergraduate Thesis</h4>
-                <p>1. Deep Learning-Based Background Noise Classification and Reduction for Audio Enhancement. – under review</p>
+                <h4>Interested in research collaborating?</h4>
+                <p>Feel free to contact me <span class="highlight"> ( <i class="fas fa-envelope" style="color: #ff5733;"></i> Email: raakibul.uap@gmail.com) </span> if you are interested in any of my research projects or if you'd like to discuss potential collaborations.</p>
             </div>
     
-            
+            <h3 class="social-media">Find me in Social Media</h3>
+            <hr>
+            <p class="social-media-p">Connect with me on various platforms to stay updated on my work and research:</p>
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/raakibul/" target="_blank"> <i class="fab fa-linkedin" style="color: #0077b5;"></i>
+                    LinkedIn</a>|
+                <a href="https://x.com/raakibul_" target="_blank"> <i class="fab fa-twitter" style="color: #1DA1F2;"></i>
+                    Twitter</a> | 
+                <a href="https://github.com/raaakibul" target="_blank"> <i class="fab fa-github" style="color: #333;"></i>
+                    GitHub</a>|
+                <a href="https://www.facebook.com/raakibul.14" target="_blank"> <i class="fab fa-facebook" style="color: #4267B2;"></i></i>
+                    Facebook</a>|
+                <a href="https://bsky.app/profile/raakibul.bsky.social" target="_blank"> <i class="fas fa-cloud" style="color: #0099FF;;"></i>
+                    Bksy</a>
+
+            </div>
         </section>
     </main>
 
-
-     
-    <!-- javascript file -->
-     <script src="script.js"></script>
+    <!-- Javascript file -->
+    <script src="toggle.js"></script>
 </body>
 </html>

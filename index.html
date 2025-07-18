@@ -1,91 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <title>raakibul</title>
-
-    <!-- google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@400;700;800&display=swap" rel="stylesheet">
-
-    <!-- Css file -->
     <link rel="stylesheet" href="style.css">
-
-    <!-- Bootstrap 5 CDN -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> -->
-
-    <!-- Icons (Bootstrap Icons) -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet"> -->
-
-    <script src="https://kit.fontawesome.com/f056a62cc9.js" crossorigin="anonymous"></script>
-
-
-<!-- bootstrap link -->
-
+     <script src="https://kit.fontawesome.com/f056a62cc9.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- header section -->
-    <header>
-        <div>
-            <!-- <button class="theme-toggle" onclick="toggleTheme()">Switch Theme</button> -->
-            <h1>Rakibul Islam</h1>
-            <p>ML and Data Science Enthusiast</p>
-        </div>
-        
-    </header>
-
-    <!-- navbar section -->
-    <nav>
-        <ul id="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="publication.html">Publications</a></li>
-            <li><a href="education.html">Education&Training</a></li>
-            <li><a href="project.html">Projects</a></li>
-            <li><a href="research.html">Research Experience</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="index.html">Contact</a></li>
-        </ul>
-
-        <!-- Hamburger Menu Toggle Button -->
-        <div id="toggle-button" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </nav>
-
-
     <main>
-        <section id="home">
+        <section class="profile-header">
+            <div class="profile-pic">
+                <img src="profile.jpg" alt="Profile" />
+            </div>
+            <div class="profine-name">
+                <h1>Rakibul Islam</h1>
+                <p>ML and Data Science Enthusiast</p>
+            </div>
+            <div class="profile-info">
+                <ul>
+                    <li>
+                        <span> <i class="fas fa-envelope" style="color: #ff5733;"></i></span>
+                       Email: raakibul.uap@gmail.com
+                    </li>
+                    <li>
+                        Computer Science &amp; Engineering
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <nav class="main-nav">
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <a class="active" href="index.html">Home</a>
+                <a href="publication.html">Publications</a>
+                <a href="education.html">Education & Training</a>
+                <a href="project.html">Projects</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+        <section class="content" id="mainContent">
             <h2>Welcome!</h2>
-            <hr>
-            <div>
-                <p>Hi there!! I'm Rakibul Islam. I work at the Largest online and offline based tutoring platform <a class="highlight" href="https://caretutors.com/">CareTutor</a> in Bangladesh. I Gave in-person lessons on physics, mathematics and programming Languages (Python, C, C++ and JavaScript) to high school and college level students. </p>
-            </div>
+            <p>
+                Hi there!! I'm Rakibul Islam. I work at the Largest online and offline based tutoring platform <a class="highlight" href="https://caretutors.com/">CareTutor</a> in Bangladesh. I Gave in-person lessons on physics, mathematics and programming Languages (Python, C, C++ and JavaScript) to high school and college level students.
+            </p>
 
-            <div class="img">
-                <img class="profile-picture" src="profile.jpg" alt="">
-            </div>
-            <br>
             <br>I aim to become a research scientist at a prestigious university or research institution. I am particularly interested in combining academic research with industrial collaboration. I aspire to establish my lab to conduct cutting-edge research that advances science and benefits academia and industry. As a dedicated learner, I investigate the possible benefits of Artificial Intelligence technology to enhance human life. My research interest areas are including machine learning, deep learning and artificial intelligence in the design and implementation of research tools.  My primary purpose is to develop widely implementable machine and deep learning-based solutions for real scenarios in artificial technology. <span class="highlight">I'm looking for funded graduate opportunity for fall 2025.</span>
             <br>
-            
             <br>
             Previously, I completed my Bachelor’s in <a class="highlight" href="https://cse.uap-bd.edu/">Computer Science</a> at <a class="highlight" href="https://www.uap-bd.edu/">University of Asia Pacific.</a>  Where I was advised by <a class="highlight" href="https://cse.uap-bd.edu/faculty/faculty_details/11">Assistant Professor Tanjina Helaly.</a> I did my undergraduate thesis on Deep Learning-Based Background Noise Classification
             and Reduction for Audio Enhancement. where i was advised by <a class="highlight" href="https://scholar.google.com/citations?user=20fAehwAAAAJ&hl=en">Rashik Rahman.</a>
-            
-            <br>
-            <br>
-            In this website, I write about Machine Learning and Open Source. Check out the Blog section!
-            </p>
-
-      
-            
-            <h3>Research Interests</h3>
+            <h2>Research Interests</h2>
             <hr>
             <p>My main research interest lies in Machine Learning and deep learning-based Artificial Intelligence systems. I want to research next-generation Machine Learning and Deep Learning-based AI systems. The Research interest that i have--</p>
                     <ul>
@@ -94,19 +64,11 @@
                         <li>Machine Learning</li>
                         <li>Deep Learning</li>
                     </ul>
-                    <br>
-            <!-- <ul>
-                <li><strong>Voice Activity Detection (VAD)</strong>: Exploring the role of machine learning in detecting voice in noisy environments.</li>
-                <li><strong>Data Science Applications in Healthcare</strong>: Developing predictive models for disease diagnosis and treatment planning.</li>
-                <li><strong>Natural Language Processing (NLP)</strong>: Investigating new techniques for improving human-computer communication through language.</li>
-            </ul> -->
+            <br>
             
-            <!-- <h3>Upcoming Projects</h3>
-            <p>I am currently working on a project that aims to enhance the accuracy of speech recognition systems using advanced neural networks, with applications in medical diagnostics.</p> -->
-    
             <div class="call-to-action">
-                <h4>Interested in collaborating?</h4>
-                <p>Feel free to contact me <span class="highlight"> ( <i class="fas fa-envelope" style="color: #ff5733;"></i>Email: raakibul.uap@gmail.com) </span> if you are interested in any of my research projects or if you'd like to discuss potential collaborations.</p>
+                <h4>Interested in research collaborating?</h4>
+                <p>Feel free to contact me <span class="highlight"> ( <i class="fas fa-envelope" style="color: #ff5733;"></i> Email: raakibul.uap@gmail.com) </span> if you are interested in any of my research projects or if you'd like to discuss potential collaborations.</p>
             </div>
     
             <h3 class="social-media">Find me in Social Media</h3>
@@ -125,17 +87,10 @@
                     Bksy</a>
 
             </div>
-
         </section>
     </main>
 
-
-    <footer>
-        <p>&copy; 2024 My Academic Website. All rights reserved.</p>
-    </footer>
-    <!-- javascript file -->
-     <script src="script.js"></script>
-
-     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> -->
+    <!-- Javascript file -->
+    <script src="toggle.js"></script>
 </body>
 </html>
