@@ -66,6 +66,7 @@ main {
     margin-bottom: 4px;
 }
 
+ 
 /* Navigation bar */
 .main-nav {
     display: flex;
@@ -148,7 +149,7 @@ main {
 /* Home button hover background fix */
 .nav-links a[href="index.html"]:hover {
     background: #eaf4ec !important;
-    color: #156c1b !important;
+    /* color: #156c1b !important; */
 }
 
 /* Mobile Nav & Overlay */
