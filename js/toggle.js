@@ -20,6 +20,8 @@ navToggle.addEventListener('click', function(e) {
     e.stopPropagation();
 });
 
+
+
 // Overlay click closes nav
 navOverlay.addEventListener('click', () => {
     navToggle.classList.remove('open');
