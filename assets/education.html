@@ -3,25 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>raakibul</title>
-    <link rel="stylesheet" href="style.css">
-     <script src="https://kit.fontawesome.com/f056a62cc9.js" crossorigin="anonymous"></script>
+    <title>Rakibul Islam | ML & Data Science</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <script src="https://kit.fontawesome.com/f056a62cc9.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <main>
         <section class="profile-header">
             <div class="profile-pic">
-                <img src="profile.jpg" alt="Profile" />
+                <img src="../img/profile.jpg" alt="Profile" />
             </div>
-            <div class="profine-name">
+            <div class="profile-name">
                 <h1>Rakibul Islam</h1>
                 <p>ML and Data Science Enthusiast</p>
             </div>
             <div class="profile-info">
                 <ul>
                     <li>
-                        <span> <i class="fas fa-envelope" style="color: #ff5733;"></i></span>
-                       Email: raakibul.uap@gmail.com
+                        <span><i class="fas fa-envelope" style="color: #ff5733;"></i></span>
+                        Email: raakibul.uap@gmail.com
                     </li>
                     <li>
                         Computer Science &amp; Engineering
@@ -30,67 +30,191 @@
             </div>
         </section>
         <nav class="main-nav">
-            <div class="nav-toggle" id="navToggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Open navigation" aria-expanded="false" aria-controls="navLinks">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
             <div class="nav-links" id="navLinks">
-                <a class="active" href="index.html">Home</a>
-                <a href="publication.html">Publications</a>
-                <a href="education.html">Education & Training</a>
-                <a href="project.html">Projects</a>
-                <a href="blog.html">Blog</a>
-                <a href="contact.html">Contact</a>
+                <a href="../assets/index.html">Home</a>
+                <a href="../assets/publication.html">Publications</a>
+                <a href="../assets/education.html">Education & Training</a>
+                <a href="../assets/project.html">Projects</a>
+                <a href="../assets/blog.html">Blog</a>
+                <a href="../assets/contact.html">Contact</a>
             </div>
         </nav>
-        <section class="content" id="mainContent">
-            <h2>Welcome!</h2>
-            <p>
-                Hi there!! I'm Rakibul Islam. I work at the Largest online and offline based tutoring platform <a class="highlight" href="https://caretutors.com/">CareTutor</a> in Bangladesh. I Gave in-person lessons on physics, mathematics and programming Languages (Python, C, C++ and JavaScript) to high school and college level students.
-            </p>
-
-            <br>I aim to become a research scientist at a prestigious university or research institution. I am particularly interested in combining academic research with industrial collaboration. I aspire to establish my lab to conduct cutting-edge research that advances science and benefits academia and industry. As a dedicated learner, I investigate the possible benefits of Artificial Intelligence technology to enhance human life. My research interest areas are including machine learning, deep learning and artificial intelligence in the design and implementation of research tools.  My primary purpose is to develop widely implementable machine and deep learning-based solutions for real scenarios in artificial technology. <span class="highlight">I'm looking for funded graduate opportunity for fall 2025.</span>
-            <br>
-            <br>
-            Previously, I completed my Bachelor’s in <a class="highlight" href="https://cse.uap-bd.edu/">Computer Science</a> at <a class="highlight" href="https://www.uap-bd.edu/">University of Asia Pacific.</a>  Where I was advised by <a class="highlight" href="https://cse.uap-bd.edu/faculty/faculty_details/11">Assistant Professor Tanjina Helaly.</a> I did my undergraduate thesis on Deep Learning-Based Background Noise Classification
-            and Reduction for Audio Enhancement. where i was advised by <a class="highlight" href="https://scholar.google.com/citations?user=20fAehwAAAAJ&hl=en">Rashik Rahman.</a>
-            <h2>Research Interests</h2>
+        <div id="navOverlay"></div>
+        <section class="content fade-in" id="mainContent">
+            <h2>Education Experience</h2>
             <hr>
-            <p>My main research interest lies in Machine Learning and deep learning-based Artificial Intelligence systems. I want to research next-generation Machine Learning and Deep Learning-based AI systems. The Research interest that i have--</p>
+            <div class="education-section">
+                <div class="edu-card">
+                    <div class="edu-icon"><i class="fas fa-university" style="color:#228B22;"></i></div>
+                    <div>
+                        <h3>University of Asia Pacific (UAP), Dhaka, Bangladesh</h3>
+                        <p><strong>B.Sc. in Computer Science & Engineering</strong></p>
+                        <p>2019 – 2023</p>
+                        <ul>
+                            <li>Thesis: Deep Learning-Based Background Noise Classification and Reduction for Audio Enhancement</li>
+                            <li>Advisor: Assistant Professor Tanjina Helaly</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="edu-card">
+                    <div class="edu-icon"><i class="fas fa-school" style="color:#156c1b;"></i></div>
+                    <div>
+                        <h3>Govt. Science College, Dhaka, Bangladesh</h3>
+                        <p><strong>Higher Secondary Certificate (HSC)</strong></p>
+                        <p>2014 – 2016</p>
+                        <ul>
+                            <li>Major: Science</li>
+                            <li>Result: GPA 5.00/5.00</li>
+                            <li>Participated in Science Olympiads</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- <div class="edu-card">
+                    <div class="edu-icon"><i class="fas fa-book-reader" style="color:#0077b5;"></i></div>
+                    <div>
+                        <h3>Yakub Ali Chowdhury Bidyapith, Pangsha</h3>
+                        <p><strong>Secondary School Certificate (SSC)</strong></p>
+                        <p>2009 – 2014</p>
+                        <ul>
+                            <li>Major:Science</li>
+                            <li>Result: GPA 5.00/5.00</li>
+                            <li>Active member of School Science Club</li>
+                        </ul>
+                    </div>
+                </div> -->
+            <!-- </div> -->
+
+            <h2>Work Experience</h2>
+            <hr>
+            <div class="experience-section">
+                <div class="exp-card">
+                    <div class="exp-icon"><i class="fas fa-chalkboard-teacher" style="color:#156c1b;"></i></div>
+                    <div>
+                        <h3>CareTutor, Bangladesh — Tutor & Curriculum Developer</h3>
+                        <p>Instructor</p>
+                        <p><strong>Oct. 2023 – Present</strong></p>
+                        <ul>
+                            <li>Delivered in-person and online tutoring on Physics, Mathematics, and Programming (Python, C, C++, JavaScript) to high school and college students.</li>
+                            <li>Developed and updated curriculum for programming bootcamps.</li>
+                            <li>Mentored students for competitive programming and university entrance exams.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="exp-card">
+                    <div class="exp-icon"><i class="fas fa-laptop-code" style="color:#0077b5;"></i></div>
+                    <div>
+                        <h3>Industrial Trainee</h3>
+                        <p>Software Engr. Intern at BrogrammersLab, Dhaka,Bangladesh</p>
+                        <p><strong>Dec. 2022 – May. 2023</strong></p>
+                        <ul>
+                            <li>Gained practical experience with version control systems (Git) and collaborative coding workflows using GitHub.</li>
+                            <li>Participated in daily stand-ups, sprint planning, and code reviews, enhancing communication and teamwork skills.</li>
+                            <li>Strengthened my problem-solving, debugging, and time management skills under industrial mentorship.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <h2>Academic Trainings and Certificate</h2>
+            <hr>
+            <div class="training-section">
+                <div class="training-card">
+                    <div class="training-icon"><i class="fab fa-python" style="color:#3776AB;"></i></div>
+                    <div>
+                        <h3>Mathematics for Machine Learning and Data Science (3 Courses) by Luis Serrano | DeepLearning.AI</h3>
+                        <p>Coursera (deeplearning.ai) — Completed: 2024</p>
+                        <ul>
+                            <li>Linear Algebra for Machine Learning and Data Science</li>
+                            <li>Calculus for Machine Learning and Data Science</li>
+                            <li>Probability & Statistics for Machine Learning & Data Science</li>
+                        </ul>
+                        <!-- <span class="cert-link"><a href="https://coursera.org/verify/deep-learning-specialization" target="_blank"><i class="fas fa-certificate" style="color:#228B22;"></i> View Certificate</a></span> -->
+                    </div>
+                </div>
+                <div class="training-card">
+                    <div class="training-icon"><i class="fas fa-robot" style="color:#ff5733;"></i></div>
+                    <div>
+                        <h3>Machine Learning Specialization (3 Courses) by Andrew NG</h3>
+                        <p>DeepLearning.AI & Stanford University — Completed: 2024</p>
+                        <ul>
+                            <li>Supervised Machine Learning: Regression and Classification</li>
+                            <li>Advanced Learning Algorithms</li>
+                            <li>Unsupervised Learning, Recommenders, Reinforcement Learning</li>
+                        </ul>
+                        <!-- <span class="cert-link"><a href="https://developers.google.com/machine-learning/crash-course" target="_blank"><i class="fas fa-certificate" style="color:#228B22;"></i> View Course</a></span> -->
+                    </div>
+                </div>
+                <div class="training-card">
+                    <div class="training-icon"><i class="fas fa-database" style="color:#156c1b;"></i></div>
+                    <div>
+                        <h3>Learn SQL Basics for Data Science Specialization (1 Course)</h3>
+                        <p>University of California, Davis — Completed: 2024</p>
+                        <ul>
+                            <li>SQL for Data Science by Sadie St. Lawrence</li>
+                        </ul>
+                        <!-- <span class="cert-link"><a href="https://www.datacamp.com/" target="_blank"><i class="fas fa-certificate" style="color:#228B22;"></i> View Platform</a></span> -->
+                    </div>
+                </div>
+                <div class="training-card">
+                    <div class="training-icon"><i class="fas fa-database" style="color:#156c1b;"></i></div>
+                    <div>
+                        <h3>IBM Data Analyst Professional Certificate (1 Course)</h3>
+                        <p>IBM — Completed: 2024</p>
+                        <ul>
+                            <li>Data Visualization with Python by Saishruthi Swaminathan and Dr. Pooja</li>
+                        </ul>
+                        <!-- <span class="cert-link"><a href="https://www.datacamp.com/" target="_blank"><i class="fas fa-certificate" style="color:#228B22;"></i> View Platform</a></span> -->
+                    </div>
+                </div>
+
+                <div class="training-card">
+                    <div class="training-icon"><i class="fas fa-database" style="color:#156c1b;"></i></div>
+                    <div>
+                        <h3>2024 - Data Science Foundations Specialization (1 Course)</h3>
+                        <p>IBM — Completed: 2024</p>
+                        <ul>
+                            <li>What is Data Science by Alex Aklson</li>
+                        </ul>
+                        <!-- <span class="cert-link"><a href="https://www.datacamp.com/" target="_blank"><i class="fas fa-certificate" style="color:#228B22;"></i> View Platform</a></span> -->
+                    </div>
+                </div>
+
+                <div class="training-card">
+                    <div class="training-icon"><i class="fas fa-database" style="color:#156c1b;"></i></div>
+                    <div>
+                        <h3>Google Data Analytics Professional Certificate (1 Course)</h3>
+                        <p>Google — Completed: 2024</p>
+                        <ul>
+                            <li>Foundations: Data, Data, Everywhere</li>
+                        </ul>
+                        <!-- <span class="cert-link"><a href="https://www.datacamp.com/" target="_blank"><i class="fas fa-certificate" style="color:#228B22;"></i> View Platform</a></span> -->
+                    </div>
+                </div>
+            </div>
+
+            <h2>Research Certificate</h2>
+            <hr>
+            <div class="cert-section">
+                <div class="cert-card">
+                    <i class="fas fa-certificate" style="color:#228B22; font-size:28px; margin-right:8px;"></i>
+                    <h3>Bdian Research Trainee | Sept. 2022- Dec.2022 </h3>
+                    <p>As a selected participant in the Bdian Research Trainee program, I received hands-on training in academic research methodologies, focusing on qualitative research techniques. The program emphasized research ethics, literature reviews, problem identification, and the fundamentals of writing a research proposal. During this experience, I:</p>
                     <ul>
-                        <li>Artificial Intelligence</li>
-                        <li>Data Science</li>
-                        <li>Machine Learning</li>
-                        <li>Deep Learning</li>
+                        <li>Explored real-world research questions in interdisciplinary fields.</li>
+                        <li>Learned how to design research frameworks and analyze qualitative data.</li>
+                        <li>Collaborated with mentors and peers on research-related discussions.</li>
+                        <li>Gained practical insights into how research projects are initiated and structured.</li>
                     </ul>
-            <br>
-            
-            <div class="call-to-action">
-                <h4>Interested in research collaborating?</h4>
-                <p>Feel free to contact me <span class="highlight"> ( <i class="fas fa-envelope" style="color: #ff5733;"></i> Email: raakibul.uap@gmail.com) </span> if you are interested in any of my research projects or if you'd like to discuss potential collaborations.</p>
+                </div>
             </div>
-    
-            <h3 class="social-media">Find me in Social Media</h3>
-            <hr>
-            <p class="social-media-p">Connect with me on various platforms to stay updated on my work and research:</p>
-            <div class="social-media">
-                <a href="https://www.linkedin.com/in/raakibul/" target="_blank"> <i class="fab fa-linkedin" style="color: #0077b5;"></i>
-                    LinkedIn</a>|
-                <a href="https://x.com/raakibul_" target="_blank"> <i class="fab fa-twitter" style="color: #1DA1F2;"></i>
-                    Twitter</a> | 
-                <a href="https://github.com/raaakibul" target="_blank"> <i class="fab fa-github" style="color: #333;"></i>
-                    GitHub</a>|
-                <a href="https://www.facebook.com/raakibul.14" target="_blank"> <i class="fab fa-facebook" style="color: #4267B2;"></i></i>
-                    Facebook</a>|
-                <a href="https://bsky.app/profile/raakibul.bsky.social" target="_blank"> <i class="fas fa-cloud" style="color: #0099FF;;"></i>
-                    Bksy</a>
 
-            </div>
         </section>
     </main>
-
-    <!-- Javascript file -->
-    <script src="toggle.js"></script>
+    <script src="../js/toggle.js"></script>
 </body>
 </html>
