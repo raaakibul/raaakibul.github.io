@@ -55,7 +55,7 @@ body {
   margin-top: 10px;
   display: flex;
   justify-content: center;
-  gap: 14px;
+  gap: 10px;
 }
 
 .social-icons img {
