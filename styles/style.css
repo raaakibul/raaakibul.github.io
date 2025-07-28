@@ -186,7 +186,7 @@ body {
 @media (max-width: 900px) {
   .main-content {
     margin-left: 0;
-    padding: 30px 12px;
+    /* padding: 30px 12px; */
   }
   .sidebar {
     left: -290px;
