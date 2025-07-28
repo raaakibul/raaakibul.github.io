@@ -95,11 +95,9 @@ body {
   background: #232537;
   color: #89b4fa;
 }
-
+/* main content */
 .main-content {
   margin-left: 280px;
-  /* max-width: 860px; */
-  /* padding: 40px 32px; */
   min-height: 100vh;
 }
 .upper-text{
