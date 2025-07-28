@@ -1,52 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rakibul Islam | ML & Data Science</title>
-    <link rel="stylesheet" href="../styles/style.css">
-    <link rel="stylesheet" href="../styles/publication.css">
-    <script src="https://kit.fontawesome.com/f056a62cc9.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rakibul</title>
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/publication.css">
+
+<!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> -->
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 </head>
 <body>
-    <main>
-        <section class="profile-header">
-            <div class="profile-pic">
-                <img src="../img/profile.jpg" alt="Profile" />
-            </div>
-            <div class="profile-name">
-                <h1>Rakibul Islam</h1>
-                <p>ML and Data Science Enthusiast</p>
-            </div>
-            <div class="profile-info">
-                <ul>
-                    <li>
-                        <span><i class="fas fa-envelope" style="color: #ff5733;"></i></span>
-                        Email: raakibul.uap@gmail.com
-                    </li>
-                    <li>
-                        Computer Science &amp; Engineering
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <nav class="main-nav">
-            <button class="nav-toggle" id="navToggle" aria-label="Open navigation" aria-expanded="false" aria-controls="navLinks">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </button>
-            <div class="nav-links" id="navLinks">
-                <a href="index.html">Home</a>
-                <a href="publication.html">Publications</a>
-                <a href="education.html">Education & Training</a>
-                <a href="project.html">Projects</a>
-                <a href="blog.html">Blog</a>
-                <a href="contact.html">Contact</a>
-            </div>
-        </nav>
-        <div id="navOverlay"></div>
-         <section class="pub-section fade-in">
+  <!-- Sidebar -->
+  <nav id="sidebar" class="sidebar">
+    <div class="sidebar-header">
+      <img src="img/profile.jpg" alt="Rakibul Islam" class="profile-img">
+      <h2>Rakibul Islam</h2>
+      <p>ML and Data Science Enthusiast</p>
+
+      <div class="social-icons">
+        <a href="https://x.com/raakibul_" target="_blank"><img src="img/twitter.svg" alt="Twitter"></a>
+        <a href="https://github.com/raaakibul"><img src="img/github.svg" alt="GitHub"></a>
+        <a href="https://www.linkedin.com/in/raakibul/" target="_blank"><img src="img/linkedin.svg" alt="LinkedIn"></a>
+        <a href="raakibul.uap@gmail.com"><img src="img/email.svg" alt="Email"></a>
+      </div>
+
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="publication.html">Publications</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="education.html">Education & Training</a></li>
+      <li><a href="project.html">Projects</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  
+  <!-- Toggle button for mobile -->
+  <button id="toggle-btn" class="toggle-btn">&#9776;</button>
+  
+  <!-- Main Content -->
+  <main class="main-content">
+         <section class="content-section">
             <h2>Selected Publications & Articles</h2>
             <ul class="pub-list">
                 <li class="pub-item">
@@ -85,8 +84,11 @@
                     <a class="pub-link" href="blog.html"><i class="fas fa-blog"></i>Read Blog</a>
                 </li> -->
             </ul>
-        </section>
-    </main>
-    <script src="../js/toggle.js"></script>
+                     
+    </section>
+
+  </main>
+  
+  <script src="./js/script.js"></script>
 </body>
 </html>

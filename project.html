@@ -1,116 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rakibul Islam | ML & Data Science</title>
-    <link rel="stylesheet" href="../styles/style.css">
-    <link rel="stylesheet" href="../styles/project.css">
-    <script src="https://kit.fontawesome.com/f056a62cc9.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rakibul</title>
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/blog.css">
+
+<!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> -->
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 </head>
 <body>
-    <main>
-        <section class="profile-header">
-            <div class="profile-pic">
-                <img src="../img/profile.jpg" alt="Profile" />
+  <!-- Sidebar -->
+  <nav id="sidebar" class="sidebar">
+    <div class="sidebar-header">
+      <img src="img/profile.jpg" alt="Rakibul Islam" class="profile-img">
+      <h2>Rakibul Islam</h2>
+      <p>ML and Data Science Enthusiast</p>
+
+      <div class="social-icons">
+        <a href="https://x.com/raakibul_" target="_blank"><img src="img/twitter.svg" alt="Twitter"></a>
+        <a href="https://github.com/raaakibul"><img src="img/github.svg" alt="GitHub"></a>
+        <a href="https://www.linkedin.com/in/raakibul/" target="_blank"><img src="img/linkedin.svg" alt="LinkedIn"></a>
+        <a href="raakibul.uap@gmail.com"><img src="img/email.svg" alt="Email"></a>
+      </div>
+
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="publication.html">Publications</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="education.html">Education & Training</a></li>
+      <li><a href="project.html">Projects</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  
+  <!-- Toggle button for mobile -->
+  <button id="toggle-btn" class="toggle-btn">&#9776;</button>
+  
+  <!-- Main Content -->
+  <main class="main-content">
+    <section class="content-section" id="mainContent">
+        <h2>Blog & Articles</h2>
+            <hr>
+            <div id="blog-controls" style="margin-bottom:24px;">
+                <input type="text" id="searchInput" placeholder="Search blog..." class="blog-search">
+                <select id="categorySelect" class="blog-category">
+                    <option value="">All Categories</option>
+                    <option value="Machine Learning">Machine Learning</option>
+                    <option value="Data Science">Data Science</option>
+                    <option value="Python">Python</option>
+                    <option value="AI">AI</option>
+                    <option value="Research">Research</option>
+                </select>
+                <button id="sortBtn" class="blog-sort"><i class="fas fa-sort"></i> Sort by Date</button>
             </div>
-            <div class="profile-name">
-                <h1>Rakibul Islam</h1>
-                <p>ML and Data Science Enthusiast</p>
+            <div id="blog-list" class="blog-list">
+                <!-- Blog posts will be injected by JS -->
             </div>
-            <div class="profile-info">
-                <ul>
-                    <li>
-                        <span><i class="fas fa-envelope" style="color: #ff5733;"></i></span>
-                        Email: raakibul.uap@gmail.com
-                    </li>
-                    <li>
-                        Computer Science &amp; Engineering
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <nav class="main-nav">
-            <button class="nav-toggle" id="navToggle" aria-label="Open navigation" aria-expanded="false" aria-controls="navLinks">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </button>
-            <div class="nav-links" id="navLinks">
-                <a href="index.html">Home</a>
-                <a href="publication.html">Publications</a>
-                <a href="education.html">Education & Training</a>
-                <a href="project.html">Projects</a>
-                <a href="blog.html">Blog</a>
-                <a href="contact.html">Contact</a>
-            </div>
-        </nav>
-        <div id="navOverlay"></div>
-        <!-- <section class="projects-section fade-in">
-            <h2>Featured Projects</h2>
-            <ul class="project-list">
-                <li class="project-item">
-                    <div class="project-title">NoiseNet</div>
-                    <div class="project-meta">Deep Learning | Audio Processing | 2023</div>
-                    <div class="project-desc">
-                        Developed a deep learning-based system for background noise classification and audio enhancement. Utilized CNNs and RNNs to reduce noise and improve speech clarity in real-world environments.
-                    </div>
-                    <a class="project-link" href="https://github.com/raaakibul/noisenet" target="_blank"><i class="fab fa-github"></i>Code Repository</a>
-                </li>
-                <li class="project-item">
-                    <div class="project-title">EduML</div>
-                    <div class="project-meta">Machine Learning | Education | 2022</div>
-                    <div class="project-desc">
-                        Created an interactive ML education platform for Bangladeshi students and teachers, featuring guided tutorials, quizzes, and real-world datasets for hands-on learning.
-                    </div>
-                    <a class="project-link" href="https://github.com/raaakibul/eduml" target="_blank"><i class="fab fa-github"></i>Code Repository</a>
-                </li>
-                <li class="project-item">
-                    <div class="project-title">CareTutor Analytics</div>
-                    <div class="project-meta">Data Science | EdTech | 2021</div>
-                    <div class="project-desc">
-                        Built machine learning models to predict student performance and deliver personalized content for CareTutor, Bangladesh's largest tutoring platform.
-                    </div>
-                    <a class="project-link" href="https://github.com/raaakibul/caretutor-analytics" target="_blank"><i class="fab fa-github"></i>Code Repository</a>
-                </li>
-                <li class="project-item">
-                    <div class="project-title">AI4Society</div>
-                    <div class="project-meta">Artificial Intelligence | Social Good | 2024</div>
-                    <div class="project-desc">
-                        Research and development of AI applications for social good, including disaster response, healthcare, and community support tools.
-                    </div>
-                    <a class="project-link" href="https://github.com/raaakibul/ai4society" target="_blank"><i class="fab fa-github"></i>Code Repository</a>
-                </li>
-                <li class="project-item">
-                    <div class="project-title">Python TutorBot</div>
-                    <div class="project-meta">Python | Chatbot | 2023</div>
-                    <div class="project-desc">
-                        Developed an intelligent chatbot for students learning Python, providing instant help, code explanations, and interactive quizzes.
-                    </div>
-                    <a class="project-link" href="https://github.com/raaakibul/python-tutorbot" target="_blank"><i class="fab fa-github"></i>Code Repository</a>
-                </li>
-            </ul>
-            <h2>Open-Source Contributions</h2>
-            <ul class="project-list">
-                <li class="project-item">
-                    <div class="project-title">ML Bangladesh Open Dataset Initiative</div>
-                    <div class="project-meta">Open Data | Community | 2022</div>
-                    <div class="project-desc">
-                        Contributed to the creation and curation of open datasets for Bangladeshi research and education, enabling reproducible research and collaboration.
-                    </div>
-                    <a class="project-link" href="https://github.com/MLBangladesh/open-dataset" target="_blank"><i class="fab fa-github"></i>Code Repository</a>
-                </li>
-                <li class="project-item">
-                    <div class="project-title">Audio Enhancement Tools</div>
-                    <div class="project-meta">Signal Processing | Python | 2023</div>
-                    <div class="project-desc">
-                        Developed and published Python libraries for audio signal cleaning and enhancement, adopted by researchers and educators.
-                    </div>
-                    <a class="project-link" href="https://github.com/raaakibul/audio-enhancement-tools" target="_blank"><i class="fab fa-github"></i>Code Repository</a>
-                </li>
-            </ul>
-        </section> -->
-    </main>
-    <script src="../js/toggle.js"></script>
+            <div id="blog-pagination" class="blog-pagination"></div>
+            <hr>
+            <h3 class="social-media">Share Your Thoughts</h3>
+            <div id="blog-comment-section">
+                <form id="commentForm">
+                    <input type="text" id="commentName" placeholder="Your Name" required>
+                    <textarea id="commentText" rows="3" placeholder="Add a comment..." required></textarea>
+                    <button type="submit">Post Comment</button>
+                </form>
+                <div id="commentList" class="comment-list"></div>
+            </div>             
+          
+         
+    </section>
+
+  </main>
+  
+  <script src="./js/script.js"></script>
+  <script src="./js/blog.js"></script>
 </body>
 </html>
