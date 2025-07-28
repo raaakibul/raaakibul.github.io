@@ -1,15 +1,15 @@
-// javascript code
-// Toggle the navigation menu in mobile view
-function toggleMenu() {
-    const nav = document.querySelector('nav');
-    nav.classList.toggle('active');
-}
+const toggleBtn = document.getElementById('toggle-btn');
+const sidebar = document.getElementById('sidebar');
 
-// Toggle between dark and light themes
-function toggleTheme() {
-    const body = document.body;
-    const homeSection = document.getElementById('home');
+toggleBtn.addEventListener('click', () => {
+  sidebar.classList.toggle('open');
+});
 
-    body.classList.toggle('dark-mode');
-    homeSection.classList.toggle('dark-mode');
-}
+// Optionally close sidebar when clicking outside (mobile)
+document.addEventListener('click', function(e) {
+  if (window.innerWidth <= 900 && sidebar.classList.contains('open')) {
+    if (!sidebar.contains(e.target) && e.target !== toggleBtn) {
+      sidebar.classList.remove('open');
+    }
+  }
+});
