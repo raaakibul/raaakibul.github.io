@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
+  padding: 0 auto;
 }
 
 body {
@@ -35,8 +35,8 @@ body {
   object-fit: cover;
   border-radius: 50%;
   margin-bottom: 12px;
-  /* border: 2px solid #aaaaaa; */
-  border: 3px solid #e8e8e8;
+  border: 2px solid #aaaaaa;
+  /* border: 3px solid #e8e8e8; */
   box-shadow: 0 4px 16px rgba(34,139,34,0.03);
   transition: box-shadow 0.3s;
 }
@@ -55,7 +55,7 @@ body {
   margin-top: 10px;
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 15px;
 }
 
 .social-icons img {
@@ -98,9 +98,12 @@ body {
 
 .main-content {
   margin-left: 280px;
-/*   max-width: 860px; */
-  padding: 40px 32px;
+  /* max-width: 860px; */
+  /* padding: 40px 32px; */
   min-height: 100vh;
+}
+.welcome-text{
+  text-align: center;
 }
 .highlight {
     text-decoration: none;
@@ -117,7 +120,7 @@ body {
   border-radius: 10px;
   box-shadow: 0 2px 12px rgba(33,40,60,0.07);
   padding: 32px 28px;
-  margin-top: 10px;
+  /* margin-top: 10px; */
 }
 
 .content-section h1 {

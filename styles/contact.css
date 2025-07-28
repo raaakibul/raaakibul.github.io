@@ -1,13 +1,13 @@
-.contact-section {
+/* .contact-section {
     max-width: 600px;
     margin: 36px auto;
     background: #fff;
     border-radius: 12px;
     box-shadow: 0 2px 14px #eaf4ec;
     padding: 32px 24px;
-}
+} */
 
-.contact-section h2 {
+.content-section h2 {
     color: #156c1b;
     margin-bottom: 18px;
 }
@@ -22,6 +22,7 @@
 }
 
 .contact-form {
+     min-height: 100vh;
     display: flex;
     flex-direction: column;
     gap: 14px;
