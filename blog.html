@@ -6,7 +6,7 @@
     <title>Rakibul</title>
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/blog.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <linkrel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
   </head>
   <body>
     <!-- Sidebar -->
@@ -52,13 +52,30 @@
     <button id="toggle-btn" class="toggle-btn">&#9776;</button>
 
     <!-- Main Content -->
+
     <main class="main-content">
-      <section class="content-section" id="mainContent">
-        <h1 class="upper-text">Research Paper Posts</h1>
-        <hr />
-        <div class="container">
-          <div id="post-list"></div>
-          <div id="full-post" class="full-post-view"></div>
+      <section class="content-section" id="blog-list-section">
+        <h1 class="blog-title-main">Research Paper Posts</h1>
+        <div id="posts-list" class="post-grid"></div>
+      </section>
+
+      <!-- Full Post Modal -->
+      <section
+        class="full-post-modal hidden"
+        id="post-modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modal-post-title"
+      >
+        <div class="full-post-modal-inner">
+          <button
+            class="modal-close-btn"
+            id="modal-close-btn"
+            aria-label="Close Post"
+          >
+            &times;
+          </button>
+          <div id="modal-content"></div>
         </div>
       </section>
     </main>
