@@ -1,3 +1,4 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); */
 * {
   box-sizing: border-box;
   margin: 0 auto;
@@ -6,6 +7,7 @@
 
 body {
   font-family: 'Segoe UI', 'Arial', sans-serif;
+  /* font-family: "Roboto", sans-serif; */
   color: #2b2d42;
   background: #f5f6fa;
 }
@@ -134,9 +136,10 @@ body {
   letter-spacing: 0.04em;
 }
 .content-section p{
-  font-size: 18px;
+  font-size: 1rem;
   margin-bottom: 10px;
   text-justify: auto;
+  line-height: 1.55;
 }
 .list-item{
   list-style-type: square;
