@@ -1,230 +1,128 @@
-// Example blog data
+// Blog posts data
 const blogPosts = [
-    {
-        // id: 1,
-        // title: "Getting Started with Machine Learning",
-        // category: "Machine Learning",
-        // desc: "If you’re new to ML, this post covers the foundational concepts, libraries, and resources to get you up and running as an ML practitioner.",
-        // content: `Machine Learning (ML) is a branch of Artificial Intelligence that enables computers to learn from data. In this article, I'll guide you through basic ML concepts, popular libraries like scikit-learn, TensorFlow, and PyTorch, and how to choose your first project. \n\nTips:\n- Start with supervised learning algorithms.\n- Practice on datasets from Kaggle or UCI ML Repository.\n- Read documentation and join ML communities for support.`,
-        // author: "Rakibul Islam",
-        // date: "2024-06-05"
-    },
-    {
-        // id: 2,
-        // title: "Data Science: From Zero to Hero",
-        // category: "Data Science",
-        // desc: "A roadmap for beginners on how to learn data science, recommended resources, and building your first portfolio project.",
-        // content: `Data Science is all about extracting insights from data. The journey begins with learning Python, statistics, and visualization tools like matplotlib and seaborn. Building a portfolio is key!\n\nChecklist:\n- Master Python basics\n- Learn Pandas and Numpy\n- Explore real datasets\n- Share your projects on GitHub`,
-        // author: "Rakibul Islam",
-        // date: "2024-06-10"
-    },
-    {
-        // id: 3,
-        // title: "Introduction to Neural Networks",
-        // category: "AI",
-        // desc: "Understand the basics of neural networks, how they work, and where to apply them in real-world scenarios.",
-        // content: `Neural networks power many AI applications today. They consist of layers of interconnected nodes. This post explains feedforward networks, activation functions, and gives an implementation example in Python with TensorFlow.`,
-        // author: "Rakibul Islam",
-        // date: "2024-06-15"
-    },
-    {
-        // id: 4,
-        // title: "Python Tricks for Data Scientists",
-        // category: "Python",
-        // desc: "Level up your Python game with these tips, tricks, and lesser-known features for data science and analysis.",
-        // content: `Python has many features that make data analysis easier. List comprehensions, lambda functions, itertools, and more! Here are some code snippets and use cases for each feature.`,
-        // author: "Rakibul Islam",
-        // date: "2024-06-20"
-    },
-    {
-        // id: 5,
-        // title: "Recent Advances in Deep Learning",
-        // category: "Machine Learning",
-        // desc: "Exploring the latest breakthroughs in deep learning architectures and their applications.",
-        // content: `Deep learning is evolving rapidly. Transformers, GANs, and self-supervised learning are changing the field. Learn about the most influential papers and open-source projects to watch in 2024.`,
-        // author: "Rakibul Islam",
-        // date: "2024-07-01"
-    },
-    {
-        id: 1,
-        title: "My Thesis Journey: Deep Learning-Based Background Noise Classification and Reduction for Audio Enhancement",
-        category: "Research",
-        desc: "A personal reflection on my thesis and experiments with deep learning for audio noise reduction.",
-        content: `During my undergraduate thesis, I worked on background noise classification and reduction for audio signals. In this article, I share the methodology, challenges, and results of my experiments, plus code snippets for reproducibility.`,
-        author: "Rakibul Islam",
-        date: "2024-07-10"
-    },
-    // Add more posts for demo purposes
+  {
+    title: "Paper Title: Locally Adaptive Conformal Inference for Operator Models",
+    authors: "Trevor A. Harris and Yan Liu",
+    summary:
+      "This paper introduces a new framework called Local Spectral Conformal Inference (LSCI) that provides distribution-free, locally adaptive uncertainty quantification specifically for neural operator (NO) models. It’s the first method designed to capture localized predictive uncertainty in operator learning, which is especially important for applications like approximating partial differential equations (PDEs) and weather forecasting.",
+    paperLink: "https://arxiv.org/pdf/2507.20975",
+    keyContributions: [
+      "<u>A New Uncertainty Quantification Approach:</u> LSCI blends projection-based depth measures (called Φ-depths) with localized conformal inference techniques to create prediction sets that adapt to local changes in the data, delivering function-valued uncertainty bands that respond to varying behavior.<br>",
+      
+      "<u>Strong Theoretical Guarantees:</u> The authors prove that LSCI achieves approximate finite-sample coverage under a new, more flexible assumption called local exchangeability. This is a relaxed version of the classical exchangeability assumption used in conformal methods, broadening its applicability.<br>",
+      
+      "<u>Efficient Sampling Algorithm:</u> They propose a practical algorithm to generate ensembles and prediction bands from LSCI, making the method feasible and efficient for real-world operator learning tasks.<br>",
+      
+      "<u>Empirical Validation:</u> Through both synthetic tests and real-world experiments, LSCI consistently outperforms existing conformal inference approaches and other uncertainty quantification techniques used for operator models—delivering better coverage, adaptivity, and computational efficiency. <br>"
+    ],
+
+    impact:[
+        "Advancing Scientific Machine Learning: LSCI offers trustworthy uncertainty estimates for black-box operator models widely used in climate science, medical imaging, and large-scale physics simulations.",
+        "Supporting Safer Model Deployment: By providing reliable confidence measures, LSCI helps ensure neural operators can be safely used in high-stakes environments where understanding prediction certainty is crucial.",
+        "Laying the Groundwork for Future Research: This work opens up exciting new directions for probabilistic operator learning, adaptive uncertainty quantification, and function-valued prediction methods, especially in situations involving distribution shifts.",    
+
+    ],
+
+    strongPoints: [
+      "Novel and Reliable Uncertainty Quantification for Neural Operators: This paper presents LSCI, a groundbreaking method that offers distribution-free, function-valued uncertainty estimates for black-box neural operator models. Unlike traditional neural operators, which typically don’t provide reliable uncertainty measures, LSCI delivers calibrated predictions—marking a major step forward in trustworthy operator learning.",
+      
+      "Strong Theory Meets Practical Usability: LSCI is backed by solid theory, built on the concepts of local exchangeability and Φ-depth-based conformal inference, ensuring finite-sample coverage guarantees. What’s impressive is that despite this theoretical depth, the method is efficient and scalable, making it well-suited for real-world applications that demand both speed and reliability.",
+
+      "Thorough Testing Across Real-World Domains: The approach is validated on a range of synthetic and real-world datasets, including applications like weather forecasting, energy demand prediction, and air quality modeling. In every case, LSCI outperforms existing methods—offering narrower prediction bands, better adaptation to local data patterns, and stronger risk control. This shows not only its robustness but also its versatility across diverse tasks."
+    ],
+    weakPoints: [
+      "Computational Overhead at Test Time: While LSCI offers strong theoretical guarantees, its reliance on localization and rejection-based sampling during inference adds notable computational cost. This can become a bottleneck, especially for large-scale or real-time applications, potentially limiting its practicality in scenarios where speed is critical.",
+
+      "Sensitivity to Bandwidth Parameter: LSCI’s performance heavily depends on the choice of the localization bandwidth parameter (λ). Although cross-validation helps tune this parameter, there’s no principled or automated way to choose the optimal value. This sensitivity may affect generalization and make the method harder to deploy across varied datasets without manual tuning.",
+
+      "Limited Support for Complex Output Structures: The current version of LSCI is designed for scalar or function-valued outputs, but it doesn't extend naturally to multivariate functional outputs—such as spatiotemporal data with multiple channels. Supporting these more complex structures would require significant modifications, limiting LSCI’s applicability in many real-world operator learning problems involving rich, structured outputs.",
+    ],
+    futureIdeas: [
+      "Speeding Up with Amortized Inference:To make LSCI suitable for real-time or online use, one promising direction is to develop amortized or neural approximations that can bypass the expensive sampling and localization steps at test time. This could make conformal prediction for neural operators fast enough for high-throughput applications.",
+
+      "Smarter Projection Operators: The current method relies on fixed projection strategies (like random or Fourier-based ones), but there's potential in making this more adaptive and data-driven. For example, using attention mechanisms or learned basis functions could improve how Φ-depths capture the structure of the data, making predictions more accurate and locally adaptive.",
+
+      "Handling Complex, Multi-Channel Outputs: LSCI currently focuses on single-output or function-valued data. Extending it to handle multivariate outputs—like climate data with multiple interacting variables—would require developing joint conformity scores or hierarchical depth models. This would open doors to using LSCI in more complex scientific and engineering tasks.",
+
+      "Bridging to Probabilistic Models: Another exciting avenue is to combine LSCI with probabilistic neural operators, such as Bayesian FNOs or stochastic DeepONets. This hybrid approach could improve how we capture both epistemic and aleatoric uncertainty, merging the strengths of conformal inference and probabilistic modeling.",
+
+      "Smarter Bandwidth Tuning: Currently, the bandwidth parameter (λ) in LSCI is selected via cross-validation. Future work could explore automated, task-aware tuning methods—like meta-learning or Bayesian optimization—to choose λ more efficiently and ensure reliable uncertainty estimates across different datasets.",
+
+      "Scaling Up to Real-World Spatiotemporal Data: LSCI has great potential for large-scale spatiotemporal tasks—such as climate simulation or fluid dynamics—but it needs optimization. This could include GPU acceleration, distributed sampling, or compressed representations to scale LSCI to massive 3D or time-dependent datasets.",
+
+      "Towards Causal and Counterfactual Inference: Finally, a bold and forward-looking direction is to explore how LSCI can be adapted for causal operator models. For instance, it could quantify uncertainty over counterfactual function-valued predictions—like simulating the effects of climate interventions or treatment plans in medicine.",
+    ],
+    questions: [
+        "How sensitive is LSCI to the choice of the projection class Φ? Although the paper shows different projection families perform similarly, could there be cases where this choice significantly affects coverage or efficiency?"
+    ]
+  }
 ];
 
-// Pagination and filtering state
-let currentPage = 1;
-const postsPerPage = 3;
-let filteredPosts = blogPosts.slice();
-let sortAsc = false;
+// Select the container elements
+const postListDiv = document.getElementById("post-list");
+const fullPostDiv = document.getElementById("full-post");
 
-// Blog rendering
-function renderBlogList() {
-    const blogList = document.getElementById('blog-list');
-    blogList.innerHTML = '';
+// Render list of blog post previews
+function renderPostList() {
+  postListDiv.innerHTML = blogPosts
+    .map(
+      (post, index) => `
+      <div class="blog-post">
+        <h2>${post.title}</h2>
+        <p><strong>Authors:</strong> ${post.authors}</p>
+        <p>${post.summary}</p>
+        <button class="button read-btn" onclick="readFullPost(${index})">Read Full Post</button>
+        <a href="${post.paperLink}" target="_blank" rel="noopener" class="button paper-link-btn">Paper Link</a>
+      </div>
+    `
+    )
+    .join("");
 
-    const startIdx = (currentPage - 1) * postsPerPage;
-    const endIdx = startIdx + postsPerPage;
-    const postsToShow = filteredPosts.slice(startIdx, endIdx);
-
-    if (postsToShow.length === 0) {
-        blogList.innerHTML = '<p>No blog posts found.</p>';
-        return;
-    }
-
-    postsToShow.forEach(post => {
-        const card = document.createElement('div');
-        card.className = "blog-card";
-        card.innerHTML = `
-            <div class="blog-title">${post.title}</div>
-            <div class="blog-meta">
-                <span class="blog-category-tag">${post.category}</span>
-                <span><i class="fas fa-user"></i> ${post.author}</span> &bull; 
-                <span><i class="far fa-calendar-alt"></i> ${post.date}</span>
-            </div>
-            <div class="blog-desc" id="desc-${post.id}">${post.desc}</div>
-            <button class="read-more-btn" data-id="${post.id}">Read More</button>
-            <div class="blog-full-content" id="full-${post.id}" style="display:none; margin-top:8px;">${formatContent(post.content)}</div>
-        `;
-        blogList.appendChild(card);
-    });
-
-    renderPagination();
-    attachReadMoreHandlers();
+  // Show list view, hide full post
+  postListDiv.style.display = "block";
+  fullPostDiv.style.display = "none";
 }
 
-function formatContent(content) {
-    // Simple formatting for paragraphs and line breaks
-    const html = content.replace(/\n/g, "<br>");
-    return `<div>${html}</div>`;
+// Render the full post view
+function readFullPost(index) {
+  const post = blogPosts[index];
+
+  fullPostDiv.innerHTML = `
+    <div class="blog-post-full">
+      <h2>${post.title}</h2>
+      <p><strong>Authors:</strong> ${post.authors}</p>
+
+      <h3>Summary:</h3>
+      <p>${post.summary}</p>
+
+      <h3>Key Contributions:</h3>
+      <p>${post.keyContributions.join("")}</p>
+
+      <h3>Impact of this paper:</h3>
+      <ul>${post.impact.map(item => `<li>${item}</li>`).join("")}</ul>
+
+      <h3>Three strong points of this paper:</h3>
+      <ul>${post.strongPoints.map(item => `<li>${item}</li>`).join("")}</ul>
+
+      <h3>Three weak points of this paper</h3>
+      <ul>${post.weakPoints.map(item => `<li>${item}</li>`).join("")}</ul>
+
+      <h3>Potential ideas for future work based on this paper.</h3>
+      <ol>${post.futureIdeas.map(item => `<li>${item}</li>`).join("")}</ol>
+
+      <h3>Questions</h3>
+      <ul>${post.questions.map(item => `<li>${item}</li>`).join("")}</ul>
+
+      <div class="post-actions">
+        <button class="button back-btn" onclick="renderPostList()">Back to All Posts</button>
+      </div>
+    </div>
+  `;
+
+  // Show full post, hide list view
+  postListDiv.style.display = "none";
+  fullPostDiv.style.display = "block";
 }
 
-// Pagination controls
-function renderPagination() {
-    const blogPagination = document.getElementById('blog-pagination');
-    blogPagination.innerHTML = '';
-    const numPages = Math.ceil(filteredPosts.length / postsPerPage);
-    if (numPages <= 1) return;
-
-    for (let i = 1; i <= numPages; i++) {
-        const btn = document.createElement('button');
-        btn.textContent = i;
-        btn.className = (i === currentPage) ? 'active' : '';
-        btn.addEventListener('click', () => {
-            currentPage = i;
-            renderBlogList();
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
-        blogPagination.appendChild(btn);
-    }
-}
-
-// Read More/Hide toggling
-function attachReadMoreHandlers() {
-    document.querySelectorAll('.read-more-btn').forEach(btn => {
-        btn.onclick = function() {
-            const postId = btn.getAttribute("data-id");
-            const fullContent = document.getElementById("full-" + postId);
-            if (fullContent.style.display === "none") {
-                fullContent.style.display = "block";
-                btn.textContent = "Hide";
-            } else {
-                fullContent.style.display = "none";
-                btn.textContent = "Read More";
-            }
-        };
-    });
-}
-
-// Search and filter
-document.getElementById('searchInput').addEventListener('input', function(e) {
-    filterAndSort();
-});
-document.getElementById('categorySelect').addEventListener('change', function(e) {
-    filterAndSort();
-});
-document.getElementById('sortBtn').addEventListener('click', function() {
-    sortAsc = !sortAsc;
-    filterAndSort();
-    this.innerHTML = sortAsc ? '<i class="fas fa-sort-amount-up"></i> Oldest First' : '<i class="fas fa-sort"></i> Newest First';
-});
-
-function filterAndSort() {
-    const searchTerm = document.getElementById('searchInput').value.toLowerCase();
-    const selectedCat = document.getElementById('categorySelect').value;
-
-    filteredPosts = blogPosts.filter(post => {
-        const matchesCategory = selectedCat ? post.category === selectedCat : true;
-        const matchesSearch = post.title.toLowerCase().includes(searchTerm) ||
-            post.desc.toLowerCase().includes(searchTerm) ||
-            post.content.toLowerCase().includes(searchTerm);
-        return matchesCategory && matchesSearch;
-    });
-
-    filteredPosts.sort((a, b) => {
-        if (sortAsc) return new Date(a.date) - new Date(b.date);
-        else return new Date(b.date) - new Date(a.date);
-    });
-
-    currentPage = 1;
-    renderBlogList();
-}
-
-// Comments integration
-const commentList = [];
-document.getElementById('commentForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    const name = document.getElementById('commentName').value.trim();
-    const text = document.getElementById('commentText').value.trim();
-    if (!name || !text) return;
-
-    // Save comment to array (could use localStorage for persistence)
-    commentList.unshift({
-        name: name,
-        text: text,
-        date: new Date().toLocaleString()
-    });
-
-    document.getElementById('commentName').value = '';
-    document.getElementById('commentText').value = '';
-    renderComments();
-});
-
-function renderComments() {
-    const container = document.getElementById('commentList');
-    container.innerHTML = "";
-    if (commentList.length === 0) {
-        container.innerHTML = "<p>No comments yet. Be the first to share your thoughts!</p>";
-        return;
-    }
-    commentList.forEach(com => {
-        const card = document.createElement('div');
-        card.className = 'comment-card';
-        card.innerHTML = `
-            <div class="comment-meta"><i class="fas fa-user"></i> ${com.name} &bull; <i class="far fa-clock"></i> ${com.date}</div>
-            <div>${escapeHTML(com.text)}</div>
-        `;
-        container.appendChild(card);
-    });
-}
-
-function escapeHTML(str) {
-    return str.replace(/[&<>"']/g, function(m) {
-        return ({
-            '&': '&amp;',
-            '<': '&lt;',
-            '>': '&gt;',
-            '"': '&quot;',
-            "'": '&#39;'
-        })[m];
-    });
-}
-
-// Initial rendering
-filterAndSort();
-renderComments();
+// Load on page ready
+document.addEventListener("DOMContentLoaded", renderPostList);
