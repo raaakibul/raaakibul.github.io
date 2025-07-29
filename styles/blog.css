@@ -164,7 +164,7 @@
 .full-post-modal-inner {
   background: rgba(255 255 255 / 0.92);
   border-radius: 18px;
-  max-width: 780px;
+  max-width: 900px;
   width: 98vw;
   max-height: 93vh;
   padding: 42px 44px 28px;
@@ -290,7 +290,6 @@
 
 @media (max-width: 600px) {
   .read-post-btn, .paper-link-btn {
-    min-width: 100%;
     padding: 14px 0;
     font-size: 1rem;
   }
