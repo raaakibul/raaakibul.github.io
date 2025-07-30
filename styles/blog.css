@@ -249,7 +249,7 @@
 }
 
 /* Responsive */
-@media (max-width: 1150px) {
+@media (max-width: 955px) {
   .post-grid {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
