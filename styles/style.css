@@ -113,7 +113,16 @@ body {
   background: #232537;
   color: #89b4fa;
 }
-
+.icon{
+  margin-right: 15px;
+  padding-right: 5px;
+}
+.publication-icon{
+  margin-right: 25px;
+}
+.edu-icon{
+  margin-right: 16px;
+}
 /* main content */
 .main-content {
   margin-left: 280px;

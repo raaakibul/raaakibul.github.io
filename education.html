@@ -1,49 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Rakibul</title>
-  <link rel="stylesheet" href="./styles/style.css">
-  <link rel="stylesheet" href="./styles/education.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rakibul</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/education.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <nav id="sidebar" class="sidebar">
+      <div class="sidebar-header">
+        <img src="img/profile.jpg" alt="Rakibul Islam" class="profile-img" />
+        <h2>Rakibul Islam</h2>
+        <p>ML and Data Science Enthusiast</p>
+      </div>
+      <ul class="nav-links">
+        <li>
+          <a href="index.html"><i class="fas fa-home icon"></i>Home</a>
+        </li>
+        <li>
+          <a href="publication.html"
+            ><i class="fas fa-file-alt publication-icon"></i>Publications</a
+          >
+        </li>
+        <li>
+          <a href="research.html">
+            <i class="fas fa-microscope icon"></i>Research</a
+          >
+        </li>
+        <li>
+          <a href="education.html"
+            ><i class="fas fa-graduation-cap edu-icon"></i>Education</a
+          >
+        </li>
+        <li>
+          <a href="project.html"
+            ><i class="fas fa-folder-open icon"></i>Projects</a
+          >
+        </li>
+        <li>
+          <a href="blog.html"><i class="fas fa-pen-nib icon"></i>Blog</a>
+        </li>
+        <li>
+          <a href="contact.html"
+            ><i class="fas fa-address-card icon"></i>Contact</a
+          >
+        </li>
+      </ul>
+      <div class="social-icons">
+        <a href="https://x.com/raakibul_" target="_blank"
+          ><img src="img/twitter.svg" alt="Twitter"
+        /></a>
+        <a href="https://github.com/raaakibul" target="_blank"
+          ><img src="img/github.svg" alt="GitHub"
+        /></a>
+        <a href="https://www.linkedin.com/in/raakibul/" target="_blank"
+          ><img src="img/linkedin.svg" alt="LinkedIn"
+        /></a>
+        <a href="mailto:rakibul@gmail.com"
+          ><img src="img/gmail.svg" alt="Email"
+        /></a>
+        <a href="https://www.facebook.com/raakibul.14" target="_blank"
+          ><img src="img/facebook.svg" alt="facebook"
+        /></a>
+        <a href="https://bsky.app/profile/raakibul.bsky.social"
+          ><img src="img/bluesky.svg" alt="bluesky"
+        /></a>
+      </div>
+    </nav>
 
-</head>
-<body>
-  <!-- Sidebar -->
-  <nav id="sidebar" class="sidebar">
-    <div class="sidebar-header">
-      <img src="img/profile.jpg" alt="Rakibul Islam" class="profile-img">
-      <h2>Rakibul Islam</h2>
-      <p>ML and Data Science Enthusiast</p>
+    <!-- Toggle button for mobile -->
+    <button id="toggle-btn" class="toggle-btn">&#9776;</button>
 
-    </div>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="publication.html">Publications</a></li>
-      <li><a href="research.html">Research</a></li>
-      <li><a href="education.html">Education & Training</a></li>
-      <li><a href="project.html">Projects</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-
-    <div class="social-icons">
-        <a href="https://x.com/raakibul_" target="_blank"><img src="img/twitter.svg" alt="Twitter"></a>
-        <a href="https://github.com/raaakibul" target="_blank"><img src="img/github.svg" alt="GitHub"></a>
-        <a href="https://www.linkedin.com/in/raakibul/" target="_blank"><img src="img/linkedin.svg" alt="LinkedIn"></a>
-        <a href="mailto:rakibul@gmail.com" ><img src="img/gmail.svg" alt="Email"></a>
-        <a href="https://www.facebook.com/raakibul.14" target="_blank"><img src="img/facebook.svg" alt="facebook"></a>
-        <a href="https://bsky.app/profile/raakibul.bsky.social" ><img src="img/bluesky.svg" alt="bluesky"></a>
-    </div>
-  </nav>
-  
-  <!-- Toggle button for mobile -->
-  <button id="toggle-btn" class="toggle-btn">&#9776;</button>
-  
-  <!-- Main Content -->
-  <main class="main-content">
-    <section class="content-section">
+    <!-- Main Content -->
+    <main class="main-content">
+      <section class="content-section">
         <h1 class="upper-text">Education & Training</h1>
         <h2>Education</h2>
         <hr>
@@ -74,21 +110,6 @@
                         </ul>
                     </div>
                 </div>
-                <!-- <div class="edu-card">
-                    <div class="edu-icon"><i class="fas fa-book-reader" style="color:#0077b5;"></i></div>
-                    <div>
-                        <h3>Yakub Ali Chowdhury Bidyapith, Pangsha</h3>
-                        <p><strong>Secondary School Certificate (SSC)</strong></p>
-                        <p>2009 – 2014</p>
-                        <ul>
-                            <li>Major:Science</li>
-                            <li>Result: GPA 5.00/5.00</li>
-                            <li>Active member of School Science Club</li>
-                        </ul>
-                    </div>
-                </div> -->
-            <!-- </div> -->
-
             <h2 class="margin-top">Work Experience</h2>
             <hr>
             <div class="experience-section">
@@ -207,9 +228,9 @@
                 </div>
             </div>             
     </section>
-
-  </main>
-  
-  <script src="./js/script.js"></script>
-</body>
+       
+    </main>
+    
+    <script src="./js/script.js"></script>
+  </body>
 </html>

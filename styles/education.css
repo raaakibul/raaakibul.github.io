@@ -1,15 +1,17 @@
-.margin-top{
+.margin-top {
     margin-top: 15px;
 }
+
 .experience-section {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
     margin-bottom: 24px;
 }
+
 .exp-card {
     /* background: linear-gradient(90deg, #f6faff 70%, #ffe8e8 100%); */
-    box-shadow: 0 2px 10px rgba(34,139,34,0.06);
+    box-shadow: 0 2px 10px rgba(34, 139, 34, 0.06);
     border-radius: 10px;
     padding: 18px 22px;
     display: flex;
@@ -20,29 +22,35 @@
     margin-bottom: 0;
     transition: box-shadow 0.2s, transform 0.2s;
 }
+
 .exp-card:hover {
-    box-shadow: 0 4px 24px rgba(34,139,34,0.15);
+    box-shadow: 0 4px 24px rgba(34, 139, 34, 0.15);
     transform: translateY(-2px) scale(1.01);
 }
+
 .exp-icon {
     font-size: 2.2rem;
     margin-right: 8px;
     flex-shrink: 0;
 }
-.certi-link a{
+
+.certi-link a {
     text-decoration: none;
     color: black;
 }
-.certi-link a:hover{
+
+.certi-link a:hover {
     font-size: 16px;
     font-weight: bold;
     color: #ff5733;
 }
+
 @media (max-width: 700px) {
     .experience-section {
         flex-direction: column;
         gap: 16px;
     }
+
     .exp-card {
         flex: 1 1 100%;
         min-width: 0;
