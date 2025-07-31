@@ -19,6 +19,13 @@
     --gradient-success: linear-gradient(135deg, #00c853 0%, #00a040 100%);
 }
 
+body {
+    /* font-family: 'Open Sans', sans-serif; */
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: #f8f9fa;
+    overflow-x: hidden;
+}
 
 /* Main Content */
 .main-content {
@@ -149,6 +156,10 @@ h1 {
     z-index: 2;
 }
 
+.research-timeline .timeline-item::before {
+    border-color: var(--success-color);
+}
+
 .timeline-header {
     display: flex;
     justify-content: space-between;
@@ -181,6 +192,10 @@ h1 {
     margin-left: 10px;
 }
 
+.research-timeline .timeline-date {
+    background: var(--gradient-success);
+}
+
 .timeline-content {
     margin-top: 15px;
 }
@@ -200,10 +215,60 @@ h1 {
     flex: 1;
 }
 
-/* research experience */
- 
+.research-description {
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+.research-list {
+    margin-top: 15px;
+}
+
+.research-list li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.research-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--success-color);
+    font-weight: bold;
+}
+
+.research-certificate-btn {
+    display: inline-flex;
+    align-items: center;
+    background: var(--gradient-success);
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    margin-top: 15px;
+    box-shadow: 0 2px 4px rgba(0, 200, 83, 0.2);
+}
+
+.research-certificate-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    background: var(--gradient-primary);
+}
+
+.research-certificate-btn i {
+    margin-left: 8px;
+}
+
 /* Certificate and card */
- 
+
 /* Animations */
 .fade-in {
     opacity: 0;
@@ -217,7 +282,7 @@ h1 {
 }
 
 /* Responsive Styles */
- 
+
 
 @media (max-width: 900px) {
 
