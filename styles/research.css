@@ -26,7 +26,7 @@
    color: var(--accent-color);
  }
  
- p{
+ .container p{
   font-size: 1.1rem;
   text-align: justify;
  }
