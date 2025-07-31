@@ -288,7 +288,7 @@ h1 {
     gap: 15px;
 }
 
-.filter-section a{
+.card-footer a{
     text-decoration: none;
 }
 
@@ -396,8 +396,8 @@ h1 {
 }
 
 .specialization-badge {
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    color: white;
+    /* background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); */
+    /* color: black;
     font-size: 0.75rem;
     padding: 5px 12px;
     border-radius: 20px;
@@ -406,7 +406,16 @@ h1 {
     white-space: nowrap;
     max-width: 60%;
     overflow: hidden;
-    text-overflow: ellipsis;
+    text-overflow: ellipsis; */
+    background: white;
+    /* color: #e10600; */
+    color: var(--primary-color);
+    padding: 8px 16px;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    box-shadow: var(--card-shadow);
+    transition: all 0.3s ease;
 }
 
 .btn-view-certificate {
