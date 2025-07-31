@@ -288,6 +288,10 @@ h1 {
     gap: 15px;
 }
 
+.filter-section a{
+    text-decoration: none;
+}
+
 .filter-btn {
     background: white;
     border: 2px solid var(--primary-color);
