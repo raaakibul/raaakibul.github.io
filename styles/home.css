@@ -102,7 +102,7 @@ body {
 
 .welcome {
     font-family: 'Montserrat', sans-serif;
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: var(--accent-color);
     margin-bottom: 10px;
     margin-left: 40px;
@@ -112,7 +112,7 @@ body {
 
 .hero h1 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     /* color: var(--primary-color); */
     color: #1a237e;;
     margin-bottom: 20px;
@@ -130,6 +130,7 @@ body {
     color: var(--text-color);
     text-align: justify;
 }
+
 
 .cta-buttons {
     margin-left: 40px;
@@ -190,7 +191,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     /* color: var(--primary-color); */
     color: #1a237e;
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin-bottom: 15px;
     position: relative;
     display: inline-block;
@@ -275,7 +276,7 @@ body {
 
 .vision-card h3 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     color: var(--primary-color);
     margin-bottom: 15px;
 }

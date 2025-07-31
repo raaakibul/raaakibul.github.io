@@ -71,10 +71,9 @@ body {
 
 .hero h1 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: white;
-    /* margin-bottom: 20px; */
-    margin-left: 60px;
+    margin-left: 98px;
     font-weight: 700;
     line-height: 1.2;
     animation: fadeInUp 1s ease-out;
@@ -174,7 +173,7 @@ body {
 
 .pub-title {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: var(--primary-color);
     margin-bottom: 10px;
     font-weight: 600;
@@ -234,6 +233,7 @@ body {
 .pub-abstract {
     font-size: 1rem;
     line-height: 1.7;
+    text-align: justify;
     color: var(--text-color);
     margin-bottom: 20px;
 }
