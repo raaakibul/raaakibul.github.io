@@ -541,11 +541,11 @@ h1 {
     }
 
     .specialization-badge {
-        max-width: 25%;
+        max-width: 50%;
     }
 
     .btn-view-certificate {
-        width: 100%;
+        width: 25%;
         justify-content: center;
     }
 }
