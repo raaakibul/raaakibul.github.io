@@ -1,45 +1,117 @@
-.research-section p {
-  font-size: 1rem;
-  margin-bottom: 20px;
-  line-height: 1.55;
-  color: #3a3f58;
-}
+ :root {
+   --primary-color: #1a1a1a;
+   --accent-color: #b8860b;
+   --text-color: #333;
+   --light-gray: #f8f8f8;
+   --border-color: #e0e0e0;
+ }
 
-.research-list,
-.project-list {
-  list-style-type: none;
-  padding-left: 0;
-  margin-bottom: 32px;
-}
+ h1,
+ h3 {
+   font-family: 'Playfair Display', serif;
+   font-weight: 700;
+   color: var(--primary-color);
+ }
 
-.research-list li,
-.project-list li {
-  background: #f7f8fc;
-  border-radius: 8px;
-  padding: 18px 24px;
-  margin-bottom: 15px;
-  box-shadow: 0 1px 5px rgba(25, 30, 60, 0.05);
-  color: #2b2d42;
-}
+ h1 {
+   font-size: 2.8rem;
+   margin-bottom: 1.5rem;
+   text-align: center;
+ }
 
-.research-list li h3 {
-  margin: 0 0 8px 0;
-  color: #1959a5;
-  font-weight: 600;
-  font-size: 1.15rem;
-}
 
-@media (max-width: 900px) {
-  .research-section {
-    padding: 24px 16px;
-  }
-  .research-list li {
-    padding: 14px 16px;
-  }
-}
+ h3 {
+   font-size: 1.5rem;
+   margin-bottom: 1rem;
+   color: var(--accent-color);
+ }
+ 
+ p{
+  font-size: 1.1rem;
+  text-align: justify;
+ }
+ .container {
+   max-width: 900px;
+   margin: 0 auto;
+   padding: 0 2rem;
+ }
 
-@media (max-width: 600px) {
-  .research-section {
-    padding: 12px 8px;
-  }
-}
+ .subtitle {
+   font-size: 1.3rem;
+   font-weight: 300;
+   color: #666;
+   max-width: 600px;
+   margin: 0 auto;
+ }
+
+
+ /* Sections */
+ section {
+   padding: 3rem 0;
+ }
+
+ .section-title {
+   margin-bottom: 1rem;
+ }
+
+ /* Research Focus */
+ .focus-areas {
+   margin: 2.5rem 0;
+ }
+
+ .focus-item {
+   margin-bottom: 2.5rem;
+   padding-bottom: 2rem;
+   border-bottom: 1px solid var(--border-color);
+ }
+
+ .focus-item:last-child {
+   border-bottom: none;
+ }
+
+ .focus-number {
+   display: inline-block;
+   width: 36px;
+   height: 36px;
+   line-height: 36px;
+   text-align: center;
+   background-color: var(--accent-color);
+   color: white;
+   border-radius: 50%;
+   margin-right: 1rem;
+   font-family: 'Playfair Display', serif;
+   font-weight: 700;
+ }
+
+ /* Thesis Highlight */
+ .thesis-highlight {
+   background-color: var(--light-gray);
+   padding: 2rem;
+   margin: 2rem 0;
+   border-left: 4px solid var(--accent-color);
+ }
+
+ /* Highlight text */
+ .highlight {
+   color: var(--accent-color);
+   font-weight: 600;
+ }
+
+ /* Responsive */
+ @media (max-width: 768px) {
+   h1 {
+     font-size: 2.2rem;
+   }
+
+   h2 {
+     font-size: 1.7rem;
+   }
+
+   .container {
+     padding: 0 1.5rem;
+   }
+
+   section {
+     padding: 2.5rem 0;
+   }
+ }
