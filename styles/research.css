@@ -35,12 +35,14 @@ body {
   font-size: 1.8rem;
   color: var(--heading-color);
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .content-subtitle {
   font-size: 1.1rem;
   color: #555;
   font-weight: 500;
+  text-align: center;
 }
 
 .research-section {
@@ -49,7 +51,7 @@ body {
 }
 
 .section-title {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: var(--heading-color);
   margin-bottom: 15px;
   padding-bottom: 10px;
@@ -131,7 +133,7 @@ body {
   transform: translateY(-5px);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
 
   .main-content {
     margin-left: 0;
@@ -143,7 +145,7 @@ body {
   }
 
   .section-title {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 
   .focus-point-title {

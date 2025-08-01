@@ -160,7 +160,7 @@ body {
 }
 
 .research-icon {
-  font-size: 3rem;
+  font-size: 2rem;
   color: var(--primary-color);
   margin-bottom: 1rem;
 }
@@ -407,7 +407,7 @@ body {
 }
 
 .interest-icon {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: var(--accent-color);
   margin-bottom: 15px;
 }

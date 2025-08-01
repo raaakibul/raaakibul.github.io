@@ -329,11 +329,12 @@ body {
     }
 
     .hero h1 {
-        font-size: 2.8rem;
+        font-size: 1.5rem;
+        margin-left: 0;
     }
 
     .section-title {
-        font-size: 2.5rem;
+        font-size: 1.5rem;
     }
 
     .publication-card {
@@ -353,7 +354,7 @@ body {
     }
 
     .hero h1 {
-        font-size: 2.2rem;
+        font-size: 1.5rem;
     }
 
     .hero p {
@@ -361,22 +362,22 @@ body {
     }
 
     .section-title {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
 }
 
 @media (max-width: 400px) {
     .hero h1 {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
 
     .section-title {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
 
     .pub-title {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 
     .pub-meta {
