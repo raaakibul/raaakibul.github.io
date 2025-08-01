@@ -6,11 +6,7 @@
   <title>Rakibul</title>
   <link rel="stylesheet" href="./styles/style.css">
   <link rel="stylesheet" href="./styles/contact.css">
-
-<!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> -->
-
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 </head>
 <body>
@@ -44,47 +40,107 @@
   <!-- Toggle button for mobile -->
   <button id="toggle-btn" class="toggle-btn">&#9776;</button>
   
-  <!-- Main Content -->
-  <main class="main-content">
-    <section class="content-section contact-section">
-      <h1 class="upper-text">Contact</h1>
-      <div class="contact-flex">
-        <div class="contact-info">
-          <h2>Get in Touch</h2>
-          <p>Feel free to reach out for research collaborations, opportunities, or professional inquiries.<br><br>
-            <strong>Email:</strong> raakibul.uap@gmail.com<br>
-            <strong>Address:</strong> Dhaka, Bangladesh<br>
-            <strong>Phone:</strong> (123) 456-7890
-          </p>
-          <div class="contact-social">
-            <a href="https://x.com/raakibul_"><img src="img/twitter.svg" alt="Twitter"></a>
-            <a href="https://github.com/raaakibul"><img src="img/github.svg" alt="GitHub"></a>
-            <a href="https://www.linkedin.com/in/raakibul/"><img src="img/linkedin.svg" alt="LinkedIn"></a>
-            <a href="mailto:rakibul@gmail.com"><img src="img/gmail.svg" alt="Email"></a>
-            <a href="https://bsky.app/profile/raakibul.bsky.social"><img src="img/bluesky.svg" alt="bluesky"></a>
-            <a href="https://www.facebook.com/raakibul.14"><img src="img/facebook.svg" alt="facebook"></a>
-          </div>
-        </div>
-        <form class="contact-form" autocomplete="off">
-          <h2>Send a Message</h2>
-          <div class="form-group">
-            <label for="name">Your Name</label>
-            <input type="text" id="name" name="name" required placeholder="Enter your name">
-          </div>
-          <div class="form-group">
-            <label for="email">Your Email</label>
-            <input type="email" id="email" name="email" required placeholder="Enter your email">
-          </div>
-          <div class="form-group">
-            <label for="message">Your Message</label>
-            <textarea id="message" name="message" rows="5" required placeholder="What would you like to say?"></textarea>
-          </div>
-          <button type="submit" class="contact-btn">Send Message</button>
-          <div id="form-status"></div>
-        </form>
-      </div>
-    </section>
+  <!-- Main content -->
+    <main class="main-content" id="mainContent">
+        <div class="contact-container">
+            <div class="contact-grid">
+                <!-- Get in Touch Section -->
+                <div class="get-in-touch">
+                    <h2 class="section-title">
+                        <i class="fas fa-address-book"></i>
+                        Contact Information
+                    </h2>
+                    
+                    <p class="contact-description">
+                        Feel free to reach out to me for any inquiries, collaborations, or just to say hello. 
+                        I'm always open to discussing new projects, creative ideas, or opportunities to be 
+                        part of your vision.
+                    </p>
 
+                    <ul class="contact-info">
+                        <li class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>raakibul.uap@gmail.com</p>
+                            </div>
+                        </li>
+                        
+                        <li class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Location</h4>
+                                <p>Dhaka, Bangladesh</p>
+                            </div>
+                        </li>
+                        
+                        <li class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <p>(+880)1315396692</p>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/raakibul/" target="_blank" class="social-link" title="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/raaakibul" target="_blank" class="social-link" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://x.com/raakibul_" target="_blank" class="social-link" title="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.facebook.com/raakibul.14" target="_blank" class="social-link" title="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <h2 class="section-title">
+                        <i class="fas fa-paper-plane"></i>
+                        Send a Message
+                    </h2>
+
+                    <div class="success-message" id="successMessage">
+                        <i class="fas fa-check-circle"></i> Message sent successfully!
+                    </div>
+
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label">Your Email</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" class="form-label">Your Message</label>
+                            <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-submit">
+                            <span>Send Message</span>
+                            <i class="fas fa-arrow-right"></i>
+                            <div class="loading" id="loading"></div>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
   </main>
   <script src="./js/contact.js"></script>
   <script src="./js/script.js"></script>
