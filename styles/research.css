@@ -67,7 +67,8 @@ header {
     text-align: center;
     margin-bottom: 35px;
     padding: 14px 16px;
-    background: var(--gradient-primary);
+    /* background: var(--gradient-primary); */
+    background-color: #2d3748;
     border-radius: 12px;
     color: white;
     box-shadow: var(--card-shadow);

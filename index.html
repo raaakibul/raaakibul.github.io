@@ -1,283 +1,449 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Rakibul Islam</title>
-  
-  <link rel="stylesheet" href="./styles/home.css">
-  <link rel="stylesheet" href="./styles/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rakibul Islam</title>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./styles/home.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
 
-</head>
-<body>
-  <!-- Sidebar -->
-  <nav id="sidebar" class="sidebar">
-    <div class="sidebar-header">
-      <img src="img/profile.jpg" alt="Rakibul Islam" class="profile-img">
-      <h2>Rakibul Islam</h2>
-      <p>ML and Data Science Enthusiast</p>
-
-    </div>
-    <ul class="nav-links">
-      <li><a href="index.html"><i class="fas fa-home icon"></i>Home</a></li>
-      <li><a href="publication.html"><i class="fas fa-file-alt publication-icon"></i>Publications</a></li>
-      <li><a href="research.html"> <i class="fas fa-microscope icon"></i>Research</a></li>
-      <li><a href="education.html"><i class="fas fa-graduation-cap edu-icon"></i>Education</a></li>
-      <li><a href="resource.html"><i class="fas fa-folder-open icon"></i>Resource</a></li>
-      <li><a href="blog.html"><i class="fas fa-pen-nib icon"></i>Blog</a></li>
-      <li><a href="contact.html"><i class="fas fa-address-card icon"></i>Contact</a></li>
-    </ul>
-    <div class="social-icons">
-        <a href="https://x.com/raakibul_" target="_blank"><img src="img/twitter.svg" alt="Twitter"></a>
-        <a href="https://github.com/raaakibul" target="_blank"><img src="img/github.svg" alt="GitHub"></a>
-        <a href="https://www.linkedin.com/in/raakibul/" target="_blank"><img src="img/linkedin.svg" alt="LinkedIn"></a>
-        <a href="mailto:rakibul@gmail.com" ><img src="img/gmail.svg" alt="Email"></a>
-        <a href="https://www.facebook.com/raakibul.14" target="_blank"><img src="img/facebook.svg" alt="facebook"></a>
-        <a href="https://bsky.app/profile/raakibul.bsky.social" ><img src="img/bluesky.svg" alt="bluesky"></a>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <nav id="sidebar" class="sidebar">
+      <div class="sidebar-header">
+        <img src="img/profile.jpg" alt="Rakibul Islam" class="profile-img" />
+        <h2>Rakibul Islam</h2>
+        <p>ML and Data Science Enthusiast</p>
       </div>
-  </nav>
-  
-  <!-- Toggle button for mobile -->
-  <button id="toggle-btn" class="toggle-btn">&#9776;</button>
-  
-  <!-- Main Content -->
-  <main class="main-content">
+      <ul class="nav-links">
+        <li>
+          <a href="index.html"><i class="fas fa-home icon"></i>Home</a>
+        </li>
+        <li>
+          <a href="publication.html"
+            ><i class="fas fa-file-alt publication-icon"></i>Publications</a
+          >
+        </li>
+        <li>
+          <a href="research.html">
+            <i class="fas fa-microscope icon"></i>Research</a
+          >
+        </li>
+        <li>
+          <a href="education.html"
+            ><i class="fas fa-graduation-cap edu-icon"></i>Education</a
+          >
+        </li>
+        <li>
+          <a href="resource.html"
+            ><i class="fas fa-folder-open icon"></i>Resource</a
+          >
+        </li>
+        <li>
+          <a href="blog.html"><i class="fas fa-pen-nib icon"></i>Blog</a>
+        </li>
+        <li>
+          <a href="contact.html"
+            ><i class="fas fa-address-card icon"></i>Contact</a
+          >
+        </li>
+      </ul>
+      <div class="social-icons">
+        <a href="https://x.com/raakibul_" target="_blank"
+          ><img src="img/twitter.svg" alt="Twitter"
+        /></a>
+        <a href="https://github.com/raaakibul" target="_blank"
+          ><img src="img/github.svg" alt="GitHub"
+        /></a>
+        <a href="https://www.linkedin.com/in/raakibul/" target="_blank"
+          ><img src="img/linkedin.svg" alt="LinkedIn"
+        /></a>
+        <a href="mailto:rakibul@gmail.com"
+          ><img src="img/gmail.svg" alt="Email"
+        /></a>
+        <a href="https://www.facebook.com/raakibul.14" target="_blank"
+          ><img src="img/facebook.svg" alt="facebook"
+        /></a>
+        <a href="https://bsky.app/profile/raakibul.bsky.social"
+          ><img src="img/bluesky.svg" alt="bluesky"
+        /></a>
+      </div>
+    </nav>
+
+    <!-- Toggle button for mobile -->
+    <button id="toggle-btn" class="toggle-btn">&#9776;</button>
+
+    <!-- Main Content -->
+    <main class="main-content">
       <section class="container">
         <!-- Hero Section -->
-            <section class="hero fade-in">
-                <div class="hero-content">
-                    <div class="hero-text">
-                        <div class="welcome">Welcome!</div>
-                        <h1>Hi there!! I'm Rakibul Islam</h1>
-                        <p>I work at the Largest online and offline based tutoring platform CareTutor in Bangladesh. I Gave in-person lessons on physics, mathematics and programming Languages (Python, C, C++ and JavaScript) to high school and college level students.</p>
-                        <div class="cta-buttons">
-                            <a href="#about" class="btn btn-primary">About Me <i class="fas fa-arrow-down"></i></a>
-                            <!-- <a href="#contact" class="btn btn-secondary">Get In Touch <i class="fas fa-envelope"></i></a> -->
-                        </div>
-                    </div>
-                    <div class="hero-image">
-                        <img src="https://picsum.photos/seed/rakibul/300/300.jpg" alt="Rakibul Islam" class="profile-img-large">
-                    </div>
-                </div>
-            </section>
-            
-            <!-- About Section -->
-            <section id="about" class="section fade-in">
-                <div class="section-header">
-                    <h2 class="section-title">About Me</h2>
-                    <p class="section-subtitle">Learn more about my background, experience, and what drives me</p>
-                </div>
-                <div class="about-content">
-                    <div class="about-text">
-                        <p>I am a dedicated Computer Science graduate from the University of Asia Pacific, passionate about the intersection of artificial intelligence, machine learning, and real-world applications. My academic journey has equipped me with a strong foundation in computer science principles and practical experience in developing innovative solutions.</p>
-                        <p>Currently, I work at CareTutor, Bangladesh's largest online and offline tutoring platform, where I share my knowledge in physics, mathematics, and programming languages with students. This role has honed my communication skills and deepened my understanding of educational technology.</p>
-                        <p>My research interests lie in developing machine and deep learning-based solutions that can be implemented in real-world scenarios. I am particularly fascinated by the potential of AI to enhance human life and solve complex problems across various domains.</p>
-                    </div>
-                    <div class="about-image">
-                        <img src="https://picsum.photos/seed/computerscience/400/300.jpg" alt="Computer Science">
-                    </div>
-                </div>
-            </section>
-            
-            <!-- Vision Section -->
-            <section class="section fade-in">
-                <div class="section-header">
-                    <h2 class="section-title">My Vision</h2>
-                    <p class="section-subtitle">My aspirations and goals for the future</p>
-                </div>
-                <div class="vision-cards">
-                    <div class="vision-card">
-                        <div class="vision-icon">
-                            <i class="fas fa-microscope"></i>
-                        </div>
-                        <h3>Research Scientist</h3>
-                        <p>I aim to become a research scientist at a prestigious university or research institution, focusing on cutting-edge developments in artificial intelligence and machine learning.</p>
-                    </div>
-                    <div class="vision-card">
-                        <div class="vision-icon">
-                            <i class="fas fa-handshake"></i>
-                        </div>
-                        <h3>Academic-Industry Collaboration</h3>
-                        <p>I am particularly interested in combining academic research with industrial collaboration to create solutions that bridge the gap between theory and practice.</p>
-                    </div>
-                    <div class="vision-card">
-                        <div class="vision-icon">
-                            <i class="fas fa-flask"></i>
-                        </div>
-                        <h3>Establish My Lab</h3>
-                        <p>I aspire to establish my own lab to conduct cutting-edge research that advances science and benefits both academia and industry.</p>
-                    </div>
-                    <div class="vision-card">
-                        <div class="vision-icon">
-                            <i class="fas fa-brain"></i>
-                        </div>
-                        <h3>AI for Human Enhancement</h3>
-                        <p>As a dedicated learner, I investigate the possible benefits of Artificial Intelligence technology to enhance human life and solve real-world problems.</p>
-                    </div>
-                </div>
-            </section>
+        <section class="hero fade-in">
+          <div class="hero-content">
+            <div class="hero-text">
+              <div class="welcome">Welcome!</div>
+              <h1>Hi there!! I'm Rakibul Islam</h1>
+              <p>
+                I work at the Largest online and offline based tutoring platform
+                CareTutor in Bangladesh. I Gave in-person lessons on physics,
+                mathematics and programming Languages (Python, C, C++ and
+                JavaScript) to high school and college level students.
+              </p>
+              <div class="cta-buttons">
+                <a href="#about" class="btn btn-primary"
+                  >About Me <i class="fas fa-arrow-down"></i
+                ></a>
+                <!-- <a href="#contact" class="btn btn-secondary">Get In Touch <i class="fas fa-envelope"></i></a> -->
+              </div>
+            </div>
+            <div class="hero-image">
+              <img
+                src="https://picsum.photos/seed/rakibul/300/300.jpg"
+                alt="Rakibul Islam"
+                class="profile-img-large"
+              />
+            </div>
+          </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section fade-in">
+          <div class="section-header">
+            <!-- <h2 class="section-title">About Me</h2> -->
+            <header>
+              <h1>About Me</h1>
+            </header>
+            <p class="section-subtitle">
+              Learn more about my background, experience, and what drives me
+            </p>
+          </div>
+          <div class="about-content">
+            <div class="about-text">
+              <p>
+                I am a dedicated Computer Science graduate from the University
+                of Asia Pacific, passionate about the intersection of artificial
+                intelligence, machine learning, and real-world applications. My
+                academic journey has equipped me with a strong foundation in
+                computer science principles and practical experience in
+                developing innovative solutions.
+              </p>
+              <p>
+                Currently, I work at CareTutor, Bangladesh's largest online and
+                offline tutoring platform, where I share my knowledge in
+                physics, mathematics, and programming languages with students.
+                This role has honed my communication skills and deepened my
+                understanding of educational technology.
+              </p>
+              <p>
+                My research interests lie in developing machine and deep
+                learning-based solutions that can be implemented in real-world
+                scenarios. I am particularly fascinated by the potential of AI
+                to enhance human life and solve complex problems across various
+                domains.
+              </p>
+            </div>
+            <div class="about-image">
+              <img
+                src="https://picsum.photos/seed/computerscience/400/300.jpg"
+                alt="Computer Science"
+              />
+            </div>
+          </div>
+        </section>
+
+        <!-- Vision Section -->
+        <section class="section fade-in">
+          <div class="section-header">
+            <!-- <h2 class="section-title">My Vision</h2> -->
+             <header>
+              <h1>My Vision</h1>
+            </header>
+            <p class="section-subtitle">
+              My aspirations and goals for the future
+            </p>
+          </div>
+          <div class="vision-cards">
+            <div class="vision-card">
+              <div class="vision-icon">
+                <i class="fas fa-microscope"></i>
+              </div>
+              <h3>Research Scientist</h3>
+              <p>
+                I aim to become a research scientist at a prestigious university
+                or research institution, focusing on cutting-edge developments
+                in artificial intelligence and machine learning.
+              </p>
+            </div>
+            <div class="vision-card">
+              <div class="vision-icon">
+                <i class="fas fa-handshake"></i>
+              </div>
+              <h3>Academic-Industry Collaboration</h3>
+              <p>
+                I am particularly interested in combining academic research with
+                industrial collaboration to create solutions that bridge the gap
+                between theory and practice.
+              </p>
+            </div>
+            <div class="vision-card">
+              <div class="vision-icon">
+                <i class="fas fa-flask"></i>
+              </div>
+              <h3>Establish My Lab</h3>
+              <p>
+                I aspire to establish my own lab to conduct cutting-edge
+                research that advances science and benefits both academia and
+                industry.
+              </p>
+            </div>
+            <div class="vision-card">
+              <div class="vision-icon">
+                <i class="fas fa-brain"></i>
+              </div>
+              <h3>AI for Human Enhancement</h3>
+              <p>
+                As a dedicated learner, I investigate the possible benefits of
+                Artificial Intelligence technology to enhance human life and
+                solve real-world problems.
+              </p>
+            </div>
+          </div>
+        </section>
       </section>
-       <!-- Research Section -->
-       <section class="content-section" id="research">
+      <!-- Research Section -->
+      <section class="content-section" id="research">
         <div class="section-header">
-                    <h2 class="section-title">Research Interests</h2>
-                    <!-- <p class="section-subtitle">My aspirations and goals for the future</p> -->
-                </div>
-        <p>My main research interest lies in Machine Learning and deep learning-based Artificial Intelligence systems. I want to research next-generation Machine Learning and Deep Learning-based AI systems. The Research interests that I have include:
-      </p>
-        <div class="research-content">
-            <div class="research-item">
-                <div class="research-icon">
-                    <i class="fas fa-brain"></i>
-                </div>
-                <h3>Machine Learning</h3>
-                <p>Developing novel algorithms for deep learning, reinforcement learning, and unsupervised learning to push the boundaries of AI capabilities.</p>
-            </div>
-            <div class="research-item">
-                <div class="research-icon">
-                    <i class="fas fa-eye"></i>
-                </div>
-                <h3>Computer Vision</h3>
-                <p>Creating advanced computer vision systems for object detection, image segmentation, and video analysis with real-world applications.</p>
-            </div>
-            <div class="research-item">
-                <div class="research-icon">
-                    <i class="fas fa-comments"></i>
-                </div>
-                <h3>Artificial Intelligence</h3>
-                <p>Building state-of-the-art AI models for text understanding, generation, and translation to enhance human-computer interaction.</p>
-            </div>
-            <div class="research-item">
-                <div class="research-icon">
-                    <i class="fas fa-robot"></i>
-                </div>
-                <h3>Deep Learning</h3>
-                <p>Integrating AI with robotics to create autonomous systems that can operate in complex environments and assist humans.</p>
-            </div>
-            <div class="research-item">
-                <div class="research-icon">
-                    <i class="fas fa-shield-alt"></i>
-                </div>
-                <h3>AI Ethics & Safety</h3>
-                <p>Researching ethical implications of AI and developing frameworks for safe, fair, and transparent artificial intelligence systems.</p>
-            </div>
-            <div class="research-item">
-                <div class="research-icon">
-                    <i class="fas fa-heartbeat"></i>
-                </div>
-                <h3>Applied Machine Learning</h3>
-                <p>Applying machine learning to medical diagnosis, drug discovery, and personalized treatment planning to improve healthcare outcomes.</p>
-            </div>
+          <!-- <h2 class="section-title">Research Interests</h2> -->
+           <header>
+              <h1>Research Interests</h1>
+            </header>
+          <!-- <p class="section-subtitle">My aspirations and goals for the future</p> -->
         </div>
-    </section>
-    
-    <section class="content-section">
-      <div class="call-to-action">
-        <h4>Interested in research collaboration?</h4>
         <p>
-        Feel free to contact me <span class="highlight"> ( <i class="fas fa-envelope" style="color: #ff5733;"></i> Email: raakibul.uap@gmail.com) </span> if you are interested in any of your research projects or if you'd like to discuss potential collaborations.
-    </p>
-    </div>
-    </section>
-
-    <!-- More About Me Section -->
-            <section class="section">
-                <div class="section-header">
-                    <h2 class="section-title">More About Me</h2>
-                    <p class="section-subtitle">Personal interests and hobbies beyond academics</p>
-                </div>
-                <div class="more-about">
-                    <div class="more-about-content">
-                        <div class="more-about-text">
-                            <h2>More About Me</h2>
-                            <p>My name is Rakibul Islam. But I go by <strong>Rakibul or Rakib.</strong> I love sports(Cricket, Tennis, Nba Basketball, Football, Formula 1), reading research papers, books and watching movies. I enjoy following the Olympic Games, especially events like swimming, track and field, and other athletic competitions that showcase the power of human dedication and performance.</p>
-                            
-                            <div class="interests-grid">
-                                <div class="interest-card">
-                                    <div class="interest-icon">
-                                        <i class="fa-solid fa-cricket-bat-ball"></i>
-                                     </div>
-                                    <h3>Cricket</h3>
-                                    <p>Following international matches and tournaments</p>
-                                </div>
-                                <div class="interest-card">
-                                    <div class="interest-icon">
-                                        <i class="fas fa-table-tennis"></i>
-                                    </div>
-                                    <h3>Tennis</h3>
-                                    <p>Grand Slams and ATP tour events</p>
-                                </div>
-                                <div class="interest-card">
-                                    <div class="interest-icon">
-                                        <i class="fas fa-basketball-ball"></i>
-                                    </div>
-                                    <h3>NBA Basketball</h3>
-                                    <p>Following teams and players</p>
-                                </div>
-                                <div class="interest-card">
-                                    <div class="interest-icon">
-                                        <i class="fas fa-futbol"></i>
-                                    </div>
-                                    <h3>Football</h3>
-                                    <p>World Cup and league matches</p>
-                                </div>
-                                <div class="interest-card">
-                                    <div class="interest-icon">
-                                        <i class="fas fa-book"></i>
-                                    </div>
-                                    <h3>Reading</h3>
-                                    <p>Research papers and books</p>
-                                </div>
-                                <div class="interest-card">
-                                    <div class="interest-icon">
-                                        <i class="fas fa-film"></i>
-                                    </div>
-                                    <h3>Movies</h3>
-                                    <p>Cinema and film analysis</p>
-                                </div>
-                            </div>
-                            
-                            <div class="f1-section">
-                                <div class="f1-content">
-                                    <div class="f1-header">
-                                        <div class="f1-icon">
-                                            <i class="fas fa-flag-checkered"></i>
-                                        </div>
-                                        <h3>Formula 1 Enthusiast</h3>
-                                    </div>
-                                    <p>Beyond my academic interests, I'm an avid fan of Formula 1 (F1) racing. What draws me most to the sport is not just the speed and adrenaline, but the precision engineering, cutting-edge technology, and data-driven strategies that make every race a complex and dynamic competition.</p>
-                                    <p>I closely follow the teams, drivers, and developments in aerodynamics, tire strategy, and power unit innovation. Watching how milliseconds and smart decisions can redefine an entire race reminds me of how attention to detail and intelligent problem-solving are also critical in my field of machine learning and AI.</p>
-                                    <p>"Formula 1 inspires me to think about performance optimization not only on the track but also in algorithms, systems, and human potential. It's a perfect fusion of passion, technology, and performance much like the kind of work I aspire to do in research and innovation."</p>
-                                    
-                                    <div class="f1-keywords">
-                                        <div class="f1-keyword">Aerodynamics</div>
-                                        <div class="f1-keyword">Data Strategy</div>
-                                        <div class="f1-keyword">Power Units</div>
-                                        <div class="f1-keyword">Performance Optimization</div>
-                                        <div class="f1-keyword">Precision Engineering</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="cv-download">
-                            <a href="CV.pdf" target="_blank" class="btn"><i class="fas fa-download"></i> Download CV</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-    <!-- Back to Top Button -->
-        <div class="back-to-top" id="backToTop">
-            <i class="fas fa-arrow-up"></i>
+          My main research interest lies in Machine Learning and deep
+          learning-based Artificial Intelligence systems. I want to research
+          next-generation Machine Learning and Deep Learning-based AI systems.
+          The Research interests that I have include:
+        </p>
+        <div class="research-content">
+          <div class="research-item">
+            <div class="research-icon">
+              <i class="fas fa-brain"></i>
+            </div>
+            <h3>Machine Learning</h3>
+            <p>
+              Developing novel algorithms for deep learning, reinforcement
+              learning, and unsupervised learning to push the boundaries of AI
+              capabilities.
+            </p>
+          </div>
+          <div class="research-item">
+            <div class="research-icon">
+              <i class="fas fa-eye"></i>
+            </div>
+            <h3>Computer Vision</h3>
+            <p>
+              Creating advanced computer vision systems for object detection,
+              image segmentation, and video analysis with real-world
+              applications.
+            </p>
+          </div>
+          <div class="research-item">
+            <div class="research-icon">
+              <i class="fas fa-comments"></i>
+            </div>
+            <h3>Artificial Intelligence</h3>
+            <p>
+              Building state-of-the-art AI models for text understanding,
+              generation, and translation to enhance human-computer interaction.
+            </p>
+          </div>
+          <div class="research-item">
+            <div class="research-icon">
+              <i class="fas fa-robot"></i>
+            </div>
+            <h3>Deep Learning</h3>
+            <p>
+              Integrating AI with robotics to create autonomous systems that can
+              operate in complex environments and assist humans.
+            </p>
+          </div>
+          <div class="research-item">
+            <div class="research-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3>AI Ethics & Safety</h3>
+            <p>
+              Researching ethical implications of AI and developing frameworks
+              for safe, fair, and transparent artificial intelligence systems.
+            </p>
+          </div>
+          <div class="research-item">
+            <div class="research-icon">
+              <i class="fas fa-heartbeat"></i>
+            </div>
+            <h3>Applied Machine Learning</h3>
+            <p>
+              Applying machine learning to medical diagnosis, drug discovery,
+              and personalized treatment planning to improve healthcare
+              outcomes.
+            </p>
+          </div>
         </div>
+      </section>
 
-  </main>
-  
-  <script src="./js/script.js"></script>
-  <script src="./js/home.js"></script>
-</body>
+      <section class="content-section">
+        <div class="call-to-action">
+          <h4>Interested in research collaboration?</h4>
+          <p>
+            Feel free to contact me
+            <span class="highlight">
+              ( <i class="fas fa-envelope" style="color: #ff5733"></i> Email:
+              raakibul.uap@gmail.com)
+            </span>
+            if you are interested in any of your research projects or if you'd
+            like to discuss potential collaborations.
+          </p>
+        </div>
+      </section>
+
+      <!-- More About Me Section -->
+      <section class="section">
+        <div class="section-header">
+          <!-- <h2 class="section-title">More About Me</h2> -->
+           <header>
+              <h1>More About Me</h1>
+            </header>
+          <p class="section-subtitle">
+            Personal interests and hobbies beyond academics
+          </p>
+        </div>
+        <div class="more-about">
+          <div class="more-about-content">
+            <div class="more-about-text">
+              <h2>More About Me</h2>
+              <p>
+                My name is Rakibul Islam. But I go by
+                <strong>Rakibul or Rakib.</strong> I love sports(Cricket,
+                Tennis, Nba Basketball, Football, Formula 1), reading research
+                papers, books and watching movies. I enjoy following the Olympic
+                Games, especially events like swimming, track and field, and
+                other athletic competitions that showcase the power of human
+                dedication and performance.
+              </p>
+
+              <div class="interests-grid">
+                <div class="interest-card">
+                  <div class="interest-icon">
+                    <i class="fa-solid fa-cricket-bat-ball"></i>
+                  </div>
+                  <h3>Cricket</h3>
+                  <p>Following international matches and tournaments</p>
+                </div>
+                <div class="interest-card">
+                  <div class="interest-icon">
+                    <i class="fas fa-table-tennis"></i>
+                  </div>
+                  <h3>Tennis</h3>
+                  <p>Grand Slams and ATP tour events</p>
+                </div>
+                <div class="interest-card">
+                  <div class="interest-icon">
+                    <i class="fas fa-basketball-ball"></i>
+                  </div>
+                  <h3>NBA Basketball</h3>
+                  <p>Following teams and players</p>
+                </div>
+                <div class="interest-card">
+                  <div class="interest-icon">
+                    <i class="fas fa-futbol"></i>
+                  </div>
+                  <h3>Football</h3>
+                  <p>World Cup and league matches</p>
+                </div>
+                <div class="interest-card">
+                  <div class="interest-icon">
+                    <i class="fas fa-book"></i>
+                  </div>
+                  <h3>Reading</h3>
+                  <p>Research papers and books</p>
+                </div>
+                <div class="interest-card">
+                  <div class="interest-icon">
+                    <i class="fas fa-film"></i>
+                  </div>
+                  <h3>Movies</h3>
+                  <p>Cinema and film analysis</p>
+                </div>
+              </div>
+
+              <div class="f1-section">
+                <div class="f1-content">
+                  <div class="f1-header">
+                    <div class="f1-icon">
+                      <i class="fas fa-flag-checkered"></i>
+                    </div>
+                    <h3>Formula 1 Enthusiast</h3>
+                  </div>
+                  <p>
+                    Beyond my academic interests, I'm an avid fan of Formula 1
+                    (F1) racing. What draws me most to the sport is not just the
+                    speed and adrenaline, but the precision engineering,
+                    cutting-edge technology, and data-driven strategies that
+                    make every race a complex and dynamic competition.
+                  </p>
+                  <p>
+                    I closely follow the teams, drivers, and developments in
+                    aerodynamics, tire strategy, and power unit innovation.
+                    Watching how milliseconds and smart decisions can redefine
+                    an entire race reminds me of how attention to detail and
+                    intelligent problem-solving are also critical in my field of
+                    machine learning and AI.
+                  </p>
+                  <p>
+                    "Formula 1 inspires me to think about performance
+                    optimization not only on the track but also in algorithms,
+                    systems, and human potential. It's a perfect fusion of
+                    passion, technology, and performance much like the kind of
+                    work I aspire to do in research and innovation."
+                  </p>
+
+                  <div class="f1-keywords">
+                    <div class="f1-keyword">Aerodynamics</div>
+                    <div class="f1-keyword">Data Strategy</div>
+                    <div class="f1-keyword">Power Units</div>
+                    <div class="f1-keyword">Performance Optimization</div>
+                    <div class="f1-keyword">Precision Engineering</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cv-download">
+              <a href="CV.pdf" target="_blank" class="btn"
+                ><i class="fas fa-download"></i> Download CV</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Back to Top Button -->
+      <div class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+      </div>
+    </main>
+
+    <script src="./js/script.js"></script>
+    <script src="./js/home.js"></script>
+  </body>
 </html>

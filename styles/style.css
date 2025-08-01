@@ -168,7 +168,8 @@ body {
 .research-item h3 {
   font-size: 1.3rem;
   margin-bottom: 1rem;
-  color: var(--text-dark);
+  /* color: var(--text-dark); */
+  color: #2d3748;
 }
 
 .research-item p {
@@ -349,7 +350,8 @@ body {
 .more-about-text h2 {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.5rem;
-  color: var(--primary-color);
+  /* color: var(--primary-color); */
+  color: #2d3748;
   margin-bottom: 30px;
   position: relative;
   display: inline-block;
@@ -415,7 +417,8 @@ body {
 .interest-card h3 {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.2rem;
-  color: var(--primary-color);
+  /* color: var(--primary-color); */
+  color: #2d3748;
   margin-bottom: 10px;
 }
 
@@ -514,7 +517,8 @@ body {
 }
 
 .cv-download .btn {
-  background: var(--gradient-primary);
+  /* background: var(--gradient-primary); */
+  background-color: #2d3748;
   color: white;
   font-size: 1.2rem;
   padding: 15px 40px;
