@@ -128,6 +128,7 @@
 
         .page-header {
             margin-bottom: 2rem;
+            text-align: center;
         }
 
         .page-header h1 {
@@ -147,24 +148,35 @@
             flex-wrap: wrap;
             gap: 1rem;
             margin-bottom: 2rem;
+            justify-content: center;
         }
 
         .category-btn {
-            padding: 0.5rem 1rem;
+            height: 40px;
+            border-radius: 20px;
             background-color: var(--secondary-color);
             color: white;
             border: none;
-            border-radius: 4px;
             cursor: pointer;
-            transition: background-color 0.2s;
+            transition: background-color 0.2s, transform 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 500;
+            font-size: 0.9rem;
+            padding: 0 1.2rem;
+            min-width: 80px;
         }
 
         .category-btn:hover {
             background-color: var(--accent-color);
+            transform: translateY(-2px);
         }
 
         .category-btn.active {
             background-color: var(--accent-color);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(66, 153, 225, 0.3);
         }
 
         /* Resource Cards */
@@ -208,24 +220,31 @@
         .card-body {
             padding: 1rem;
             flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
 
         .card-body p {
             margin-bottom: 1rem;
             color: #4a5568;
+            text-align: center;
         }
 
         .card-footer {
-            padding: 0 1rem 1rem;
+            padding: 1rem;
             display: flex;
-            justify-content: space-between;
+            flex-direction: column;
             align-items: center;
+            gap: 1.5rem;
         }
 
         .card-tags {
             display: flex;
             flex-wrap: wrap;
             gap: 0.5rem;
+            justify-content: center;
+            width: 100%;
         }
 
         .tag {
@@ -240,17 +259,18 @@
             background-color: var(--accent-color);
             color: white;
             border: none;
-            border-radius: 4px;
-            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            padding: 0.6rem 1.5rem;
             cursor: pointer;
             font-weight: 500;
-            transition: background-color 0.2s;
+            transition: background-color 0.2s, transform 0.2s;
             display: flex;
             align-items: center;
         }
 
         .view-btn:hover {
             background-color: #3182ce;
+            transform: translateY(-2px);
         }
 
         .view-btn i {
@@ -397,6 +417,14 @@
 
             .resources-grid {
                 grid-template-columns: 1fr;
+            }
+
+            .category-btn {
+                height: 36px;
+                border-radius: 18px;
+                font-size: 0.85rem;
+                padding: 0 1rem;
+                min-width: 70px;
             }
 
             .modal-content {

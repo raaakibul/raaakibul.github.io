@@ -112,8 +112,11 @@ body {
 
 /* .nav-links li.active > a, */
 .nav-links li a:hover {
-  background: #232537;
-  color: #89b4fa;
+  /* background: #232537; */
+  background: #4a5568;
+  /* background: #2d3748; */
+  /* color: #89b4fa; */
+  color: white;
 }
 
 .icon {
