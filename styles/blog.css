@@ -1,3 +1,72 @@
+:root {
+    --primary-color: #1a237e;
+    /* --secondary-color: #3949ab; */
+    --accent-color: #00acc1;
+    --light-color: #f5f7fa;
+    --dark-color: #263238;
+    --success-color: #00c853;
+    --text-color: #455a64;
+    --sidebar-bg: #171b26;
+    --sidebar-border: #232537;
+    --sidebar-text: #ccd6f6;
+    --card-shadow: 0 4px 12px rgba(2, 2, 2, 0.08);
+    --hover-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    --gradient-primary: linear-gradient(135deg, #1a237e 0%, #3949ab 100%);
+    --gradient-accent: linear-gradient(135deg, #00acc1 0%, #0097a7 100%);
+    --gradient-success: linear-gradient(135deg, #00c853 0%, #00a040 100%);
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  background-color: var(--main-bg);
+  color: var(--main-text);
+}
+ 
+
+/* blog header section */
+header {
+    text-align: center;
+    margin-bottom: 35px;
+    padding: 14px 16px;
+    background: var(--gradient-primary);
+    border-radius: 12px;
+    color: white;
+    box-shadow: var(--card-shadow);
+    position: relative;
+    overflow: hidden;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 300px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    bottom: -50%;
+    left: -10%;
+    width: 250px;
+    height: 250px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 1;
+}
+
 /* Blog Title */
 .blog-title-main {
   /* font-weight: 800; */
@@ -293,6 +362,9 @@
     padding: 14px 0;
     font-size: 1rem;
   }
+  header {
+        padding: 30px 15px;
+    }
   .paper-card-btns {
     flex-direction: column;
     gap: 14px;

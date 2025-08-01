@@ -1,50 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Rakibul</title>
-  <link rel="stylesheet" href="./styles/style.css">
-  <link rel="stylesheet" href="./styles/publication.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-</head>
-<body>
-  <!-- Sidebar -->
-  <nav id="sidebar" class="sidebar">
-    <div class="sidebar-header">
-      <img src="img/profile.jpg" alt="Rakibul Islam" class="profile-img">
-      <h2>Rakibul Islam</h2>
-      <p>ML and Data Science Enthusiast</p>
-
-    </div>
-    <ul class="nav-links">
-      <li><a href="index.html"><i class="fas fa-home icon"></i>Home</a></li>
-      <li><a href="publication.html"><i class="fas fa-file-alt publication-icon"></i>Publications</a></li>
-      <li><a href="research.html"> <i class="fas fa-microscope icon"></i>Research</a></li>
-      <li><a href="education.html"><i class="fas fa-graduation-cap edu-icon"></i>Education</a></li>
-      <li><a href="resource.html"><i class="fas fa-folder-open icon"></i>Resource</a></li>
-      <li><a href="blog.html"><i class="fas fa-pen-nib icon"></i>Blog</a></li>
-      <li><a href="contact.html"><i class="fas fa-address-card icon"></i>Contact</a></li>
-    </ul>
-    <div class="social-icons">
-        <a href="https://x.com/raakibul_" target="_blank"><img src="img/twitter.svg" alt="Twitter"></a>
-        <a href="https://github.com/raaakibul" target="_blank"><img src="img/github.svg" alt="GitHub"></a>
-        <a href="https://www.linkedin.com/in/raakibul/" target="_blank"><img src="img/linkedin.svg" alt="LinkedIn"></a>
-        <a href="mailto:rakibul@gmail.com" ><img src="img/gmail.svg" alt="Email"></a>
-        <a href="https://www.facebook.com/raakibul.14" target="_blank"><img src="img/facebook.svg" alt="facebook"></a>
-        <a href="https://bsky.app/profile/raakibul.bsky.social" ><img src="img/bluesky.svg" alt="bluesky"></a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rakibul</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/publication.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <nav id="sidebar" class="sidebar">
+      <div class="sidebar-header">
+        <img src="img/profile.jpg" alt="Rakibul Islam" class="profile-img" />
+        <h2>Rakibul Islam</h2>
+        <p>ML and Data Science Enthusiast</p>
       </div>
-  </nav>
-  
-  <!-- Toggle button for mobile -->
-  <button id="toggle-btn" class="toggle-btn">&#9776;</button>
-  
-  <!-- Main Content -->
-  <main class="main-content">
-          <section class="container">  
-            <!-- Hero Section -->
-            <section class="hero">
+      <ul class="nav-links">
+        <li>
+          <a href="index.html"><i class="fas fa-home icon"></i>Home</a>
+        </li>
+        <li>
+          <a href="publication.html"
+            ><i class="fas fa-file-alt publication-icon"></i>Publications</a
+          >
+        </li>
+        <li>
+          <a href="research.html">
+            <i class="fas fa-microscope icon"></i>Research</a
+          >
+        </li>
+        <li>
+          <a href="education.html"
+            ><i class="fas fa-graduation-cap edu-icon"></i>Education</a
+          >
+        </li>
+        <li>
+          <a href="resource.html"
+            ><i class="fas fa-folder-open icon"></i>Resource</a
+          >
+        </li>
+        <li>
+          <a href="blog.html"><i class="fas fa-pen-nib icon"></i>Blog</a>
+        </li>
+        <li>
+          <a href="contact.html"
+            ><i class="fas fa-address-card icon"></i>Contact</a
+          >
+        </li>
+      </ul>
+      <div class="social-icons">
+        <a href="https://x.com/raakibul_" target="_blank"
+          ><img src="img/twitter.svg" alt="Twitter"
+        /></a>
+        <a href="https://github.com/raaakibul" target="_blank"
+          ><img src="img/github.svg" alt="GitHub"
+        /></a>
+        <a href="https://www.linkedin.com/in/raakibul/" target="_blank"
+          ><img src="img/linkedin.svg" alt="LinkedIn"
+        /></a>
+        <a href="mailto:rakibul@gmail.com"
+          ><img src="img/gmail.svg" alt="Email"
+        /></a>
+        <a href="https://www.facebook.com/raakibul.14" target="_blank"
+          ><img src="img/facebook.svg" alt="facebook"
+        /></a>
+        <a href="https://bsky.app/profile/raakibul.bsky.social"
+          ><img src="img/bluesky.svg" alt="bluesky"
+        /></a>
+      </div>
+    </nav>
+
+    <!-- Toggle button for mobile -->
+    <button id="toggle-btn" class="toggle-btn">&#9776;</button>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <section class="container">
+        <!-- Hero Section -->
+
+        <header>
+          <h1>Selected Publications & Articles</h1>
+        </header>
+
+        <!-- <section class="hero">
                 <div class="floating-element">
                     <i class="fas fa-file-alt"></i>
                 </div>
@@ -58,54 +100,64 @@
                 <div class="hero-content">
                     <h1>Selected Publications & Articles</h1>
                  </div>
-            </section> 
-            <!-- Publications Section -->
-            <section class="section">
-                <div class="publications-container" id="publicationsContainer">
-                    <div class="publication-card" data-category="thesis">
-                        <div class="pub-icon">
-                            <i class="fas fa-graduation-cap"></i>
-                        </div>
-                        <div class="pub-content">
-                            <h3 class="pub-title">Deep Learning-Based Background Noise Classification and Reduction for Audio Enhancement</h3>
-                            <span class="pub-status status-review">On Review</span>
-                            <div class="pub-authors">
-                                <strong>Rakibul Islam</strong>, Rashik Rahman — Undergraduate Thesis, UAP, 2023
-                            </div>
-                            <div class="pub-meta">
-                                <div class="pub-meta-item">
-                                    <i class="fas fa-university"></i>
-                                    <span>University of Asia Pacific</span>
-                                </div>
-                                <div class="pub-meta-item">
-                                    <i class="fas fa-calendar-alt"></i>
-                                    <span>2023</span>
-                                </div>
-                            </div>
-                            <div class="pub-abstract">
-                                Proposed novel deep learning models for classifying and reducing background noise in audio signals for communication. Methods include CNNs and RNNs with real-world data. The research focuses on improving audio quality in various environments through advanced machine learning techniques.
-                            </div>
-                            <div class="pub-keywords">
-                                <div class="pub-keyword">Deep Learning</div>
-                                <div class="pub-keyword">Audio Processing</div>
-                                <div class="pub-keyword">Noise Classification</div>
-                                <div class="pub-keyword">CNN</div>
-                                <div class="pub-keyword">RNN</div>
-                                <div class="pub-keyword">Audio Enhancement</div>
-                            </div>
-                            <div class="pub-actions">
-                                <a href="#" class="pub-link pub-link-primary">View Details <i class="fas fa-arrow-right"></i></a>
-                                <a href="#" class="pub-link pub-link-secondary">Cite <i class="fas fa-quote-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
+            </section>  -->
+        <!-- Publications Section -->
+        <section class="section">
+          <div class="publications-container" id="publicationsContainer">
+            <div class="publication-card" data-category="thesis">
+              <div class="pub-icon">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+              <div class="pub-content">
+                <h3 class="pub-title">
+                  Deep Learning-Based Background Noise Classification and
+                  Reduction for Audio Enhancement
+                </h3>
+                <span class="pub-status status-review">On Review</span>
+                <div class="pub-authors">
+                  <strong>Rakibul Islam</strong>, Rashik Rahman — Undergraduate
+                  Thesis, UAP, 2023
                 </div>
-            </section>
-
+                <div class="pub-meta">
+                  <div class="pub-meta-item">
+                    <i class="fas fa-university"></i>
+                    <span>University of Asia Pacific</span>
+                  </div>
+                  <div class="pub-meta-item">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>2023</span>
+                  </div>
+                </div>
+                <div class="pub-abstract">
+                  Proposed novel deep learning models for classifying and
+                  reducing background noise in audio signals for communication.
+                  Methods include CNNs and RNNs with real-world data. The
+                  research focuses on improving audio quality in various
+                  environments through advanced machine learning techniques.
+                </div>
+                <div class="pub-keywords">
+                  <div class="pub-keyword">Deep Learning</div>
+                  <div class="pub-keyword">Audio Processing</div>
+                  <div class="pub-keyword">Noise Classification</div>
+                  <div class="pub-keyword">CNN</div>
+                  <div class="pub-keyword">RNN</div>
+                  <div class="pub-keyword">Audio Enhancement</div>
+                </div>
+                <div class="pub-actions">
+                  <a href="#" class="pub-link pub-link-primary"
+                    >View Details <i class="fas fa-arrow-right"></i
+                  ></a>
+                  <a href="#" class="pub-link pub-link-secondary"
+                    >Cite <i class="fas fa-quote-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
+      </section>
+    </main>
 
-  </main>
-  
-  <script src="./js/script.js"></script>
-</body>
+    <script src="./js/script.js"></script>
+  </body>
 </html>
