@@ -17,20 +17,12 @@
     --gradient-success: linear-gradient(135deg, #00c853 0%, #00a040 100%);
 }
 
-body {
-    /* font-family: 'Open Sans', sans-serif; */
+body { 
     line-height: 1.6;
     color: var(--text-color);
     background-color: #f8f9fa;
     overflow-x: hidden;
 }
-
-/* Main Content */
-/* .main-content {
-    margin-left: 280px;
-    padding: 20px;
-    transition: margin-left 0.3s;
-} */
 
 /* Main Content Styles */
 .main-content {
@@ -51,7 +43,6 @@ header {
     text-align: center;
     margin-bottom: 35px;
     padding: 14px 16px;
-    /* background: var(--gradient-primary); */
     background: #2d3748;
     border-radius: 12px;
     color: white;
@@ -104,7 +95,6 @@ h1 {
 
 .section-title {
     font-family: 'Montserrat', sans-serif;
-    /* color: var(--primary-color); */
     color: #2d3748;
     font-size: 1.8rem;
     margin-bottom: 30px;
@@ -180,13 +170,11 @@ h1 {
 .timeline-title {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.3rem;
-    /* color: var(--primary-color); */
     color: #2d3748;
     font-weight: 600;
 }
 
 .timeline-subtitle {
-    /* color: var(--secondary-color); */
     color: #2d3748;
     font-size: 1rem;
     margin-top: 5px;
@@ -271,7 +259,6 @@ h1 {
 .research-certificate-btn:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-    /* background: var(--gradient-primary); */
     background: #2d3748;
 }
 
@@ -319,7 +306,6 @@ h1 {
 
 .filter-btn:hover,
 .filter-btn.active {
-    /* background: var(--primary-color); */
     background: #2d3748;
     color: white;
 }
@@ -356,7 +342,6 @@ h1 {
 
 .course-title {
     font-size: 1.3rem;
-    /* color: var(--primary-color); */
     color: #2d3748;
     margin-bottom: 15px;
     font-weight: 600;
@@ -412,19 +397,7 @@ h1 {
 }
 
 .specialization-badge {
-    /* background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); */
-    /* color: black;
-    font-size: 0.75rem;
-    padding: 5px 12px;
-    border-radius: 20px;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    white-space: nowrap;
-    max-width: 60%;
-    overflow: hidden;
-    text-overflow: ellipsis; */
-    background: white;
-    /* color: #e10600; */
+    background: white; 
     color: var(--primary-color);
     padding: 8px 16px;
     border-radius: 25px;
@@ -473,10 +446,6 @@ h1 {
         margin-left: 0;
     }
 
-    /* .mobile-toggle {
-        display: block;
-    } */
-
     .container {
         padding: 15px;
     }
@@ -516,9 +485,6 @@ h1 {
 }
 
 @media (max-width: 600px) {
-    /* body {
-        padding: 10px;
-    } */
 
     .container {
         padding: 10px;
