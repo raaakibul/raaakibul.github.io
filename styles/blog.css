@@ -247,7 +247,7 @@ header h1 {
   overflow: hidden;
   animation: modalFadeIn 0.3s;
   border: 1px solid var(--border-color);
-  max-height: 98vh;
+  max-height: 99vh;
   overflow-y: auto;
 }
 
@@ -421,7 +421,7 @@ header h1 {
     margin: 5% auto;
     width: 95%;
     padding: 1.5rem;
-    max-height: 95vh;
+    max-height: 99vh;
     max-width: 95%;
   }
 
@@ -458,7 +458,7 @@ header h1 {
     margin: 5% auto;
     width: 95%;
     padding: 1.5rem;
-    max-height: 95vh;
+    max-height: 99vh;
     max-width: 95%;
   }
 
@@ -495,7 +495,7 @@ header h1 {
     margin: 5% auto;
     width: 95%;
     padding: 1.5rem;
-    max-height: 95vh;
+    max-height: 99vh;
     max-width: 95%;
   }
 
