@@ -24,8 +24,6 @@
 body {
   display: flex;
   min-height: 100vh;
-  background-color: var(--main-bg);
-  color: var(--main-text);
 }
 
 /* Main Content Styles */
@@ -142,7 +140,7 @@ header h1 {
 
 .card-header {
   padding: 1rem;
-  background-color: var(--secondary-color);
+  background-color: #2d3748;
   color: white;
 }
 
@@ -317,8 +315,6 @@ header h1 {
 }
 
 .modal-header {
-  /* margin-bottom: 1.5rem; */
-  /* padding-bottom: 1rem; */
   border-bottom: 1px solid var(--border-color);
 }
 
