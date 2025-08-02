@@ -83,37 +83,38 @@
         <h1>Academic Learning Resource or Course </h1>
       </header>
 
-      <h1>This page is under construction. here is showing the demo.... but it will be like this</h1>
       <div class="resource-categories">
-        <button class="category-btn active" data-category="all">All</button>
-        <button class="category-btn" data-category="datasets">Datasets</button>
-        <button class="category-btn" data-category="tutorials">
-          Tutorials
-        </button>
-        <button class="category-btn" data-category="tools">Tools</button>
-        <button class="category-btn" data-category="papers">Papers</button>
-        <button class="category-btn" data-category="courses">Courses</button>
-      </div>
-
-      <div class="resources-grid" id="resourcesGrid">
-        <!-- Resource cards will be dynamically generated here -->
-      </div>
+            <button class="category-btn active" data-category="all">All</button>
+            <button class="category-btn" data-category="datasets">Datasets</button>
+            <button class="category-btn" data-category="tutorials">Tutorials</button>
+            <button class="category-btn" data-category="tools">Tools</button>
+            <button class="category-btn" data-category="papers">Papers</button>
+            <button class="category-btn" data-category="courses">Courses</button>
+        </div>
+        <div class="resources-grid" id="resourcesGrid">
+            <!-- Resource cards will be dynamically generated here -->
+        </div>
     </main>
 
      <!-- Modal for Resource Details -->
-    <div id="resourceModal" class="modal">
+     <div id="resourceModal" class="modal">
         <div class="modal-content">
-            <span class="close-modal" id="closeModal">&times;</span>
-            <div class="modal-header">
-                <h2 id="modalTitle"></h2>
-                <span class="category" id="modalCategory"></span>
-            </div>
-            <div class="modal-body" id="modalBody">
-                <!-- Content will be dynamically inserted here -->
-            </div>
-            <div class="modal-tags">
-                <h4>Tags:</h4>
-                <div id="modalTags"></div>
+            <button class="close-modal" id="closeModal">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-container">
+                <div class="modal-header">
+                    <h2 id="modalTitle"></h2>
+                </div>
+                <div class="modal-body" id="modalBody">
+                    <!-- Content will be dynamically inserted here -->
+                </div>
+                <div class="modal-footer">
+                    <button class="back-btn" id="backBtn">
+                        <i class="fas fa-arrow-left"></i>
+                        Back to Resources
+                    </button>
+                </div>
             </div>
         </div>
     </div>

@@ -45,30 +45,42 @@
       <header>
           <h1>Research Paper Posts</h1>
       </header>
-      <section class="content-section" id="blog-list-section">         
-        <div id="posts-list" class="post-grid"></div>
-      </section>
-
-      <!-- Full Post Modal -->
-      <section
-        class="full-post-modal hidden"
-        id="post-modal"
-        role="dialog"
-        aria-modal="true"
-        aria-labelledby="modal-post-title"
-      >
-        <div class="full-post-modal-inner">
-          <button
-            class="modal-close-btn"
-            id="modal-close-btn"
-            aria-label="Close Post"
-          >
-            &times;
-          </button>
-          <div id="modal-content"></div>
+       
+       <!-- Publication Categories -->
+        <div class="publication-categories">
+            <button class="category-btn active" data-category="all">All</button>
+            <button class="category-btn" data-category="journals">Journals</button>
+            <button class="category-btn" data-category="conferences">Conferences</button>
+            <button class="category-btn" data-category="workshops">Workshops</button>
+            <button class="category-btn" data-category="papers">Papers</button>
         </div>
-      </section>
+
+        <div class="publications-grid" id="publicationsGrid">
+            <!-- Publication cards will be dynamically generated here -->
+        </div>
     </main>
+
+    <!-- Modal for Publication Details -->
+    <div id="publicationModal" class="modal">
+        <div class="modal-content">
+            <button class="close-modal" id="closeModal">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-header">
+                <h2 id="modalTitle"></h2>
+            </div>
+            <div class="modal-authors" id="modalAuthors"></div>
+            <div class="modal-body" id="modalBody">
+                <!-- Content will be dynamically inserted here -->
+            </div>
+            <div class="modal-footer">
+                <button class="back-btn" id="backBtn">
+                    <i class="fas fa-arrow-left"></i>
+                    Back to Page
+                </button>
+            </div>
+        </div>
+    </div>
 
     <script src="./js/blog.js"></script>
     <script src="./js/script.js"></script>

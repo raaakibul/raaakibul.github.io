@@ -620,14 +620,14 @@ body {
   background: #232537;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 955px) {
   .toggle-btn {
     display: block;
   }
 }
 
 /* Keep sidebar above overlay */
-@media (max-width: 900px) {
+@media (max-width: 955px) {
   .sidebar {
     top: 0;
     left: -260px;
