@@ -24,18 +24,6 @@ body {
     overflow-x: hidden;
 }
 
-.main-content {
-    margin-left: 280px;
-    padding: 20px;
-    transition: margin-left 0.3s;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
 /* Hero Section */
 .hero {
     display: flex;
@@ -288,6 +276,7 @@ h1 {
     font-size: 1.1rem;
     line-height: 1.8;
     text-align: justify;
+    padding-left: 15px;
 }
 
 /* Vision Section */
@@ -366,9 +355,6 @@ h1 {
 }
 
 @media (max-width: 600px) {
-    .container {
-        padding: 15px;
-    }
 
     .hero h1 {
         font-size: 1.8rem;
