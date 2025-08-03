@@ -140,7 +140,7 @@ h1 {
     top: 0;
     width: 3px;
     height: 100%;
-    background: var(--gradient-accent);
+    background:#e67e22;
     border-radius: 3px;
 }
 
@@ -173,7 +173,7 @@ h1 {
 }
 
 .research-timeline .timeline-item::before {
-    border-color: var(--success-color);
+    border-color: #e67e22;
 }
 
 .timeline-header {

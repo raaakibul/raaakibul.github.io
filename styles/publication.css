@@ -324,7 +324,7 @@ header::after {
 }
 
 .pub-link-secondary:hover {
-    background: var(--primary-color);
+    background: #2d3748;
     color: white;
 }
 
