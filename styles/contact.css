@@ -145,7 +145,6 @@ h1 {
   background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
 }
 
-/* 联系信息文本 */
 .contact-text {
   background: linear-gradient(135deg, rgba(52, 152, 219, 0.05) 0%, rgba(46, 204, 113, 0.05) 100%);
   border-radius: 15px;
@@ -172,7 +171,7 @@ h1 {
 }
 
 .contact-text::before {
-  content: '"';
+  content: '';
   position: absolute;
   top: 10px;
   left: 15px;
@@ -297,8 +296,7 @@ h1 {
   color: var(--text-light);
   font-size: 15px;
 }
-
-/* 社交媒体部分 */
+ 
 .social-media {
   margin-top: 30px;
   padding-top: 20px;
@@ -324,7 +322,7 @@ h1 {
   background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
 }
 
-.social-icons {
+.contact-social-icons {
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
@@ -383,7 +381,7 @@ h1 {
   font-weight: 500;
 }
 
-/* 表单部分 */
+ 
 .form-section {
   background: var(--white);
   border-radius: 20px;
@@ -526,7 +524,7 @@ textarea.form-control {
     grid-template-columns: 1fr;
   }
 
-  .social-icons {
+  .contact-social-icons {
     flex-direction: column;
     align-items: center;
   }

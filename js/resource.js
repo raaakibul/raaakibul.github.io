@@ -2,7 +2,7 @@
 const resources = [
   {
     title: "Machine Learning Tutorial Resourse Hub",
-    category: "tutorial",
+    category: "tutorials",
     description:
       "Machine Learning Tutorial Resource",
     tags: ["Machine Learning"],
