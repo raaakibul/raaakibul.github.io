@@ -120,8 +120,11 @@ h1 {
 /* Resource Cards */
 .resources-grid {
     display: grid;
+    /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem; */
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 1.5rem;
+    gap: 30px;
+    margin-bottom: 2rem;
 }
 
 .resource-card {
@@ -336,15 +339,17 @@ h1 {
     margin-bottom: 1rem;
 }
 
-.modal-body a{
+.modal-body a {
     text-decoration: none;
     color: #171b26;
     font-weight: bold;
 }
-.modal-body a:hover{
+
+.modal-body a:hover {
     text-decoration: underline;
     color: #e67e22;
 }
+
 .modal-body ul {
     margin-left: 1.5rem;
     margin-bottom: 1rem;
@@ -394,7 +399,8 @@ h1 {
     }
 
     .resources-grid {
-        grid-template-columns: 1fr;
+        /* grid-template-columns: 1fr; */
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     }
 
     .category-btn {
@@ -444,7 +450,8 @@ h1 {
     }
 
     .resources-grid {
-        grid-template-columns: 1fr;
+        /* grid-template-columns: 1fr; */
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     }
 
     .category-btn {
