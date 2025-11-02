@@ -274,6 +274,35 @@
  }
 
  /* Responsive Design */
+@media (max-width: 980px) {
+     .header h1 {
+         font-size: 2rem;
+     }
+
+     .publication-card {
+         padding: 25px;
+     }
+
+     .publication-title {
+         font-size: 1.25rem;
+     }
+
+     .publication-meta {
+         flex-direction: column;
+         gap: 12px;
+     }
+
+     .publication-footer {
+         flex-direction: column;
+         align-items: flex-start;
+     }
+
+     .publication-actions {
+         width: 100%;
+         justify-content: flex-end;
+     }
+ }
+
  @media (max-width: 768px) {
      .header h1 {
          font-size: 2rem;
