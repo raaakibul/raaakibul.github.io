@@ -1,3 +1,7 @@
+
+:root{
+    --hover-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
 * {
     margin: 0;
     padding: 0;
@@ -143,6 +147,9 @@ nav ul li a:hover::after {
     /* border-radius: 8px; */
     /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); */
 }
+.intro-text{
+    flex: 2;
+}
 
 .intro-text h2 {
     color: #1a365d;
@@ -176,6 +183,17 @@ nav ul li a:hover::after {
     transform: translateY(-2px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
     background: linear-gradient(135deg, #2c5282 0%, #1a365d 100%);
+}
+
+.about-image{
+    flex: 1;
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 75%;
+    border-radius: 5px;
+    box-shadow: var(--hover-shadow);
 }
 
 .research-themes {
@@ -247,7 +265,7 @@ nav ul li a:hover::after {
 .news-container {
     flex-grow: 1;
     overflow-y: auto;
-    max-height: 538px;
+    max-height: 262px;
     padding-right: 5px;
 }
 
