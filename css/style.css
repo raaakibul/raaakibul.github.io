@@ -1,7 +1,7 @@
-
-:root{
+:root {
     --hover-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -114,6 +114,23 @@ nav ul li a:hover::after {
     transform: scaleX(1);
 }
 
+/* GitHub Icon Styles */
+.github-link {
+    font-size: 18px !important;
+    padding: 10px 10px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.github-link i {
+    transition: transform 0.3s ease;
+}
+
+.github-link:hover i {
+    transform: scale(1.2);
+}
+
 /* Mobile Menu Toggle */
 .menu-toggle {
     display: none;
@@ -147,7 +164,8 @@ nav ul li a:hover::after {
     /* border-radius: 8px; */
     /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); */
 }
-.intro-text{
+
+.intro-text {
     flex: 2;
 }
 
@@ -185,7 +203,7 @@ nav ul li a:hover::after {
     background: linear-gradient(135deg, #2c5282 0%, #1a365d 100%);
 }
 
-.about-image{
+.about-image {
     flex: 1;
     text-align: center;
 }
@@ -596,7 +614,7 @@ nav ul li a:hover::after {
     border-radius: 8px;
     padding: 20px;
     transition: all 0.3s ease;
-    border-left: 4px solid #2c5282;
+    border-top: 4px solid #2c5282;
 }
 
 .interest-card:hover {
