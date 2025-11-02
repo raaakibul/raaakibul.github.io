@@ -1,48 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rakibul Islam</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="contact.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rakibul Islam</title>
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/contact.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 </head>
 <body>
-    <header>
-        <div class="container header-container">
-            <div class="logo">Rakibul Islam</div>
-            <button class="menu-toggle">
-                <i class="fas fa-bars"></i>
-            </button>
-            <nav>
-                <ul id="nav-menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="publication.html">Publications</a></li>
-                    <li><a href="research.html">Research</a></li>
-                    <li><a href="education.html">Education</a></li>
-                    <li><a href="resource.html">Resource</a></li>
-                    <li><a href="blog.html">Blog & Projects</a></li>
-                    <li><a href="contact.js">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <!-- Sidebar -->
+  <nav id="sidebar" class="sidebar">
+    <div class="sidebar-header">
+      <img src="img/profile.jpg" alt="Rakibul Islam" class="profile-img">
+      <h2>Rakibul Islam</h2>
+      <p>ML and Data Science Enthusiast</p>
 
-    <div class="container">
-        <section class="contact-section">
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html"><i class="fas fa-home icon"></i>Home</a></li>
+      <li><a href="publication.html"><i class="fas fa-file-alt publication-icon"></i>Publications</a></li>
+      <li><a href="research.html"> <i class="fas fa-microscope icon"></i>Research</a></li>
+      <li><a href="education.html"><i class="fas fa-graduation-cap edu-icon"></i>Education</a></li>
+      <li><a href="resource.html"><i class="fas fa-folder-open icon"></i>Resource</a></li>
+      <li><a href="blog.html"><i class="fas fa-pen-nib icon"></i>Blog & Projects</a></li>
+      <li><a href="contact.html"><i class="fas fa-address-card icon"></i>Contact</a></li>
+    </ul>
+    <div class="social-icons">
+        <a href="https://x.com/raakibul_" target="_blank"><img src="img/twitter.svg" alt="Twitter"></a>
+        <a href="https://github.com/raaakibul" target="_blank"><img src="img/github.svg" alt="GitHub"></a>
+        <a href="https://www.linkedin.com/in/raakibul/" target="_blank"><img src="img/linkedin.svg" alt="LinkedIn"></a>
+        <a href="mailto:rakibul@gmail.com" ><img src="img/gmail.svg" alt="Email"></a>
+        <a href="https://www.facebook.com/raakibul.14" target="_blank"><img src="img/facebook.svg" alt="facebook"></a>
+        <a href="https://bsky.app/profile/raakibul.bsky.social" ><img src="img/bluesky.svg" alt="bluesky"></a>
+      </div>
+  </nav>
+  
+  <!-- Toggle button for mobile -->
+  <button id="toggle-btn" class="toggle-btn">&#9776;</button>
+  
+  <!-- Main content -->
+    <main class="main-content">
+        <header>
+              <h1>Get In Touch</h1>
+        </header>
+
+        <div class="container">
+            
+            <section class="contact-section">
                 <h2 class="section-title">Contact Information</h2>
                 <div class="contact-text">
                     <p>Feel free to reach out to me for any inquiries, collaborations, or just to say hello. I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
                 </div>
-            
-            <div class="profile-container">
-                <img src="img/profile.jpg" alt="Profile Picture" class="profile-image">
-                <h3 class="profile-name">Rakibul Islam</h3>
-                <p class="profile-title">Machine Learning and Data Science Enthusiast</p>
-            </div>
                 
-
                 <div class="contact-info">
                     <div class="info-card">
                         <div class="info-icon email-icon">
@@ -126,10 +137,10 @@
                     </div>
                 </form>
             </section>
-    </section>
-    </div>
+        </div>
 
-    <script src="script.js"></script>
-    <script src="contact.js"></script>
+  </main>
+  <script src="./js/contact.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 </html>

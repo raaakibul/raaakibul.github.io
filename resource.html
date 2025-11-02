@@ -1,125 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Rakibul</title>
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/resource.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
-  </head>
-  <body>
-    <!-- Sidebar -->
-    <nav id="sidebar" class="sidebar">
-      <div class="sidebar-header">
-        <img src="img/profile.jpg" alt="Rakibul Islam" class="profile-img" />
-        <h2>Rakibul Islam</h2>
-        <p>ML and Data Science Enthusiast</p>
-      </div>
-      <ul class="nav-links">
-        <li>
-          <a href="index.html"><i class="fas fa-home icon"></i>Home</a>
-        </li>
-        <li>
-          <a href="publication.html"
-            ><i class="fas fa-file-alt publication-icon"></i>Publications</a
-          >
-        </li>
-        <li>
-          <a href="research.html">
-            <i class="fas fa-microscope icon"></i>Research</a
-          >
-        </li>
-        <li>
-          <a href="education.html"
-            ><i class="fas fa-graduation-cap edu-icon"></i>Education</a
-          >
-        </li>
-        <li>
-          <a href="resource.html"
-            ><i class="fas fa-folder-open icon"></i>Resource</a
-          >
-        </li>
-        <li>
-          <a href="blog.html"><i class="fas fa-pen-nib icon"></i>Blog & Projects</a>
-        </li>
-        <li>
-          <a href="contact.html"
-            ><i class="fas fa-address-card icon"></i>Contact</a
-          >
-        </li>
-      </ul>
-      <div class="social-icons">
-        <a href="https://x.com/raakibul_" target="_blank"
-          ><img src="img/twitter.svg" alt="Twitter"
-        /></a>
-        <a href="https://github.com/raaakibul" target="_blank"
-          ><img src="img/github.svg" alt="GitHub"
-        /></a>
-        <a href="https://www.linkedin.com/in/raakibul/" target="_blank"
-          ><img src="img/linkedin.svg" alt="LinkedIn"
-        /></a>
-        <a href="mailto:rakibul@gmail.com"
-          ><img src="img/gmail.svg" alt="Email"
-        /></a>
-        <a href="https://www.facebook.com/raakibul.14" target="_blank"
-          ><img src="img/facebook.svg" alt="facebook"
-        /></a>
-        <a href="https://bsky.app/profile/raakibul.bsky.social"
-          ><img src="img/bluesky.svg" alt="bluesky"
-        /></a>
-      </div>
-    </nav>
-
-    <!-- Toggle button for mobile -->
-    <button id="toggle-btn" class="toggle-btn">&#9776;</button>
-
-    <!-- Main Content -->
-    <main class="main-content">
-      <header>
-        <h1>Academic Learning Resource or Course </h1>
-      </header>
-
-      <div class="resource-categories">
-            <button class="category-btn active" data-category="all">All</button>
-            <button class="category-btn" data-category="datasets">Datasets</button>
-            <button class="category-btn" data-category="tutorials">Tutorials</button>
-            <button class="category-btn" data-category="tools">Tools</button>
-            <button class="category-btn" data-category="papers">Papers</button>
-            <button class="category-btn" data-category="courses">Courses</button>
-        </div>
-        <div class="resources-grid" id="resourcesGrid">
-            <!-- Resource cards will be dynamically generated here -->
-        </div>
-    </main>
-
-     <!-- Modal for Resource Details -->
-     <div id="resourceModal" class="modal">
-        <div class="modal-content">
-            <button class="close-modal" id="closeModal">
-                <i class="fas fa-times"></i>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rakibul Islam</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="resource.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo">Rakibul Islam</div>
+            <button class="menu-toggle">
+                <i class="fas fa-bars"></i>
             </button>
-            <div class="modal-container">
-                <div class="modal-header">
-                    <h2 id="modalTitle"></h2>
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="publication.html">Publications</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="resource.html">Resource</a></li>
+                    <li><a href="blog.html">Blog & Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="resource-section">
+        <div class="section-header">
+            <h1>Resource Hub</h1>
+            <p><strong>This is demo design, working on it</strong></p>
+            <p>Discover valuable resources to enhance your knowledge and skills. Click on any resource to view its content.</p>
+        </div>
+
+        <!-- Filter Section -->
+        <div class="filter-section">
+            <button class="filter-button active" data-filter="all">All</button>
+            <button class="filter-button" data-filter="datasets">Datasets</button>
+            <button class="filter-button" data-filter="tutorials">Tutorials</button>
+            <button class="filter-button" data-filter="tools">Tools</button>
+            <button class="filter-button" data-filter="papers">Papers</button>
+            <button class="filter-button" data-filter="courses">Courses</button>
+        </div>
+
+        <div class="resources-grid">
+            <article class="resource-card" data-category="tutorials">
+                <div class="resource-header">
+                    <div class="resource-icon">📝</div>
+                    <div class="resource-text">
+                        <h2 class="resource-title">Web Development Basics</h2>
+                        <p class="resource-description">Learn the fundamentals of web development including HTML, CSS, and JavaScript.</p>
+                    </div>
                 </div>
-                <div class="modal-body" id="modalBody">
-                    <!-- Content will be dynamically inserted here -->
+                <button class="resource-button" onclick="openModal('web-dev')">View Resource</button>
+            </article>
+
+            <article class="resource-card" data-category="tutorials">
+                <div class="resource-header">
+                    <div class="resource-icon">📝</div>
+                    <div class="resource-text">
+                        <h2 class="resource-title">UI/UX Design Principles</h2>
+                        <p class="resource-description">Master the art of creating intuitive and beautiful user interfaces.</p>
+                    </div>
                 </div>
-                <div class="modal-footer">
-                    <button class="back-btn" id="backBtn">
-                        <i class="fas fa-arrow-left"></i>
-                        Back to Resources
-                    </button>
+                <button class="resource-button" onclick="openModal('ui-ux')">View Resource</button>
+            </article>
+
+            <article class="resource-card" data-category="tools">
+                <div class="resource-header">
+                    <div class="resource-icon">🛠️</div>
+                    <div class="resource-text">
+                        <h2 class="resource-title">Performance Optimization</h2>
+                        <p class="resource-description">Learn techniques to make your websites faster and more efficient.</p>
+                    </div>
                 </div>
+                <button class="resource-button" onclick="openModal('performance')">View Resource</button>
+            </article>
+
+            <article class="resource-card" data-category="papers">
+                <div class="resource-header">
+                    <div class="resource-icon">📄</div>
+                    <div class="resource-text">
+                        <h2 class="resource-title">Web Security Best Practices</h2>
+                        <p class="resource-description">Protect your applications from common security threats and vulnerabilities.</p>
+                    </div>
+                </div>
+                <button class="resource-button" onclick="openModal('security')">View Resource</button>
+            </article>
+
+            <article class="resource-card" data-category="tutorials">
+                <div class="resource-header">
+                    <div class="resource-icon">📝</div>
+                    <div class="resource-text">
+                        <h2 class="resource-title">Responsive Web Design</h2>
+                        <p class="resource-description">Create websites that work perfectly on all devices and screen sizes.</p>
+                    </div>
+                </div>
+                <button class="resource-button" onclick="openModal('responsive')">View Resource</button>
+            </article>
+
+            <article class="resource-card" data-category="courses">
+                <div class="resource-header">
+                    <div class="resource-icon">🎓</div>
+                    <div class="resource-text">
+                        <h2 class="resource-title">Modern JavaScript Frameworks</h2>
+                        <p class="resource-description">Explore React, Vue, and Angular for building dynamic web applications.</p>
+                    </div>
+                </div>
+                <button class="resource-button" onclick="openModal('frameworks')">View Resource</button>
+            </article>
+
+            <article class="resource-card" data-category="datasets">
+                <div class="resource-header">
+                    <div class="resource-icon">📊</div>
+                    <div class="resource-text">
+                        <h2 class="resource-title">Machine Learning Datasets</h2>
+                        <p class="resource-description">Curated collection of high-quality datasets for machine learning projects.</p>
+                    </div>
+                </div>
+                <button class="resource-button" onclick="openModal('datasets')">View Resource</button>
+            </article>
+
+            <article class="resource-card" data-category="tools">
+                <div class="resource-header">
+                    <div class="resource-icon">🛠️</div>
+                    <div class="resource-text">
+                        <h2 class="resource-title">Development Tools</h2>
+                        <p class="resource-description">Essential tools and utilities for modern web development workflows.</p>
+                    </div>
+                </div>
+                <button class="resource-button" onclick="openModal('dev-tools')">View Resource</button>
+            </article>
+
+            <article class="resource-card" data-category="courses">
+                <div class="resource-header">
+                    <div class="resource-icon">🎓</div>
+                    <div class="resource-text">
+                        <h2 class="resource-title">Data Science Fundamentals</h2>
+                        <p class="resource-description">Comprehensive course covering the basics of data science and analytics.</p>
+                    </div>
+                </div>
+                <button class="resource-button" onclick="openModal('data-science')">View Resource</button>
+            </article>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal" id="resourceModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="modalTitle">Resource Title</h2>
+                <button class="modal-close" onclick="closeModal()">&times;</button>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- Content will be dynamically inserted here -->
+            </div>
+            <div class="modal-footer">
+                <button class="back-button" onclick="closeModal()">
+                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd"/>
+                    </svg>
+                    Back to Main Page
+                </button>
             </div>
         </div>
     </div>
 
-    <script src="./js/resource.js"></script>
-    <script src="./js/script.js"></script>
-  </body>
+
+    </div>
+
+ 
+
+    <script src="script.js"></script>
+    <script src="resource.js"></script>
+</body>
 </html>

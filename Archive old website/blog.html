@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rakibul Islam</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/blog.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  </head>
+  <body>
+    <!-- Sidebar -->
+     <nav id="sidebar" class="sidebar">
+    <div class="sidebar-header">
+      <img src="img/profile.jpg" alt="Rakibul Islam" class="profile-img">
+      <h2>Rakibul Islam</h2>
+      <p>ML and Data Science Enthusiast</p>
+
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html"><i class="fas fa-home icon"></i>Home</a></li>
+      <li><a href="publication.html"><i class="fas fa-file-alt publication-icon"></i>Publications</a></li>
+      <li><a href="research.html"> <i class="fas fa-microscope icon"></i>Research</a></li>
+      <li><a href="education.html"><i class="fas fa-graduation-cap edu-icon"></i>Education</a></li>
+      <li><a href="resource.html"><i class="fas fa-folder-open icon"></i>Resource</a></li>
+      <li><a href="blog.html"><i class="fas fa-pen-nib icon"></i>Blog & Projects</a></li>
+      <li><a href="contact.html"><i class="fas fa-address-card icon"></i>Contact</a></li>
+    </ul>
+    <div class="social-icons">
+        <a href="https://x.com/raakibul_" target="_blank"><img src="img/twitter.svg" alt="Twitter"></a>
+        <a href="https://github.com/raaakibul" target="_blank"><img src="img/github.svg" alt="GitHub"></a>
+        <a href="https://www.linkedin.com/in/raakibul/" target="_blank"><img src="img/linkedin.svg" alt="LinkedIn"></a>
+        <a href="mailto:rakibul@gmail.com" ><img src="img/gmail.svg" alt="Email"></a>
+        <a href="https://www.facebook.com/raakibul.14" target="_blank"><img src="img/facebook.svg" alt="facebook"></a>
+        <a href="https://bsky.app/profile/raakibul.bsky.social" ><img src="img/bluesky.svg" alt="bluesky"></a>
+      </div>
+  </nav>
+
+    <!-- Toggle button for mobile -->
+    <button id="toggle-btn" class="toggle-btn">&#9776;</button>
+
+    <!-- Main Content -->
+
+    <main class="main-content">
+      <header>
+          <h1>Research Paper Posts</h1>
+      </header>
+       
+       <!-- Publication Categories -->
+        <div class="publication-categories">
+            <button class="category-btn active" data-category="all">All</button>
+            <button class="category-btn" data-category="journals">Journals</button>
+            <button class="category-btn" data-category="conferences">Conferences</button>
+            <button class="category-btn" data-category="articles">Articles</button>
+            <button class="category-btn" data-category="papers">Papers</button>
+        </div>
+
+        <div class="publications-grid" id="publicationsGrid">
+        </div>
+
+         <header>
+          <h1>Open Source Projects</h1>
+      </header>
+
+      <!-- Open Source Projects Section -->
+
+        <div class="projects-container">
+            <div class="page-header">
+                <p class="page-subtitle">Explore my latest contributions to the open source community</p>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="projects-grid">
+                <!-- Project Card 1 -->
+                <div class="project-card">
+                    <img src="https://picsum.photos/seed/robot1/400/200.jpg" alt="Project Image" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title">A Modern Personal Website Template for Scholars</h3>
+                        <p class="project-description">
+                            A clean, responsive website template designed specifically for academics and researchers 
+                            to showcase their work, publications, and professional achievements.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">CSS</span>
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">FontAwesome</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://github.com/raaakibul/professor-portfolio-site" target="_blank" class="github-btn">
+                                View on GitHub
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <!-- <div class="project-card">
+                    <img src="https://picsum.photos/seed/robot2/400/200.jpg" alt="Project Image" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title">A Modern Personal Website Template for Scholars</h3>
+                        <p class="project-description">
+                            An elegant template featuring publication management, research highlights, and 
+                            professional profile sections optimized for scholars in various fields.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">Node.js</span>
+                            <span class="project-tag">MongoDB</span>
+                            <span class="project-tag">Express</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="#" class="github-btn">
+                                View on GitHub
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- Project Card 3 -->
+                <!-- <div class="project-card">
+                    <img src="https://picsum.photos/seed/robot3/400/200.jpg" alt="Project Image" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title">A Modern Personal Website Template for Scholars</h3>
+                        <p class="project-description">
+                            A comprehensive template with integrated blog functionality, event calendar, and 
+                            collaboration tools for academic professionals and research teams.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">Vue.js</span>
+                            <span class="project-tag">Firebase</span>
+                            <span class="project-tag">Tailwind CSS</span>
+                            <span class="project-tag">PWA</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="#" class="github-btn">
+                                View on GitHub
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- Additional Project Cards -->
+                <!-- <div class="project-card">
+                    <img src="https://picsum.photos/seed/ml1/400/200.jpg" alt="Project Image" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title">Sentiment Analysis for Academic Papers</h3>
+                        <p class="project-description">
+                            A machine learning model that analyzes sentiment and extracts key insights from 
+                            academic papers and research publications.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">TensorFlow</span>
+                            <span class="project-tag">NLP</span>
+                            <span class="project-tag">BERT</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="#" class="github-btn">
+                                View on GitHub
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- <div class="project-card">
+                    <img src="https://picsum.photos/seed/data1/400/200.jpg" alt="Project Image" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title">Research Data Visualization Dashboard</h3>
+                        <p class="project-description">
+                            An interactive dashboard for visualizing complex research data with customizable 
+                            charts and real-time collaboration features.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Plotly</span>
+                            <span class="project-tag">Dash</span>
+                            <span class="project-tag">Pandas</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="#" class="github-btn">
+                                View on GitHub
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- <div class="project-card">
+                    <img src="https://picsum.photos/seed/tools1/400/200.jpg" alt="Project Image" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title">Academic Citation Generator</h3>
+                        <p class="project-description">
+                            A command-line tool that automatically generates citations in various formats 
+                            (APA, MLA, Chicago) from academic paper metadata.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">CLI</span>
+                            <span class="project-tag">API</span>
+                            <span class="project-tag">Open Source</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="#" class="github-btn">
+                                View on GitHub
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+
+        <!-- Back to Top Button -->
+        <div class="back-to-top" id="backToTop">
+            <i class="fas fa-arrow-up"></i>
+        </div>
+    </main>
+
+    <!-- Modal for Publication Details -->
+    <div id="publicationModal" class="modal">
+        <div class="modal-content">
+            <button class="close-modal" id="closeModal">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-header">
+                <h2 id="modalTitle"></h2>
+            </div>
+            <div class="modal-authors" id="modalAuthors"></div>
+            <div class="modal-body" id="modalBody">
+            </div>
+            <div class="modal-footer">
+                <button class="back-btn" id="backBtn">
+                    <i class="fas fa-arrow-left"></i>
+                    Back to Page
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/blog.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
