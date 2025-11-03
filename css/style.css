@@ -176,12 +176,32 @@ nav ul li a:hover::after {
     flex: 2;
 }
 
-.intro-text h2 {
+/* .intro-text h2 {
     color: #1a365d;
     margin-bottom: 15px;
     font-size: 24px;
     font-weight: 600;
+} */
+
+.intro-text h2 {
+    color: #1a365d;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 10px;
 }
+
+.intro-text h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background: #2c5282;
+}
+
 
 .intro-text p {
     margin-bottom: 15px;
