@@ -1,13 +1,24 @@
 // Resource data
 const resources = {
   "web-dev": {
-    title: "Web Development Basics",
+    title: "Machine Learning Tutorial Resourse Hub",
     content: `
-                    <h3>Getting Started</h3>
-                    <p>Web development is the process of building websites and web applications. It involves three main technologies: HTML for structure, CSS for styling, and JavaScript for interactivity. Start by understanding the basics of each technology and how they work together to create modern web experiences.</p>
-                    <p>HTML (HyperText Markup Language) provides the structure of your website. It uses tags to define elements like headings, paragraphs, links, and images. Learning HTML is the first step in web development.</p>
-                    <p>CSS (Cascading Style Sheets) controls the presentation of your website. It allows you to style your HTML elements with colors, fonts, layouts, and more. CSS makes your website visually appealing and user-friendly.</p>
-                    <p>JavaScript adds interactivity to your website. It allows you to create dynamic content, control multimedia, animate images, and much more. JavaScript is essential for modern web development.</p>
+                    <p>Welcome to the Machine Learning Tutorial Resource Hub a curated collection of quality tutorials, guides, and references to help you learn and explore the field of machine learning. This resource is designed to support learners at various levels by providing access to tutorials covering essential topics, algorithms, tools, and real-world applications. Whether you're just starting out or expanding your knowledge, this hub offers a centralized place to discover valuable learning materials and deepen your understanding of machine learning.</p>
+                    <h3>YouTube-Based Machine Learning Learning Resource</h3>
+                    <p>1. Sebastian Raschka
+                        <a href="https://www.youtube.com/watch?v=OgK8JFjkSto&list=PLTKMiZHVd_2KyGirGEvKlniaWeLOHhUF3" target="_blank">Intro to Machine Learning and Statistical Pattern Classification Course</a> <br>
+                    2. UofU Data Science: 
+                        <a href="https://www.youtube.com/watch?v=G4RhudIawVY&list=PLbuogVdPnkCo06Fs1LketYTz3f61BxcnL" target="_blank">Machine Learning (Spring 2025)</a><br>
+                    3. UofU Data Science: 
+                        <a href="https://www.youtube.com/watch?v=hPsvYcI9fnE&list=PLbuogVdPnkCr-ANNi5GZid3MvSkzm_wnM" target="_blank">Machine Learning (Spring 2024)</a>
+                    </p>
+
+                    <h3>Machine Learning Lectures by University Professors</h3>
+                    <p>1. Sebastian Raschka
+                        <a href="https://www.youtube.com/watch?v=OgK8JFjkSto&list=PLTKMiZHVd_2KyGirGEvKlniaWeLOHhUF3" target="_blank">Intro to Machine Learning and Statistical Pattern Classification Course</a> <br>
+                    2. UofU Data Science: 
+                        <a href="https://www.youtube.com/watch?v=G4RhudIawVY&list=PLbuogVdPnkCo06Fs1LketYTz3f61BxcnL" target="_blank">Machine Learning (Spring 2025)</a>
+                    </p><br>
                 `,
   },
   "ui-ux": {
