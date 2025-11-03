@@ -11,8 +11,10 @@
 }
 
 .projects-section {
-    max-width: 1200px;
-    margin: 0 auto;
+    /* max-width: 1200px; */
+    /* margin: 0 auto; */
+    margin: 25px;
+
 }
 
 .section-header {
@@ -21,8 +23,8 @@
 }
 
 .section-header h1 {
-    font-size: 2rem;
-    font-weight: 700;
+    font-size: 1.6rem;
+    font-weight: 600;
     color: var(--text-primary);
     margin-bottom: 0.75rem;
 }

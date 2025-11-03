@@ -6,32 +6,35 @@
     <title>Rakibul Islam</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/education.css">
 
 </head>
 <body>
     <header>
-        <div class="container header-container">
-            <div class="logo">Rakibul Islam</div>
-            <button class="menu-toggle">
-                <i class="fas fa-bars"></i>
-            </button>
-            <nav>
-                <ul id="nav-menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="publication.html">Publications</a></li>
-                    <li><a href="research.html">Research</a></li>
-                    <li><a href="education.html">Education</a></li>
-                    <li><a href="resource.html">Resource</a></li>
-                    <li><a href="blog.html">Projects</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+      <div class="container header-container">
+        <div class="logo">Rakibul Islam</div>
+        <button class="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+        <nav>
+          <ul id="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="publication.html">Publications</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="resource.html">Resource</a></li>
+            <li><a href="blog.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="https://github.com/raaakibul" target="_blank" class="github-link"><i class="fab fa-github"></i></a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <div class="container">
+
+     <div class="container ">
         <div class="education-section">
-            <h2>Education & Training</h2>
+            <h2>Education and Experience</h2>
             <div class="education-content">
                 <div class="education-item">
                     <div class="education-header">
@@ -61,37 +64,7 @@
                     </div>
                 </div>
 
-                <!-- <div class="education-item">
-                    <div class="education-header">
-                        <div class="education-school">Govt. Science College</div>
-                        <div class="education-date">Jun. 2014 – Aug. 2016</div>
-                    </div>
-                    <div class="education-location">
-                        <i class="fas fa-map-marker-alt"></i> Dhaka, Bangladesh
-                    </div>
-                    <div class="education-details">
-                        <div class="education-detail-item">
-                            <h4><i class="fas fa-certificate"></i> Certificate</h4>
-                            <p>Higher Secondary Certificate (HSC)</p>
-                        </div>
-                        <div class="education-detail-item">
-                            <h4><i class="fas fa-book"></i> Major</h4>
-                            <p>Science</p>
-                        </div>
-                        <div class="education-detail-item">
-                            <h4><i class="fas fa-chart-line"></i> Result</h4>
-                            <p>GPA 5.00/5.00</p>
-                        </div>
-                        <div class="education-detail-item">
-                            <h4><i class="fas fa-trophy"></i> Activities</h4>
-                            <ul>
-                                <li>Participated in Science Olympiads</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div> -->
-
-                 <h2>Prrofessional Experience</h2>
+                 <h2>Professional Experience</h2>
                 <div class="education-item">
                     <div class="education-header">
                         <div class="education-school">CareTutor, Bangladesh</div>
@@ -134,7 +107,7 @@
 
                 <div class="education-item">
                     <div class="education-header">
-                        <div class="education-school">Bdian Research Trainee</div>
+                        <div class="education-school">BDIAN Research Trainee</div>
                         <div class="education-date">Sept. 2022 - Dec. 2022</div>
                     </div>
                     <div class="education-location">
@@ -159,12 +132,18 @@
             </div>
         </div>
 
-      
-            <div>
-                <h1 class="learning">My Learning Journey</h1>
-                <p class="subtitle">Professional Certificates & Courses</p>
-            </div>
-         
+        <!-- CV Button Section -->
+        <div class="cv-section">
+            <a href="#" class="cv-button" onclick="window.print(); return false;">
+                <i class="fas fa-file-alt"></i>
+                Curriculum Vitae
+            </a>
+        </div>
+
+        <div>
+            <h1 class="learning">My Learning Journey</h1>
+            <p class="subtitle">Professional Certificates & Courses</p>
+        </div>
         
         <!-- Filter Section -->
         <div class="filter-section">
@@ -185,13 +164,13 @@
                     <span class="year-badge">2024</span>
                 </div>
                 <div class="course-info">
-                    <p><i class="fas fa-user"></i> by Luis Serrano</p>
-                    <p><i class="fas fa-building"></i> DeepLearning.AI</p>
-                    <p><i class="fas fa-book"></i> Mathematics for ML and Data Science</p>
+                    <p><i class="fas fa-user"></i><span>by Luis Serrano</span></p>
+                    <p><i class="fas fa-building"></i><span>DeepLearning.AI</span></p>
+                    <p><i class="fas fa-book"></i><span>Mathematics for ML and Data Science</span></p>
                 </div>
                 <div class="course-footer">
                     <span class="institution">Coursera</span>
-                    <button class="certificate-btn" data-course="Linear Algebra for Machine Learning and Data Science">View Certificate</button>
+                    <a href="#" class="certificate-btn" data-course="Linear Algebra for Machine Learning and Data Science" onclick="alert('Viewing certificate for: Linear Algebra for Machine Learning and Data Science'); return false;">View Certificate</a>
                 </div>
             </div>
             
@@ -201,13 +180,13 @@
                     <span class="year-badge">2024</span>
                 </div>
                 <div class="course-info">
-                    <p><i class="fas fa-user"></i> by Luis Serrano</p>
-                    <p><i class="fas fa-building"></i> DeepLearning.AI</p>
-                    <p><i class="fas fa-book"></i> Mathematics for ML and Data Science</p>
+                    <p><i class="fas fa-user"></i><span>by Luis Serrano</span></p>
+                    <p><i class="fas fa-building"></i><span>DeepLearning.AI</span></p>
+                    <p><i class="fas fa-book"></i><span>Mathematics for ML and Data Science</span></p>
                 </div>
                 <div class="course-footer">
                     <span class="institution">Coursera</span>
-                    <button class="certificate-btn" data-course="Calculus for Machine Learning and Data Science">View Certificate</button>
+                    <a href="#" class="certificate-btn" data-course="Calculus for Machine Learning and Data Science" onclick="alert('Viewing certificate for: Calculus for Machine Learning and Data Science'); return false;">View Certificate</a>
                 </div>
             </div>
             
@@ -217,13 +196,13 @@
                     <span class="year-badge">2024</span>
                 </div>
                 <div class="course-info">
-                    <p><i class="fas fa-user"></i> by Luis Serrano</p>
-                    <p><i class="fas fa-building"></i> DeepLearning.AI</p>
-                    <p><i class="fas fa-book"></i> Mathematics for ML and Data Science</p>
+                    <p><i class="fas fa-user"></i><span>by Luis Serrano</span></p>
+                    <p><i class="fas fa-building"></i><span>DeepLearning.AI</span></p>
+                    <p><i class="fas fa-book"></i><span>Mathematics for ML and Data Science</span></p>
                 </div>
                 <div class="course-footer">
                     <span class="institution">Coursera</span>
-                    <button class="certificate-btn" data-course="Probability & Statistics for Machine Learning & Data Science">View Certificate</button>
+                    <a href="#" class="certificate-btn" data-course="Probability & Statistics for Machine Learning & Data Science" onclick="alert('Viewing certificate for: Probability & Statistics for Machine Learning & Data Science'); return false;">View Certificate</a>
                 </div>
             </div>
             
@@ -234,13 +213,13 @@
                     <span class="year-badge">2024</span>
                 </div>
                 <div class="course-info">
-                    <p><i class="fas fa-user"></i> by Andrew Ng</p>
-                    <p><i class="fas fa-building"></i> DeepLearning.AI</p>
-                    <p><i class="fas fa-book"></i> Machine Learning Specialization</p>
+                    <p><i class="fas fa-user"></i><span>by Andrew Ng</span></p>
+                    <p><i class="fas fa-building"></i><span>DeepLearning.AI</span></p>
+                    <p><i class="fas fa-book"></i><span>Machine Learning Specialization</span></p>
                 </div>
                 <div class="course-footer">
                     <span class="institution">Coursera</span>
-                    <button class="certificate-btn" data-course="Supervised Machine Learning: Regression and Classification">View Certificate</button>
+                    <a href="#" class="certificate-btn" data-course="Supervised Machine Learning: Regression and Classification" onclick="alert('Viewing certificate for: Supervised Machine Learning: Regression and Classification'); return false;">View Certificate</a>
                 </div>
             </div>
             
@@ -250,13 +229,13 @@
                     <span class="year-badge">2024</span>
                 </div>
                 <div class="course-info">
-                    <p><i class="fas fa-user"></i> by Andrew Ng</p>
-                    <p><i class="fas fa-building"></i> DeepLearning.AI</p>
-                    <p><i class="fas fa-book"></i> Machine Learning Specialization</p>
+                    <p><i class="fas fa-user"></i><span>by Andrew Ng</span></p>
+                    <p><i class="fas fa-building"></i><span>DeepLearning.AI</span></p>
+                    <p><i class="fas fa-book"></i><span>Machine Learning Specialization</span></p>
                 </div>
                 <div class="course-footer">
                     <span class="institution">Coursera</span>
-                    <button class="certificate-btn" data-course="Advanced Learning Algorithms">View Certificate</button>
+                    <a href="#" class="certificate-btn" data-course="Advanced Learning Algorithms" onclick="alert('Viewing certificate for: Advanced Learning Algorithms'); return false;">View Certificate</a>
                 </div>
             </div>
             
@@ -266,30 +245,30 @@
                     <span class="year-badge">2024</span>
                 </div>
                 <div class="course-info">
-                    <p><i class="fas fa-user"></i> by Andrew Ng</p>
-                    <p><i class="fas fa-building"></i> DeepLearning.AI</p>
-                    <p><i class="fas fa-book"></i> Machine Learning Specialization</p>
+                    <p><i class="fas fa-user"></i><span>by Andrew Ng</span></p>
+                    <p><i class="fas fa-building"></i><span>DeepLearning.AI</span></p>
+                    <p><i class="fas fa-book"></i><span>Machine Learning Specialization</span></p>
                 </div>
                 <div class="course-footer">
                     <span class="institution">Coursera</span>
-                    <button class="certificate-btn" data-course="Unsupervised Learning, Recommenders, Reinforcement Learning">View Certificate</button>
+                    <a href="#" class="certificate-btn" data-course="Unsupervised Learning, Recommenders, Reinforcement Learning" onclick="alert('Viewing certificate for: Unsupervised Learning, Recommenders, Reinforcement Learning'); return false;">View Certificate</a>
                 </div>
             </div>
             
-            <!-- sql Skills Courses -->
+            <!-- SQL Skills Courses -->
             <div class="course-card" data-category="sql">
                 <div class="course-header">
                     <h3 class="course-title">SQL for Data Science</h3>
                     <span class="year-badge">2024</span>
                 </div>
                 <div class="course-info">
-                    <p><i class="fas fa-user"></i> by Sadie St. Lawrence</p>
-                    <p><i class="fas fa-building"></i> University of California, Davis</p>
-                    <p><i class="fas fa-book"></i> Learn SQL Basics for Data Science</p>
+                    <p><i class="fas fa-user"></i><span>by Sadie St. Lawrence</span></p>
+                    <p><i class="fas fa-building"></i><span>University of California, Davis</span></p>
+                    <p><i class="fas fa-book"></i><span>Learn SQL Basics for Data Science</span></p>
                 </div>
                 <div class="course-footer">
                     <span class="institution">Coursera</span>
-                    <button class="certificate-btn" data-course="SQL for Data Science">View Certificate</button>
+                    <a href="#" class="certificate-btn" data-course="SQL for Data Science" onclick="alert('Viewing certificate for: SQL for Data Science'); return false;">View Certificate</a>
                 </div>
             </div>
             
@@ -299,13 +278,13 @@
                     <span class="year-badge">2024</span>
                 </div>
                 <div class="course-info">
-                    <p><i class="fas fa-user"></i> by Saishruthi Swaminathan and Dr. Pooja</p>
-                    <p><i class="fas fa-building"></i> IBM</p>
-                    <p><i class="fas fa-book"></i> IBM Data Analyst Professional Certificate</p>
+                    <p><i class="fas fa-user"></i><span>by Saishruthi Swaminathan and Dr. Pooja</span></p>
+                    <p><i class="fas fa-building"></i><span>IBM</span></p>
+                    <p><i class="fas fa-book"></i><span>IBM Data Analyst Professional Certificate</span></p>
                 </div>
                 <div class="course-footer">
                     <span class="institution">Coursera</span>
-                    <button class="certificate-btn" data-course="Data Visualization with Python">View Certificate</button>
+                    <a href="#" class="certificate-btn" data-course="Data Visualization with Python" onclick="alert('Viewing certificate for: Data Visualization with Python'); return false;">View Certificate</a>
                 </div>
             </div>
             
@@ -316,13 +295,13 @@
                     <span class="year-badge">2024</span>
                 </div>
                 <div class="course-info">
-                    <p><i class="fas fa-user"></i> by Alex Aklson</p>
-                    <p><i class="fas fa-building"></i> IBM</p>
-                    <p><i class="fas fa-book"></i> Data Science Foundations Specialization</p>
+                    <p><i class="fas fa-user"></i><span>by Alex Aklson</span></p>
+                    <p><i class="fas fa-building"></i><span>IBM</span></p>
+                    <p><i class="fas fa-book"></i><span>Data Science Foundations Specialization</span></p>
                 </div>
                 <div class="course-footer">
                     <span class="institution">Coursera</span>
-                    <button class="certificate-btn" data-course="What is Data Science">View Certificate</button>
+                    <a href="#" class="certificate-btn" data-course="What is Data Science" onclick="alert('Viewing certificate for: What is Data Science'); return false;">View Certificate</a>
                 </div>
             </div>
             
@@ -332,17 +311,16 @@
                     <span class="year-badge">2024</span>
                 </div>
                 <div class="course-info">
-                    <p><i class="fas fa-user"></i> by Google</p>
-                    <p><i class="fas fa-building"></i> Google</p>
-                    <p><i class="fas fa-book"></i> Google Data Analytics Professional Certificate</p>
+                    <p><i class="fas fa-user"></i><span>by Google</span></p>
+                    <p><i class="fas fa-building"></i><span>Google</span></p>
+                    <p><i class="fas fa-book"></i><span>Google Data Analytics Professional Certificate</span></p>
                 </div>
                 <div class="course-footer">
                     <span class="institution">Coursera</span>
-                    <button class="certificate-btn" data-course="Foundations: Data, Data, Everywhere">View Certificate</button>
+                    <a href="#" class="certificate-btn" data-course="Foundations: Data, Data, Everywhere" onclick="alert('Viewing certificate for: Foundations: Data, Data, Everywhere'); return false;">View Certificate</a>
                 </div>
             </div>
         </div>
-         
     </div>
 
     <script src="js/script.js"></script>
