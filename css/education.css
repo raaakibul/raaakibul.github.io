@@ -350,57 +350,6 @@
     color: white;
 }
 
-/* Print-specific styles */
-@media print {
-    body {
-        background-color: #fff;
-        color: #000;
-        max-width: 100%;
-        padding: 15px;
-    }
-
-    .filter-section,
-    .certificate-btn,
-    .cv-button {
-        display: none;
-    }
-
-    .learning {
-        font-size: 20pt;
-    }
-
-    .education-section h2 {
-        font-size: 14pt;
-    }
-
-    .course-title {
-        font-size: 11pt;
-    }
-
-    .year-badge {
-        font-size: 9pt;
-    }
-
-    .course-info p {
-        font-size: 9pt;
-    }
-
-    .institution {
-        font-size: 9pt;
-    }
-
-    section {
-        page-break-inside: avoid;
-        margin-bottom: 15pt;
-    }
-
-    .education-item,
-    .course-card {
-        page-break-inside: avoid;
-        margin-bottom: 12pt;
-    }
-}
-
 @media (max-width: 768px) {
     :root {
         --container-padding: 15px;
