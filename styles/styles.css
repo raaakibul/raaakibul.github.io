@@ -554,6 +554,19 @@ footer {
 
 /* home page end */
 
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 /* =========================== */
 
 /* Responsive Styles */
@@ -567,7 +580,7 @@ footer {
         position: absolute;
         top: 100%;
         right: 0;
-        width: 280px;
+        width: 200px;
         background: linear-gradient(135deg, #2c3e50, #34495e, #2c3e50);
         border-radius: 0 0 12px 12px;
         border: none;
