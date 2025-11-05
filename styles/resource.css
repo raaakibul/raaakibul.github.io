@@ -13,7 +13,7 @@
     font-size: 1.2rem;
     margin-bottom: 1.5rem;
     color: #333;
-    border-bottom: 2px solid #333;
+    border-bottom: 2px solid #3498db;
     padding-bottom: 0.5rem;
     box-sizing: border-box;
 }
@@ -294,17 +294,6 @@
     background-color: var(--bg-primary);
     box-shadow: var(--shadow-sm);
     transform: translateY(-1px);
-}
-
-/* Footer Styles */
-footer {
-    background-color: #f9f9f9;
-    color: #333;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 1.5rem;
-    border-top: 1px solid #eee;
-    box-sizing: border-box;
 }
 
 /* Responsive Styles */
