@@ -29,6 +29,32 @@ navLinks.forEach((link) => {
   });
 });
 
+// Close mobile menu when clicking anywhere on the page
+document.addEventListener("click", function (event) {
+  // Check if the mobile menu is active
+  if (navMenu.classList.contains("active")) {
+    // Check if the click is outside the navbar and not on the toggle button
+    if (
+      !event.target.closest("header") &&
+      !event.target.closest(mobileMenuBtn)
+    ) {
+      navMenu.classList.remove("active");
+      menuIcon.classList.remove("fa-times");
+      menuIcon.classList.add("fa-bars");
+    }
+  }
+});
+
+// Close mobile menu when scrolling
+window.addEventListener("scroll", function () {
+  // Check if the mobile menu is active
+  if (navMenu.classList.contains("active")) {
+    navMenu.classList.remove("active");
+    menuIcon.classList.remove("fa-times");
+    menuIcon.classList.add("fa-bars");
+  }
+});
+
 // Add smooth scrolling for all links
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {

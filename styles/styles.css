@@ -19,14 +19,17 @@ body {
 
 /* Navigation Styles */
 header {
-    background-color: #fff;
+    /* background-color: #fff; */
     /* background-color: #e8f4f8; */
+    background: linear-gradient(135deg, #1a2a6c, #2c3e50, #3498db);
     color: #333;
     padding: 0.8rem 1rem;
     position: sticky;
     top: 0;
     z-index: 100;
-    border-bottom: 3px solid #eee;
+    /* border-bottom: 3px solid #eee; */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-bottom: none;
 }
 
 .nav-container {
@@ -37,10 +40,12 @@ header {
 }
 
 .logo {
-    font-size: 1.3rem;
-    font-weight: 600;
-    color: #333;
+    font-size: 1.5rem;
+    font-weight: 700;
+    /* color: #333; */
+    color: #fff;
     flex-shrink: 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .nav-right {
@@ -68,21 +73,42 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #333;
+    /* color: #333; */
+    color: #fff;
     text-decoration: none;
     font-weight: 500;
     transition: all 0.3s ease;
-    padding: 0.3rem 0.6rem;
-    border-radius: 4px;
+    padding: 0.4rem 0.6rem;
+    /* padding: 0.3rem 0.6rem; */
+    border-radius: 20px;
+    /* border-radius: 4px; */
     display: flex;
     align-items: center;
-    font-size: 0.95rem;
-    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    font-size: 0.9rem;
+    /* box-shadow: 0 0 0 rgba(0, 0, 0, 0); */
+    position: relative;
+    overflow: hidden;
+}
+
+nav ul li a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+    z-index: -1;
+}
+
+nav ul li a:hover::before {
+    left: 0;
 }
 
 nav ul li a:hover {
-    box-shadow: 0 2px 2px 3px rgba(0, 0, 0, 0.1);
-    background-color: #f5f5f5;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 nav ul li a i {
@@ -92,26 +118,28 @@ nav ul li a i {
 /* GitHub icon specific styling */
 nav ul li a i.fab {
     margin-left: 0;
+    font-size: 1.1rem;
 }
 
 .mobile-menu-btn {
     display: none;
-    background: none;
+    background: rgba(255, 255, 255, 0.2);
     border: none;
-    color: #333;
+    color: #fff;
     font-size: 1.5rem;
     cursor: pointer;
     margin-left: 1rem;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     align-items: center;
     justify-content: center;
-    border-radius: 4px;
+    border-radius: 50%;
     transition: all 0.3s ease;
 }
 
 .mobile-menu-btn:hover {
-    background-color: #f0f0f0;
+    background: rgba(255, 255, 255, 0.3);
+    transform: rotate(90deg);
 }
 
 /* Main Content Styles */
@@ -187,7 +215,8 @@ main {
     font-size: 1.2rem;
     margin-bottom: 1.2rem;
     color: #333;
-    border-bottom: 2px solid #333;
+    /* border-bottom: 2px solid #333; */
+    border-bottom: 2px solid #3498db;
     padding-bottom: 0.5rem;
 }
 
@@ -195,7 +224,7 @@ main {
     font-size: 1.2rem;
     margin-bottom: 1.5rem;
     color: #333;
-    border-bottom: 2px solid #333;
+    border-bottom: 2px solid #3498db;
     padding-bottom: 0.5rem;
     box-sizing: border-box;
 }
@@ -215,7 +244,7 @@ main {
     font-size: 1.2rem;
     margin-bottom: 1.5rem;
     color: #333;
-    border-bottom: 2px solid #333;
+    border-bottom: 2px solid #3498db;
     padding-bottom: 0.5rem;
     box-sizing: border-box;
 }
@@ -263,12 +292,12 @@ main {
 
 .news-container::-webkit-scrollbar-track {
     background: #f1f1f1;
-    border-radius: 3px;
+    border-radius: 4px;
 }
 
 .news-container::-webkit-scrollbar-thumb {
     background: #ccc;
-    border-radius: 3px;
+    border-radius: 4px;
 }
 
 .news-container::-webkit-scrollbar-thumb:hover {
@@ -370,12 +399,14 @@ main {
 
 /* Footer Styles */
 footer {
-    background-color: #f9f9f9;
-    color: #333;
+    background: linear-gradient(135deg, #2c3e50, #1a2a6c);
+    color: #fff;
     text-align: center;
     padding: 1.5rem;
     margin-top: 2rem;
-    border-top: 1px solid #eee;
+    border-top: none;
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1);
+
 }
 
 /* home page end */
@@ -383,7 +414,7 @@ footer {
 /* =========================== */
 
 /* Responsive Styles */
-@media (max-width: 860px) {
+@media (max-width: 870px) {
     .mobile-menu-btn {
         display: flex;
     }
@@ -393,12 +424,13 @@ footer {
         position: absolute;
         top: 100%;
         right: 0;
-        width: 25%;
-        background-color: #fff;
-        border-radius: 0 0 8px 8px;
-        border: 1px solid #eee;
-        border-top: none;
-        padding: 5px;
+        width: 280px;
+        background: linear-gradient(135deg, #1a2a6c, #2c3e50, #3498db);
+        border-radius: 0 0 12px 12px;
+        border: none;
+        padding: 0.8rem;
+        /* Reduced padding */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
     }
 
     nav.active {
@@ -407,7 +439,7 @@ footer {
 
     nav ul {
         flex-direction: column;
-        padding: 0.5rem;
+        padding: 0;
     }
 
     nav ul li {
@@ -418,12 +450,15 @@ footer {
     nav ul li a {
         width: 100%;
         justify-content: center;
-        box-shadow: 0 0 0 rgba(0, 0, 0, 0);
-        padding: 0.3rem 0.6rem;
+        padding: 0.6rem;
+        /* Reduced padding */
+        border-radius: 8px;
+        color: #fff;
     }
 
     nav ul li a:hover {
-        box-shadow: 0 2px 2px 3px rgba(0, 0, 0, 0.1);
+        background: rgba(255, 255, 255, 0.2);
+        transform: none;
     }
 
     .profile-section {
@@ -494,16 +529,12 @@ footer {
     }
 
     .logo {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
 
     nav ul li a {
         font-size: 0.9rem;
-        padding: 0.3rem 0.5rem;
-    }
-
-    nav ul li a:hover {
-        box-shadow: 0 2px 2px 3px rgba(0, 0, 0, 0.1);
+        padding: 0.6rem;
     }
 
     .profile-image {
@@ -529,7 +560,7 @@ footer {
     }
 
     .logo {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
 
     .mobile-menu-btn {
@@ -539,19 +570,14 @@ footer {
 
     nav ul li a {
         font-size: 0.9rem;
-        padding: 0.3rem 0.5rem;
+        padding: 0.6rem;
     }
-
-    nav ul li a:hover {
-        box-shadow: 0 2px 2px 3px rgba(0, 0, 0, 0.1);
-    }
-
     nav ul {
         padding: 0.3rem;
     }
 
     nav ul li {
-        margin: 0.2rem 0;
+        margin: 0.3rem 0;
     }
 
     .profile-image {
