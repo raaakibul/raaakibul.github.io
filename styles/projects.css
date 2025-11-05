@@ -181,10 +181,6 @@
     .filter-btn {
         flex-shrink: 0;
     }
-
-    .projects-grid {
-        grid-template-columns: 1fr;
-    }
 }
 
 @media (max-width: 480px) {

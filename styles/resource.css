@@ -298,11 +298,6 @@
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-    .resource-grid {
-        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-        gap: 20px;
-    }
-
     .modal-content {
         max-width: 95%;
     }

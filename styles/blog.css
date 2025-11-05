@@ -292,9 +292,6 @@
     transform: translateY(-1px);
 }
  
-
- 
-
 @media (max-width: 480px) {
     .research-grid {
         grid-template-columns: 1fr;
