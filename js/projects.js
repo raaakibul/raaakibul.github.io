@@ -1,6 +1,6 @@
-// Filter functionality for courses
+// Filter functionality for projects
 const filterBtns = document.querySelectorAll(".filter-btn");
-const courseCards = document.querySelectorAll(".course-card");
+const projectCards = document.querySelectorAll(".project-card");
 
 filterBtns.forEach((btn) => {
   btn.addEventListener("click", function () {
@@ -12,8 +12,8 @@ filterBtns.forEach((btn) => {
 
     const filter = this.getAttribute("data-filter");
 
-    // Show/hide course cards based on filter
-    courseCards.forEach((card) => {
+    // Show/hide project cards based on filter
+    projectCards.forEach((card) => {
       if (filter === "all" || card.getAttribute("data-category") === filter) {
         card.style.display = "flex";
       } else {

@@ -5,37 +5,155 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rakibul Islam</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/publication.css">
 </head>
 <body>
-    <header>
-      <div class="container header-container">
-        <div class="logo">Rakibul Islam</div>
-        <button class="menu-toggle">
-          <i class="fas fa-bars"></i>
-        </button>
-        <nav>
-          <ul id="nav-menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="publication.html">Publications</a></li>
-            <li><a href="research.html">Research</a></li>
-            <li><a href="education.html">Education</a></li>
-            <li><a href="resource.html">Resource</a></li>
-            <li><a href="blog.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="https://github.com/raaakibul" target="_blank" class="github-link"><i class="fab fa-github"></i></a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-
     <div class="container">
-        <div class="main-content">
-            <div class="publications-container" id="publicationsContainer">
-                <!-- Publications will be dynamically loaded here -->
+        <header>
+            <div class="nav-container">
+                <div class="logo">Rakibul Islam</div>
+                <div class="nav-right">
+                    <nav id="navMenu">
+                        <ul>
+                            <li><a href="home.html">Home</a></li>
+                            <li><a href="research.html">Research</a></li>
+                            <li><a href="education.html">Education</a></li>
+                            <li><a href="publication.html">Publications</a></li>
+                            <li><a href="projects.html">Projects</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="resource.html">Resource</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="https://github.com/raaakibul" target="_blank"><i class="fab fa-github"></i></a></li>
+                        </ul>
+                    </nav>
+                    <button class="mobile-menu-btn" id="mobileMenuBtn">
+                        <i class="fas fa-bars" id="menuIcon"></i>
+                    </button>
+                </div>
             </div>
-        </div>
+        </header>
+
+
+        <main>
+            <!-- <h1 class="page-title">Publications</h1> -->
+             <div class="profile-section">
+                <div class="profile-content">
+                    <h1>Thesis and Publications</h1>
+                </div>
+                 
+            </div>
+            
+            <div class="publications-container">
+                <div class="publication-card">
+                    <div class="publication-header">
+                        <h2 class="publication-title">Deep Learning-Based Background Noise Classification and Reduction for Audio Enhancement</h2>
+                        <div class="publication-authors">Rakibul Islam, Rashik Rahman</div>
+                    </div>
+                    
+                    <div class="publication-meta">
+                        <div class="meta-item">
+                            <i class="fas fa-book meta-icon"></i>
+                            <span></span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-calendar-alt meta-icon"></i>
+                            <span>2023</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-link meta-icon"></i>
+                            <span>DOI: #</span>
+                        </div>
+                    </div>
+                    
+                    <div class="abstract-container">
+                        <div class="publication-abstract collapsed">
+                            Background noise can deteriorate audio quality and interfere with the ability to concentrate on the intended sounds. The categorization and reduction of background noise are crucial in audio enhancement since they help to identify and diminish undesired noise. Implementing this technique improves audio recording intelligibility and quality, ensuring that the intended sound is dominant and free of background noise. The objective is to improve the user's auditory experience by minimizing ambient or unnecessary sounds in audio applications. In order to accurately categorize audio due to fluctuations in sound pitch and volume, a Deep Learning-Based Background Noise Classification and Reduction for Audio Enhancement is proposed in this research. By employing deep learning techniques, particularly Long Short-Term Memory (LSTM) networks, the methodology achieves an impressive accuracy rate of 88.35%. To train the proposed system, the Urbansound8 dataset is used, which has approximately 8,732 audio files in WAV format. The enhancement of background noise identification is achieved by employing an innovative sliding window technique that incorporates both audio wavelet characteristics and time information. In addition, a comparative analysis of Tiny Machine Learning (TinyML) models is used to construct a robust, efficient and effective background noise categorization and reduction model. Further research will develop an LSTM model using TinyML as a foundation to enhance and rectify noise in practical situations.
+                        </div>
+                        <div class="abstract-gradient"></div>
+                        <button class="expand-btn">
+                            <span>Read more</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                    
+                    <div class="publication-footer">
+                        <div class="publication-tags">
+                            <span class="tag">Deep Learning</span>
+                            <span class="tag">RNN</span>
+                            <span class="tag">Audio</span>
+                            <span class="tag">LSTM</span>
+                        </div>
+                        <div class="publication-actions">
+                            <a href="#" class="action-btn">
+                                <i class="fas fa-file-pdf"></i>
+                                <span>PDF</span>
+                            </a>
+                            <a href="#" class="action-btn">
+                                <i class="fas fa-link"></i>
+                                <span>DOI</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="publication-card">
+                    <div class="publication-header">
+                        <h2 class="publication-title">Real-time Object Detection Using Lightweight Neural Networks</h2>
+                        <div class="publication-authors"></div>
+                    </div>
+                    
+                    <div class="publication-meta">
+                        <div class="meta-item">
+                            <i class="fas fa-book meta-icon"></i>
+                            <span>#</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-calendar-alt meta-icon"></i>
+                            <span>2023</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-link meta-icon"></i>
+                            <span>DOI: #</span>
+                        </div>
+                    </div>
+                    
+                    <div class="abstract-container">
+                        <div class="publication-abstract collapsed">
+                            We introduce a lightweight neural network architecture designed for real-time object detection on edge devices. Our approach achieves state-of-the-art performance while reducing computational complexity by 60% compared to existing methods. The proposed architecture incorporates novel attention mechanisms and depth-wise separable convolutions to optimize both speed and accuracy. Extensive experiments on COCO and PASCAL VOC datasets demonstrate that our method outperforms previous lightweight models while running at over 30 FPS on mobile devices.
+                        </div>
+                        <div class="abstract-gradient"></div>
+                        <button class="expand-btn">
+                            <span>Read more</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                    
+                    <div class="publication-footer">
+                        <div class="publication-tags">
+                            <span class="tag">CV</span>
+                            <span class="tag">AI</span>
+                            <span class="tag">Edge Computing</span>
+                        </div>
+                        <div class="publication-actions">
+                            <a href="#" class="action-btn">
+                                <i class="fas fa-file-pdf"></i>
+                                <span>PDF</span>
+                            </a>
+                            <a href="#" class="action-btn">
+                                <i class="fas fa-link"></i>
+                                <span>DOI</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+         
     </div>
 
     <script src="js/script.js"></script>

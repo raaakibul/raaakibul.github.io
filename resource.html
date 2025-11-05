@@ -3,175 +3,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rakibul Islam</title>
+    <title>Resources - Rakibul Islam</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/resource.css">
+    
 </head>
 <body>
-    <header>
-      <div class="container header-container">
-        <div class="logo">Rakibul Islam</div>
-        <button class="menu-toggle">
-          <i class="fas fa-bars"></i>
-        </button>
-        <nav>
-          <ul id="nav-menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="publication.html">Publications</a></li>
-            <li><a href="research.html">Research</a></li>
-            <li><a href="education.html">Education</a></li>
-            <li><a href="resource.html">Resource</a></li>
-            <li><a href="blog.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="https://github.com/raaakibul" target="_blank" class="github-link"><i class="fab fa-github"></i></a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-
     <div class="container">
-        <section class="resource-section">
-        <div class="section-header">
-            <h1>Resource Hub</h1>
-            <p><strong>This is demo design, working on it</strong></p>
-            <p>Discover valuable resources to enhance your knowledge and skills. Click on any resource to view its content.</p>
-        </div>
-
-        <!-- Filter Section -->
-        <div class="filter-section">
-            <button class="filter-button active" data-filter="all">All</button>
-            <button class="filter-button" data-filter="datasets">Datasets</button>
-            <button class="filter-button" data-filter="tutorials">Tutorials</button>
-            <button class="filter-button" data-filter="tools">Tools</button>
-            <button class="filter-button" data-filter="papers">Papers</button>
-            <button class="filter-button" data-filter="courses">Courses</button>
-        </div>
-
-        <div class="resources-grid">
-            <article class="resource-card" data-category="tutorials">
-                <div class="resource-header">
-                    <div class="resource-icon">📝</div>
-                    <div class="resource-text">
-                        <h2 class="resource-title">Machine Learning Tutorial Resourse Hub</h2>
-                        <p class="resource-description">Machine Learning Tutorial Resource.</p>
-                    </div>
+        <header>
+            <div class="nav-container">
+                <div class="logo">Rakibul Islam</div>
+                <div class="nav-right">
+                    <nav id="navMenu">
+                        <ul>
+                            <li><a href="home.html">Home</a></li>
+                            <li><a href="research.html">Research</a></li>
+                            <li><a href="education.html">Education</a></li>
+                            <li><a href="publication.html">Publications</a></li>
+                            <li><a href="projects.html">Projects</a></li>
+                            <li><a href="projects.html">Blog</a></li>
+                            <li><a href="resource.html">Resource</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="https://github.com/rakibul" target="_blank"><i class="fab fa-github"></i></a></li>
+                        </ul>
+                    </nav>
+                    <button class="mobile-menu-btn" id="mobileMenuBtn">
+                        <i class="fas fa-bars" id="menuIcon"></i>
+                    </button>
                 </div>
-                <button class="resource-button" onclick="openModal('web-dev')">View Resource</button>
-            </article>
+            </div>
+        </header>
 
-            <article class="resource-card" data-category="tutorials">
-                <div class="resource-header">
-                    <div class="resource-icon">📝</div>
-                    <div class="resource-text">
-                        <h2 class="resource-title">UI/UX Design Principles</h2>
-                        <p class="resource-description">Master the art of creating intuitive and beautiful user interfaces.</p>
+        <main>
+            <h1 class="page-title">Resource Hub--This is demo design, working on it</h1>
+            
+            <div class="resource-intro">
+                <p>
+                    Discover valuable resources to enhance your knowledge and skills. Click on any resource to view its content.
+                </p>
+            </div>
+            
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="datasets">Datasets</button>
+                <button class="filter-btn" data-filter="tutorials">Tutorials</button>
+                <button class="filter-btn" data-filter="tools">Tools</button>
+                <button class="filter-btn" data-filter="papers">Papers</button>
+                <button class="filter-btn" data-filter="courses">Courses</button>
+            </div>
+            
+            <div class="resource-grid">
+                <div class="resource-card" data-category="tutorials">
+                    <div class="resource-header">
+                        <div class="resource-icon">📝</div>
+                        <h3 class="resource-title">Machine Learning Tutorial Resource Hub</h3>
                     </div>
+                    <p class="resource-description">Machine Learning Tutorial Resource.</p>
+                    <a href="#" class="resource-btn" data-id="ml-tutorial">View Resource</a>
                 </div>
-                <button class="resource-button" onclick="openModal('ui-ux')">View Resource</button>
-            </article>
-
-            <article class="resource-card" data-category="tools">
-                <div class="resource-header">
-                    <div class="resource-icon">🛠️</div>
-                    <div class="resource-text">
-                        <h2 class="resource-title">Performance Optimization</h2>
-                        <p class="resource-description">Learn techniques to make your websites faster and more efficient.</p>
+                
+                <div class="resource-card" data-category="tutorials">
+                    <div class="resource-header">
+                        <div class="resource-icon">📝</div>
+                        <h3 class="resource-title">UI/UX Design Principles</h3>
                     </div>
+                    <p class="resource-description">Master the art of creating intuitive and beautiful user interfaces.</p>
+                    <a href="#" class="resource-btn" data-id="ui-ux-principles">View Resource</a>
                 </div>
-                <button class="resource-button" onclick="openModal('performance')">View Resource</button>
-            </article>
-
-            <article class="resource-card" data-category="papers">
-                <div class="resource-header">
-                    <div class="resource-icon">📄</div>
-                    <div class="resource-text">
-                        <h2 class="resource-title">Web Security Best Practices</h2>
-                        <p class="resource-description">Protect your applications from common security threats and vulnerabilities.</p>
+                
+                <div class="resource-card" data-category="tools">
+                    <div class="resource-header">
+                        <div class="resource-icon">🛠️</div>
+                        <h3 class="resource-title">Performance Optimization</h3>
                     </div>
+                    <p class="resource-description">Learn techniques to make your websites faster and more efficient.</p>
+                    <a href="#" class="resource-btn" data-id="performance-optimization">View Resource</a>
                 </div>
-                <button class="resource-button" onclick="openModal('security')">View Resource</button>
-            </article>
-
-            <article class="resource-card" data-category="tutorials">
-                <div class="resource-header">
-                    <div class="resource-icon">📝</div>
-                    <div class="resource-text">
-                        <h2 class="resource-title">Responsive Web Design</h2>
-                        <p class="resource-description">Create websites that work perfectly on all devices and screen sizes.</p>
+                
+                <div class="resource-card" data-category="papers">
+                    <div class="resource-header">
+                        <div class="resource-icon">📄</div>
+                        <h3 class="resource-title">Web Security Best Practices</h3>
                     </div>
+                    <p class="resource-description">Protect your applications from common security threats and vulnerabilities.</p>
+                    <a href="#" class="resource-btn" data-id="web-security">View Resource</a>
                 </div>
-                <button class="resource-button" onclick="openModal('responsive')">View Resource</button>
-            </article>
-
-            <article class="resource-card" data-category="courses">
-                <div class="resource-header">
-                    <div class="resource-icon">🎓</div>
-                    <div class="resource-text">
-                        <h2 class="resource-title">Modern JavaScript Frameworks</h2>
-                        <p class="resource-description">Explore React, Vue, and Angular for building dynamic web applications.</p>
+                
+                <div class="resource-card" data-category="tutorials">
+                    <div class="resource-header">
+                        <div class="resource-icon">📝</div>
+                        <h3 class="resource-title">Responsive Web Design</h3>
                     </div>
+                    <p class="resource-description">Create websites that work perfectly on all devices and screen sizes.</p>
+                    <a href="#" class="resource-btn" data-id="responsive-design">View Resource</a>
                 </div>
-                <button class="resource-button" onclick="openModal('frameworks')">View Resource</button>
-            </article>
-
-            <article class="resource-card" data-category="datasets">
-                <div class="resource-header">
-                    <div class="resource-icon">📊</div>
-                    <div class="resource-text">
-                        <h2 class="resource-title">Machine Learning Datasets</h2>
-                        <p class="resource-description">Curated collection of high-quality datasets for machine learning projects.</p>
+                
+                <div class="resource-card" data-category="courses">
+                    <div class="resource-header">
+                        <div class="resource-icon">🎓</div>
+                        <h3 class="resource-title">Modern JavaScript Frameworks</h3>
                     </div>
+                    <p class="resource-description">Explore React, Vue, and Angular for building dynamic web applications.</p>
+                    <a href="#" class="resource-btn" data-id="js-frameworks">View Resource</a>
                 </div>
-                <button class="resource-button" onclick="openModal('datasets')">View Resource</button>
-            </article>
-
-            <article class="resource-card" data-category="tools">
-                <div class="resource-header">
-                    <div class="resource-icon">🛠️</div>
-                    <div class="resource-text">
-                        <h2 class="resource-title">Development Tools</h2>
-                        <p class="resource-description">Essential tools and utilities for modern web development workflows.</p>
+                
+                <div class="resource-card" data-category="datasets">
+                    <div class="resource-header">
+                        <div class="resource-icon">📊</div>
+                        <h3 class="resource-title">Machine Learning Datasets</h3>
                     </div>
+                    <p class="resource-description">Curated collection of high-quality datasets for machine learning projects.</p>
+                    <a href="#" class="resource-btn" data-id="ml-datasets">View Resource</a>
                 </div>
-                <button class="resource-button" onclick="openModal('dev-tools')">View Resource</button>
-            </article>
-
-            <article class="resource-card" data-category="courses">
-                <div class="resource-header">
-                    <div class="resource-icon">🎓</div>
-                    <div class="resource-text">
-                        <h2 class="resource-title">Data Science Fundamentals</h2>
-                        <p class="resource-description">Comprehensive course covering the basics of data science and analytics.</p>
+                
+                <div class="resource-card" data-category="tools">
+                    <div class="resource-header">
+                        <div class="resource-icon">🛠️</div>
+                        <h3 class="resource-title">Development Tools</h3>
                     </div>
+                    <p class="resource-description">Essential tools and utilities for modern web development workflows.</p>
+                    <a href="#" class="resource-btn" data-id="dev-tools">View Resource</a>
                 </div>
-                <button class="resource-button" onclick="openModal('data-science')">View Resource</button>
-            </article>
-        </div>
-    </section>
+                
+                <div class="resource-card" data-category="courses">
+                    <div class="resource-header">
+                        <div class="resource-icon">🎓</div>
+                        <h3 class="resource-title">Data Science Fundamentals</h3>
+                    </div>
+                    <p class="resource-description">Comprehensive course covering the basics of data science and analytics.</p>
+                    <a href="#" class="resource-btn" data-id="data-science">View Resource</a>
+                </div>
+            </div>
+        </main>
+    </div>
 
     <!-- Modal -->
-    <div class="modal" id="resourceModal">
+    <div id="resourceModal" class="modal">
         <div class="modal-content">
             <div class="modal-header">
-                <h2 class="modal-title" id="modalTitle">Resource Title</h2>
-                <button class="modal-close" onclick="closeModal()">&times;</button>
+                <div>
+                    <h2 class="modal-title" id="modalTitle"></h2>
+                    <div class="modal-meta">
+                        <span id="modalIcon"></span>
+                        <span>Resource</span>
+                    </div>
+                </div>
+                <button class="modal-close" id="closeModalIcon">
+                    <i class="fas fa-times"></i>
+                </button>
             </div>
-            <div class="modal-body" id="modalBody">
-                <!-- Content will be dynamically inserted here -->
-            </div>
+            <div class="modal-body" id="modalContent"></div>
             <div class="modal-footer">
-                <button class="back-button" onclick="closeModal()">
-                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 20 20">
-                        <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd"/>
-                    </svg>
+                <button class="back-button" id="closeModal">
+                    <i class="fas fa-arrow-left"></i>
                     Back to Main Page
                 </button>
             </div>
         </div>
-    </div>
-
-
     </div>
 
     <script src="js/script.js"></script>

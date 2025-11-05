@@ -5,441 +5,201 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rakibul Islam</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/blog.css">
-    <link rel="stylesheet" href="css/project.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="blog.css">
 </head>
 <body>
-    <header>
-      <div class="container header-container">
-        <div class="logo">Rakibul Islam</div>
-        <button class="menu-toggle">
-          <i class="fas fa-bars"></i>
-        </button>
-        <nav>
-          <ul id="nav-menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="publication.html">Publications</a></li>
-            <li><a href="research.html">Research</a></li>
-            <li><a href="education.html">Education</a></li>
-            <li><a href="resource.html">Resource</a></li>
-            <li><a href="blog.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="https://github.com/raaakibul" target="_blank" class="github-link"><i class="fab fa-github"></i></a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-
     <div class="container">
-         <section class="research-section">
-        <div class="section-header">
-            <h1>Research Papers Review Posts</h1>
-            <p>Explore my collection of academic publications, journals, conference papers, articles, and books across various disciplines.</p>
-        </div>
-
-        <!-- Filter Section -->
-        <div class="filter-section">
-            <button class="filter-button active" data-filter="all">All</button>
-            <button class="filter-button" data-filter="journals">Journals</button>
-            <button class="filter-button" data-filter="conferences">Conferences</button>
-            <button class="filter-button" data-filter="articles">Articles</button>
-            <button class="filter-button" data-filter="papers">Papers</button>
-            <button class="filter-button" data-filter="books">Books</button>
-        </div>
-
-        <div class="papers-grid">
-            <!-- <article class="paper-card" data-category="journals">
-                <div class="paper-image">
-                    <img src="https://picsum.photos/seed/paper1/400/200.jpg" alt="Deep Learning Applications">
+        <header>
+            <div class="nav-container">
+                <div class="logo">Rakibul Islam</div>
+                <div class="nav-right">
+                    <nav id="navMenu">
+                        <ul>
+                            <li><a href="home.html">Home</a></li>
+                            <li><a href="research.html">Research</a></li>
+                            <li><a href="education.html">Education</a></li>
+                            <li><a href="publication.html">Publications</a></li>
+                            <li><a href="projects.html">Projects</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="resource.html">Resource</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="https://github.com/raaakibul" target="_blank"><i class="fab fa-github"></i></a></li>
+                        </ul>
+                    </nav>
+                    <button class="mobile-menu-btn" id="mobileMenuBtn">
+                        <i class="fas fa-bars" id="menuIcon"></i>
+                    </button>
                 </div>
-                <div class="paper-content">
-                    <div class="paper-meta">
-                        <span class="paper-type">Journal</span>
-                        <span class="paper-date">
-                            <svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zM4 8h12v8H4V8z" clip-rule="evenodd"/>
-                            </svg>
-                            Nov 2023
-                        </span>
+            </div>
+        </header>
+
+        <main>
+             <div class="profile-section">
+                <div class="profile-content">
+                    <h1>Paper Review----These post are ai generated i am working on it.</h1>
+                    <p>
+                    Discover and explore research papers that have shaped our understanding of various fields. Each paper includes a detailed review and analysis of its contributions and implications.
+                </p>
+                </div>
+                 
+            </div>
+            
+            <!-- <div class="research-intro">
+                <h2>Exploring the Frontiers of Knowledge</h2>
+                <p>
+                    Discover and explore research papers that have shaped our understanding of various fields. Each paper includes a detailed review and analysis of its contributions and implications.
+                </p>
+            </div> -->
+            
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="machine-learning">Machine Learning</button>
+                <button class="filter-btn" data-filter="computer-vision">Computer Vision</button>
+                <button class="filter-btn" data-filter="nlp">Natural Language Processing</button>
+                <button class="filter-btn" data-filter="data-science">Data Science</button>
+                <button class="filter-btn" data-filter="other">Other</button>
+            </div>
+            
+            <div class="research-grid">
+                <div class="research-card" data-category="machine-learning">
+                    <div class="research-header">
+                        <div class="research-icon">📄</div>
+                        <div class="research-title-container">
+                            <h3 class="research-title">Attention Is All You Need</h3>
+                            <p class="research-authors">Vaswani et al.</p>
+                        </div>
                     </div>
-                    <h2 class="paper-title">Deep Learning Applications in Healthcare</h2>
-                    <p class="paper-authors">Johnson, M., Smith, A., Williams, B.</p>
-                    <p class="paper-journal">Journal of Medical AI, Vol. 15, Issue 3</p>
-                    <p class="paper-abstract">This paper explores the transformative potential of deep learning algorithms in medical diagnosis, treatment planning, and patient care management.</p>
-                    <button class="paper-button" onclick="openModal('deep-learning-healthcare')">Read More</button>
+                    <p class="research-description">Revolutionary paper introducing the Transformer architecture, which has become the foundation for modern language models.</p>
+                    <a href="#" class="research-btn" data-id="attention-paper">Read Review</a>
                 </div>
-            </article> -->
-
-            <!-- <article class="paper-card" data-category="conferences">
-                <div class="paper-image">
-                    <img src="https://picsum.photos/seed/paper2/400/200.jpg" alt="Quantum Computing">
-                </div>
-                <div class="paper-content">
-                    <div class="paper-meta">
-                        <span class="paper-type">Conference</span>
-                        <span class="paper-date">
-                            <svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zM4 8h12v8H4V8z" clip-rule="evenodd"/>
-                            </svg>
-                            Oct 2023
-                        </span>
+                
+                <div class="research-card" data-category="computer-vision">
+                    <div class="research-header">
+                        <div class="research-icon">📄</div>
+                        <div class="research-title-container">
+                            <h3 class="research-title">Deep Residual Learning for Image Recognition</h3>
+                            <p class="research-authors">He et al.</p>
+                        </div>
                     </div>
-                    <h2 class="paper-title">Advances in Quantum Computing Algorithms</h2>
-                    <p class="paper-authors">Chen, L., Rodriguez, P., Kumar, S.</p>
-                    <p class="paper-journal">International Conference on Quantum Computing 2023</p>
-                    <p class="paper-abstract">Presenting novel quantum algorithms that demonstrate significant speedup over classical counterparts for optimization and machine learning tasks.</p>
-                    <button class="paper-button" onclick="openModal('quantum-computing')">Read More</button>
+                    <p class="research-description">Introduced ResNet, a groundbreaking architecture that enabled training of very deep neural networks.</p>
+                    <a href="#" class="research-btn" data-id="resnet-paper">Read Review</a>
                 </div>
-            </article>
-
-            <article class="paper-card" data-category="articles">
-                <div class="paper-image">
-                    <img src="https://picsum.photos/seed/paper3/400/200.jpg" alt="Climate Change">
-                </div>
-                <div class="paper-content">
-                    <div class="paper-meta">
-                        <span class="paper-type">Article</span>
-                        <span class="paper-date">
-                            <svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zM4 8h12v8H4V8z" clip-rule="evenodd"/>
-                            </svg>
-                            Sep 2023
-                        </span>
+                
+                <div class="research-card" data-category="nlp">
+                    <div class="research-header">
+                        <div class="research-icon">📄</div>
+                        <div class="research-title-container">
+                            <h3 class="research-title">BERT: Pre-training of Deep Bidirectional Transformers</h3>
+                            <p class="research-authors">Devlin et al.</p>
+                        </div>
                     </div>
-                    <h2 class="paper-title">Climate Change Impact on Biodiversity</h2>
-                    <p class="paper-authors">Garcia, M., Thompson, K., Patel, R.</p>
-                    <p class="paper-journal">Nature Climate Change Review</p>
-                    <p class="paper-abstract">A comprehensive analysis of how changing climate patterns are affecting global biodiversity and ecosystem services across different biomes.</p>
-                    <button class="paper-button" onclick="openModal('climate-biodiversity')">Read More</button>
+                    <p class="research-description">Introduced BERT, a language representation model that revolutionized natural language processing tasks.</p>
+                    <a href="#" class="research-btn" data-id="bert-paper">Read Review</a>
                 </div>
-            </article>
-
-            <article class="paper-card" data-category="papers">
-                <div class="paper-image">
-                    <img src="https://picsum.photos/seed/paper4/400/200.jpg" alt="Renewable Energy">
-                </div>
-                <div class="paper-content">
-                    <div class="paper-meta">
-                        <span class="paper-type">Paper</span>
-                        <span class="paper-date">
-                            <svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zM4 8h12v8H4V8z" clip-rule="evenodd"/>
-                            </svg>
-                            Aug 2023
-                        </span>
+                
+                <div class="research-card" data-category="data-science">
+                    <div class="research-header">
+                        <div class="research-icon">📄</div>
+                        <div class="research-title-container">
+                            <h3 class="research-title">The Unreasonable Effectiveness of Data</h3>
+                            <p class="research-authors">Halevy, Norvig, Pereira</p>
+                        </div>
                     </div>
-                    <h2 class="paper-title">Next Generation Renewable Energy Systems</h2>
-                    <p class="paper-authors">Wilson, J., Anderson, T., Lee, H.</p>
-                    <p class="paper-journal">Energy Research Institute</p>
-                    <p class="paper-abstract">Examining emerging technologies and methodologies for improving efficiency and storage capacity in renewable energy systems.</p>
-                    <button class="paper-button" onclick="openModal('renewable-energy')">Read More</button>
+                    <p class="research-description">Seminal paper arguing that simple models with massive data can outperform complex models with limited data.</p>
+                    <a href="#" class="research-btn" data-id="data-effectiveness">Read Review</a>
                 </div>
-            </article>
-
-            <article class="paper-card" data-category="journals">
-                <div class="paper-image">
-                    <img src="https://picsum.photos/seed/paper5/400/200.jpg" alt="Neural Networks">
-                </div>
-                <div class="paper-content">
-                    <div class="paper-meta">
-                        <span class="paper-type">Journal</span>
-                        <span class="paper-date">
-                            <svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zM4 8h12v8H4V8z" clip-rule="evenodd"/>
-                            </svg>
-                            Jul 2023
-                        </span>
+                
+                <div class="research-card" data-category="machine-learning">
+                    <div class="research-header">
+                        <div class="research-icon">📄</div>
+                        <div class="research-title-container">
+                            <h3 class="research-title">ImageNet Classification with Deep Convolutional Neural Networks</h3>
+                            <p class="research-authors">Krizhevsky, Sutskever, Hinton</p>
+                        </div>
                     </div>
-                    <h2 class="paper-title">Explainable Neural Networks</h2>
-                    <p class="paper-authors">Zhang, Y., Brown, E., Davis, M.</p>
-                    <p class="paper-journal">IEEE Transactions on AI, Vol. 28, Issue 4</p>
-                    <p class="paper-abstract">A novel approach to making neural network decisions interpretable and transparent, addressing the black box problem in deep learning.</p>
-                    <button class="paper-button" onclick="openModal('explainable-nn')">Read More</button>
+                    <p class="research-description">AlexNet paper that marked the beginning of the deep learning revolution in computer vision.</p>
+                    <a href="#" class="research-btn" data-id="alexnet-paper">Read Review</a>
                 </div>
-            </article>
-
-            <article class="paper-card" data-category="conferences">
-                <div class="paper-image">
-                    <img src="https://picsum.photos/seed/paper6/400/200.jpg" alt="Robotics">
-                </div>
-                <div class="paper-content">
-                    <div class="paper-meta">
-                        <span class="paper-type">Conference</span>
-                        <span class="paper-date">
-                            <svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zM4 8h12v8H4V8z" clip-rule="evenodd"/>
-                            </svg>
-                            Jun 2023
-                        </span>
+                
+                <div class="research-card" data-category="nlp">
+                    <div class="research-header">
+                        <div class="research-icon">📄</div>
+                        <div class="research-title-container">
+                            <h3 class="research-title">GPT-3: Language Models are Few-Shot Learners</h3>
+                            <p class="research-authors">Brown et al.</p>
+                        </div>
                     </div>
-                    <h2 class="paper-title">Autonomous Navigation in Dynamic Environments</h2>
-                    <p class="paper-authors">Miller, S., Kim, D., O'Connor, N.</p>
-                    <p class="paper-journal">International Robotics Conference 2023</p>
-                    <p class="paper-abstract">Presenting a new framework for autonomous robots to navigate safely and efficiently in unpredictable and changing environments.</p>
-                    <button class="paper-button" onclick="openModal('autonomous-nav')">Read More</button>
+                    <p class="research-description">Introduced GPT-3, a massive language model that demonstrated remarkable few-shot learning capabilities.</p>
+                    <a href="#" class="research-btn" data-id="gpt3-paper">Read Review</a>
                 </div>
-            </article>
-
-            <article class="paper-card" data-category="books">
-                <div class="paper-image">
-                    <img src="https://picsum.photos/seed/book1/400/200.jpg" alt="AI Revolution">
-                </div>
-                <div class="paper-content">
-                    <div class="paper-meta">
-                        <span class="paper-type">Book</span>
-                        <span class="paper-date">
-                            <svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zM4 8h12v8H4V8z" clip-rule="evenodd"/>
-                            </svg>
-                            May 2023
-                        </span>
+                
+                <div class="research-card" data-category="computer-vision">
+                    <div class="research-header">
+                        <div class="research-icon">📄</div>
+                        <div class="research-title-container">
+                            <h3 class="research-title">You Only Look Once: Unified, Real-Time Object Detection</h3>
+                            <p class="research-authors">Redmon et al.</p>
+                        </div>
                     </div>
-                    <h2 class="paper-title">The AI Revolution: Understanding Machine Learning</h2>
-                    <p class="paper-authors">Dr. Sarah Mitchell</p>
-                    <p class="paper-journal">TechPress Publications, 2nd Edition</p>
-                    <p class="paper-abstract">A comprehensive guide to machine learning concepts, algorithms, and real-world applications for both beginners and experienced practitioners.</p>
-                    <button class="paper-button" onclick="openModal('ai-revolution')">Read More</button>
+                    <p class="research-description">Introduced YOLO, a real-time object detection system that processes images in a single pass.</p>
+                    <a href="#" class="research-btn" data-id="yolo-paper">Read Review</a>
                 </div>
-            </article>
-
-            <article class="paper-card" data-category="books">
-                <div class="paper-image">
-                    <img src="https://picsum.photos/seed/book2/400/200.jpg" alt="Sustainable Future">
-                </div>
-                <div class="paper-content">
-                    <div class="paper-meta">
-                        <span class="paper-type">Book</span>
-                        <span class="paper-date">
-                            <svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zM4 8h12v8H4V8z" clip-rule="evenodd"/>
-                            </svg>
-                            Apr 2023
-                        </span>
+                
+                <div class="research-card" data-category="other">
+                    <div class="research-header">
+                        <div class="research-icon">📄</div>
+                        <div class="research-title-container">
+                            <h3 class="research-title">Mastering the Game of Go with Deep Neural Networks and Tree Search</h3>
+                            <p class="research-authors">Silver et al.</p>
+                        </div>
                     </div>
-                    <h2 class="paper-title">Sustainable Future: Green Technology Solutions</h2>
-                    <p class="paper-authors">Prof. Michael Green, Dr. Lisa Chen</p>
-                    <p class="paper-journal">EcoScience Publishing</p>
-                    <p class="paper-abstract">Exploring innovative green technologies and sustainable practices that can help address climate change and environmental challenges.</p>
-                    <button class="paper-button" onclick="openModal('sustainable-future')">Read More</button>
+                    <p class="research-description">AlphaGo paper that demonstrated AI mastering the complex game of Go, a milestone in artificial intelligence.</p>
+                    <a href="#" class="research-btn" data-id="alphago-paper">Read Review</a>
                 </div>
-            </article>
-
-            <article class="paper-card" data-category="books">
-                <div class="paper-image">
-                    <img src="https://picsum.photos/seed/book3/400/200.jpg" alt="Quantum Physics">
-                </div>
-                <div class="paper-content">
-                    <div class="paper-meta">
-                        <span class="paper-type">Book</span>
-                        <span class="paper-date">
-                            <svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zM4 8h12v8H4V8z" clip-rule="evenodd"/>
-                            </svg>
-                            Mar 2023
-                        </span>
+                
+                <div class="research-card" data-category="data-science">
+                    <div class="research-header">
+                        <div class="research-icon">📄</div>
+                        <div class="research-title-container">
+                            <h3 class="research-title">Big Data: The Next Frontier for Innovation, Competition, and Productivity</h3>
+                            <p class="research-authors">McKinsey Global Institute</p>
+                        </div>
                     </div>
-                    <h2 class="paper-title">Quantum Physics: From Theory to Applications</h2>
-                    <p class="paper-authors">Dr. Robert Johnson, Dr. Emma Wilson</p>
-                    <p class="paper-journal">Academic Press, 3rd Edition</p>
-                    <p class="paper-abstract">A detailed exploration of quantum mechanics principles and their practical applications in modern technology and computing.</p>
-                    <button class="paper-button" onclick="openModal('quantum-physics')">Read More</button>
+                    <p class="research-description">Comprehensive analysis of how big data can create value across sectors and business functions.</p>
+                    <a href="#" class="research-btn" data-id="big-data-paper">Read Review</a>
                 </div>
-            </article> -->
-        </div>
-    </section>
+            </div>
+        </main>
+    </div>
 
     <!-- Modal -->
-    <div class="modal" id="paperModal">
+    <div id="researchModal" class="modal">
         <div class="modal-content">
             <div class="modal-header">
-                <div>
-                    <h2 class="modal-title" id="modalTitle">Paper Title</h2>
-                    <div class="modal-meta" id="modalMeta">
-                        <span class="paper-type">Type</span>
-                        <span class="paper-date">
-                            <svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zM4 8h12v8H4V8z" clip-rule="evenodd"/>
-                            </svg>
-                            Date
-                        </span>
+                <div class="modal-title-container">
+                    <h2 class="modal-title" id="modalTitle"></h2>
+                    <p class="modal-authors" id="modalAuthors"></p>
+                    <div class="modal-meta">
+                        <span id="modalVenue"></span>
+                        <span id="modalYear"></span>
                     </div>
                 </div>
-                <button class="modal-close" onclick="closeModal()">&times;</button>
+                <button class="modal-close" id="closeModalIcon">
+                    <i class="fas fa-times"></i>
+                </button>
             </div>
-            <div class="modal-body" id="modalBody">
-                <!-- Content will be dynamically inserted here -->
-            </div>
+            <div class="modal-body" id="modalContent"></div>
             <div class="modal-footer">
-                <button class="back-button" onclick="closeModal()">
-                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 20 20">
-                        <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd"/>
-                    </svg>
+                <button class="back-button" id="closeModal">
+                    <i class="fas fa-arrow-left"></i>
                     Back to Papers
                 </button>
             </div>
         </div>
     </div>
 
-    <!-- project section -->
-       <section class="projects-section">
-        <div class="section-header">
-            <h1>Open Source Projects</h1>
-            <p>Discover and contribute to my collection of open source projects. From web frameworks to developer tools, find projects that match your interests.</p>
-        </div>
-
-        <div class="projects-grid">
-            <article class="project-card" data-category="web">
-                <div class="project-image" onclick="openModal('react-ui-framework')">
-                    <img src="https://picsum.photos/seed/project1/400/200.jpg" alt="React Framework">
-                </div>
-                <div class="project-content">
-                    <div class="project-meta">
-                        <span class="project-category">Web</span>
-                    </div>
-                    <h2 class="project-title">A Modern Personal Website Template for Scholars</h2>
-                    <p class="project-description">A clean, responsive website template designed specifically for academics and researchers to showcase their work, publications, and professional achievements.</p>
-                    <div class="project-tags">
-                        <span class="project-tag">HTML</span>
-                        <span class="project-tag">CSS</span>
-                        <span class="project-tag">JavaScript</span>
-                        <span class="project-tag">FontAwesome</span>
-                    </div>
-                    <a href="https://github.com/raaakibul/professor-portfolio-site" class="project-button" target="_blank" rel="noopener noreferrer">
-                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20">
-                            <path fill-rule="evenodd" d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z" clip-rule="evenodd"/>
-                        </svg>
-                        View on GitHub
-                    </a>
-                </div>
-            </article>
-
-            <!-- <article class="project-card" data-category="mobile">
-                <div class="project-image" onclick="openModal('flutter-starter')">
-                    <img src="https://picsum.photos/seed/project2/400/200.jpg" alt="Flutter App">
-                </div>
-                <div class="project-content">
-                    <div class="project-meta">
-                        <span class="project-category">Mobile</span>
-                    </div>
-                    <h2 class="project-title" onclick="openModal('flutter-starter')">Flutter Starter Kit</h2>
-                    <p class="project-description">A comprehensive Flutter starter template with pre-built components, state management, and authentication for rapid mobile app development.</p>
-                    <div class="project-tags">
-                        <span class="project-tag">Flutter</span>
-                        <span class="project-tag">Dart</span>
-                        <span class="project-tag">Mobile</span>
-                    </div>
-                    <a href="https://github.com/example/flutter-starter" class="project-button" target="_blank" rel="noopener noreferrer">
-                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20">
-                            <path fill-rule="evenodd" d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z" clip-rule="evenodd"/>
-                        </svg>
-                        View on GitHub
-                    </a>
-                </div>
-            </article>
-
-            <article class="project-card" data-category="desktop">
-                <div class="project-image" onclick="openModal('electron-task-manager')">
-                    <img src="https://picsum.photos/seed/project3/400/200.jpg" alt="Electron App">
-                </div>
-                <div class="project-content">
-                    <div class="project-meta">
-                        <span class="project-category">Desktop</span>
-                    </div>
-                    <h2 class="project-title" onclick="openModal('electron-task-manager')">Electron Task Manager</h2>
-                    <p class="project-description">A cross-platform desktop application for managing tasks and projects with sync capabilities and a clean, intuitive interface.</p>
-                    <div class="project-tags">
-                        <span class="project-tag">Electron</span>
-                        <span class="project-tag">JavaScript</span>
-                        <span class="project-tag">Desktop</span>
-                    </div>
-                    <a href="https://github.com/example/electron-task-manager" class="project-button" target="_blank" rel="noopener noreferrer">
-                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20">
-                            <path fill-rule="evenodd" d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z" clip-rule="evenodd"/>
-                        </svg>
-                        View on GitHub
-                    </a>
-                </div>
-            </article>
-
-            <article class="project-card" data-category="libraries">
-                <div class="project-image" onclick="openModal('data-viz-lib')">
-                    <img src="https://picsum.photos/seed/project4/400/200.jpg" alt="JavaScript Library">
-                </div>
-                <div class="project-content">
-                    <div class="project-meta">
-                        <span class="project-category">Libraries</span>
-                    </div>
-                    <h2 class="project-title" onclick="openModal('data-viz-lib')">Data Visualization Library</h2>
-                    <p class="project-description">A lightweight JavaScript library for creating interactive charts and graphs with minimal setup and extensive customization options.</p>
-                    <div class="project-tags">
-                        <span class="project-tag">JavaScript</span>
-                        <span class="project-tag">D3.js</span>
-                        <span class="project-tag">Charts</span>
-                    </div>
-                    <a href="https://github.com/example/data-viz-lib" class="project-button" target="_blank" rel="noopener noreferrer">
-                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20">
-                            <path fill-rule="evenodd" d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z" clip-rule="evenodd"/>
-                        </svg>
-                        View on GitHub
-                    </a>
-                </div>
-            </article>
-
-            <article class="project-card" data-category="tools">
-                <div class="project-image" onclick="openModal('code-formatter')">
-                    <img src="https://picsum.photos/seed/project5/400/200.jpg" alt="CLI Tool">
-                </div>
-                <div class="project-content">
-                    <div class="project-meta">
-                        <span class="project-category">Tools</span>
-                    </div>
-                    <h2 class="project-title" onclick="openModal('code-formatter')">Code Formatter CLI</h2>
-                    <p class="project-description">A command-line tool for automatically formatting code across multiple programming languages with customizable rules and plugins.</p>
-                    <div class="project-tags">
-                        <span class="project-tag">CLI</span>
-                        <span class="project-tag">Rust</span>
-                        <span class="project-tag">Tools</span>
-                    </div>
-                    <a href="https://github.com/example/code-formatter" class="project-button" target="_blank" rel="noopener noreferrer">
-                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20">
-                            <path fill-rule="evenodd" d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z" clip-rule="evenodd"/>
-                        </svg>
-                        View on GitHub
-                    </a>
-                </div>
-            </article>
-
-            <article class="project-card" data-category="web">
-                <div class="project-image" onclick="openModal('api-gateway')">
-                    <img src="https://picsum.photos/seed/project6/400/200.jpg" alt="API Gateway">
-                </div>
-                <div class="project-content">
-                    <div class="project-meta">
-                        <span class="project-category">Web</span>
-                    </div>
-                    <h2 class="project-title" onclick="openModal('api-gateway')">API Gateway Framework</h2>
-                    <p class="project-description">A lightweight API gateway built with Node.js for managing microservices with load balancing, rate limiting, and monitoring capabilities.</p>
-                    <div class="project-tags">
-                        <span class="project-tag">Node.js</span>
-                        <span class="project-tag">API</span>
-                        <span class="project-tag">Microservices</span>
-                    </div>
-                    <a href="https://github.com/example/api-gateway" class="project-button" target="_blank" rel="noopener noreferrer">
-                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20">
-                            <path fill-rule="evenodd" d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z" clip-rule="evenodd"/>
-                        </svg>
-                        View on GitHub
-                    </a>
-                </div>
-            </article> -->
-        </div>
-    </section> 
-    </div>
- 
-
-    <script src="js/script.js"></script>
-    <script src="js/blog.js"></script>
-     
+    <script src="script.js"></script>
+    <script src="blog.js"></script>
 </body>
 </html>

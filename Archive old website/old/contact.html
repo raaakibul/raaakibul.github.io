@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rakibul Islam</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <header>
+      <div class="container header-container">
+        <div class="logo">Rakibul Islam</div>
+        <button class="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+        <nav>
+          <ul id="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="publication.html">Publications</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="resource.html">Resource</a></li>
+            <li><a href="blog.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="https://github.com/raaakibul" target="_blank" class="github-link"><i class="fab fa-github"></i></a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="container">
+        <section class="contact-section">
+                <h2 class="section-title">Contact Information</h2>
+                <div class="contact-text">
+                    <p>Feel free to reach out to me for any inquiries, collaborations, or just to say hello. I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+                </div>
+            
+            <div class="profile-container">
+                <img src="img/profile.jpg" alt="Profile Picture" class="profile-image">
+                <h3 class="profile-name">Rakibul Islam</h3>
+                <p class="profile-title">Machine Learning and Data Science Enthusiast</p>
+            </div>
+                
+
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="info-icon email-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Email</h3>
+                            <p>raakibul.uap@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon location-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Location</h3>
+                            <p>Dhaka, Bangladesh</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon phone-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Phone</h3>
+                            <p>(+880) 1315396692</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-media">
+                    <h3>Connect With Me</h3>
+                    <div class="contact-social-icons">
+                        <a href="https://www.facebook.com/raakibul.14" target="_blank" class="social-icon">
+                            <i class="fab fa-facebook"></i>
+                            <span>Facebook</span>
+                        </a>
+                        <a href="https://x.com/raakibul_" target="_blank" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                            <span>Twitter</span>
+                        </a>
+                        <a href="https://github.com/raaakibul" target="_blank" class="social-icon">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://bsky.app/profile/raakibul.bsky.social" target="_blank" class="social-icon">
+                            <i class="fas fa-cloud"></i>
+                            <span>Bluesky</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/raakibul/" target="_blank" class="social-icon">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="form-section">
+                <h2 class="section-title">Send a Message</h2>
+                
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" class="form-control" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                    
+                    <div class="form-message" id="formMessage">
+                        Thank you for your message! I will get back to you soon.
+                    </div>
+                </form>
+            </section>
+    </section>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>

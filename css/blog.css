@@ -1,205 +1,135 @@
+ 
 :root {
-    --text-primary: #1a1a1a;
-    --text-secondary: #666666;
     --bg-primary: #ffffff;
-    --bg-secondary: #f5f5f5;
-    --border-color: #e0e0e0;
-    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
-    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.08);
-    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+    --bg-secondary: #f9f9f9;
+    --text-primary: #333333;
+    --text-secondary: #666666;
+    --border-color: #eeeeee;
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 5px 15px rgba(0, 0, 0, 0.3);
     --transition: all 0.3s ease;
 }
 
-.projects-section {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.section-header {
-    text-align: center;
-    margin-bottom: 2.5rem;
-}
-
-.section-header h1 {
-    font-size: 1.6rem;
-    font-weight: 600;
-    color: var(--text-primary);
-    margin-bottom: 0.75rem;
-}
-
-.section-header p {
-    font-size: 1rem;
-    color: var(--text-secondary);
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-/* Filter Section */
-.filter-section {
+/* Filter Buttons */
+.filter-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 0.75rem;
-    margin-bottom: 2rem;
+    gap: 10px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
 }
 
-.filter-button {
-    background-color: var(--bg-primary);
-    color: var(--text-primary);
-    border: 1px solid var(--border-color);
-    padding: 0.625rem 1.5rem;
-    border-radius: 50px;
-    font-size: 0.875rem;
+.filter-btn {
+    padding: 8px 16px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    font-size: 0.9rem;
     font-weight: 500;
+    color: #555;
     cursor: pointer;
-    transition: var(--transition);
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 100px;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
 }
 
-.filter-button:hover {
-    background-color: var(--bg-secondary);
-    box-shadow: var(--shadow-sm);
-    transform: translateY(-1px);
+.filter-btn:hover {
+    background-color: #eee;
 }
 
-.filter-button.active {
-    background-color: var(--bg-secondary);
-    border-color: var(--text-primary);
-    box-shadow: var(--shadow-sm);
+.filter-btn.active {
+    background-color: #57534d;
+    color: #fff;
+    border-color: #333;
 }
 
-.projects-grid {
+/* Research Grid */
+.research-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 1.25rem;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
 }
 
-.project-card {
-    background-color: var(--bg-primary);
-    border-radius: 12px;
-    box-shadow: var(--shadow-sm);
-    transition: var(--transition);
-    border: 1px solid var(--border-color);
+.research-card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
 }
 
-.project-card:hover {
-    box-shadow: var(--shadow-md);
-    transform: translateY(-2px);
+.research-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-.project-card.hidden {
-    display: none;
-}
-
-.project-image {
-    width: 100%;
-    height: 180px;
-    background-color: var(--bg-secondary);
+.research-header {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 3rem;
-    color: var(--text-secondary);
-    overflow: hidden;
-    cursor: pointer;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    box-sizing: border-box;
 }
 
-.project-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.research-icon {
+    font-size: 1.8rem;
+    margin-right: 15px;
+    margin-top: 3px;
+    box-sizing: border-box;
 }
 
-.project-content {
-    padding: 1.5rem;
+.research-title-container {
     flex-grow: 1;
-    display: flex;
-    flex-direction: column;
 }
 
-.project-meta {
-    display: flex;
-    align-items: center;
-    margin-bottom: 0.75rem;
-    font-size: 0.75rem;
-    color: var(--text-secondary);
+.research-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+    box-sizing: border-box;
 }
 
-.project-category {
-    background-color: var(--bg-secondary);
-    padding: 0.25rem 0.75rem;
-    border-radius: 50px;
-    font-weight: 500;
+.research-authors {
+    font-size: 0.85rem;
+    color: #666;
+    font-style: italic;
+    box-sizing: border-box;
 }
 
-.project-title {
-    font-size: 1.125rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-    color: var(--text-primary);
-    line-height: 1.4;
-    cursor: pointer;
-    transition: var(--transition);
-}
-
-.project-title:hover {
-    color: var(--text-secondary);
-}
-
-.project-description {
-    color: var(--text-secondary);
+.research-description {
+    font-size: 0.9rem;
+    color: #555;
     line-height: 1.5;
-    font-weight: 400;
-    margin-bottom: 1rem;
-    font-size: 0.875rem;
+    margin-bottom: 15px;
     flex-grow: 1;
+    box-sizing: border-box;
 }
 
-.project-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    margin-bottom: 1.25rem;
-}
-
-.project-tag {
-    background-color: var(--bg-secondary);
-    color: var(--text-secondary);
-    padding: 0.25rem 0.75rem;
-    border-radius: 50px;
-    font-size: 0.75rem;
-    font-weight: 500;
-}
-
-.project-button {
-    background-color: var(--bg-secondary);
-    color: var(--text-primary);
-    border: 1px solid var(--border-color);
-    padding: 0.625rem 1.5rem;
-    border-radius: 50px;
-    font-size: 0.875rem;
-    font-weight: 500;
-    cursor: pointer;
-    transition: var(--transition);
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
+.research-btn {
+    display: inline-block;
+    padding: 6px 14px;
+    background-color: #f0f0f0;
+    color: #333;
     text-decoration: none;
-    align-self: flex-start;
-    min-width: 140px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
     text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    align-self: flex-start;
 }
 
-.project-button:hover {
-    background-color: var(--bg-primary);
-    box-shadow: var(--shadow-sm);
-    transform: translateY(-1px);
+.research-btn:hover {
+    background-color: #e0e0e0;
+    border-color: #ccc;
 }
 
 /* Modal Styles */
@@ -226,7 +156,7 @@
     border-radius: 12px;
     max-width: 700px;
     width: 100%;
-    max-height: 90vh;
+    max-height: 99vh;
     overflow-y: auto;
     box-shadow: var(--shadow-lg);
     position: relative;
@@ -237,20 +167,31 @@
     border-bottom: 1px solid var(--border-color);
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+}
+
+.modal-title-container {
+    flex-grow: 1;
 }
 
 .modal-title {
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--text-primary);
+    margin-bottom: 5px;
+}
+
+.modal-authors {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    font-style: italic;
 }
 
 .modal-meta {
     display: flex;
     align-items: center;
     gap: 1rem;
-    margin-top: 0.5rem;
+    margin-top: 0.75rem;
     font-size: 0.875rem;
     color: var(--text-secondary);
 }
@@ -268,6 +209,7 @@
     align-items: center;
     justify-content: center;
     border-radius: 8px;
+    flex-shrink: 0;
 }
 
 .modal-close:hover {
@@ -349,133 +291,54 @@
     box-shadow: var(--shadow-sm);
     transform: translateY(-1px);
 }
+ 
 
-/* Responsive Design */
-@media (max-width: 1000px) {
-    .section-header h1 {
-        font-size: 1.75rem;
-    }
-
-    .section-header p {
-        font-size: 0.875rem;
-    }
-
-    .filter-section {
-        gap: 0.5rem;
-        margin-bottom: 1.5rem;
-    }
-
-    .filter-button {
-        padding: 0.5rem 1.25rem;
-        min-width: 90px;
-        font-size: 0.8125rem;
-    }
-
-    .projects-grid {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-    }
-
-    .project-image {
-        height: 160px;
-    }
-
-    .modal-content {
-        max-height: 95vh;
-    }
-
-    .modal-header,
-    .modal-body,
-    .modal-footer {
-        padding: 1.25rem;
-    }
-
-    .modal-links {
-        flex-direction: column;
-    }
-}
-
-
-@media (max-width: 768px) {
-    .section-header h1 {
-        font-size: 1.75rem;
-    }
-
-    .section-header p {
-        font-size: 0.875rem;
-    }
-
-    .filter-section {
-        gap: 0.5rem;
-        margin-bottom: 1.5rem;
-    }
-
-    .filter-button {
-        padding: 0.5rem 1.25rem;
-        min-width: 90px;
-        font-size: 0.8125rem;
-    }
-
-    .projects-grid {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-    }
-
-    .project-image {
-        height: 160px;
-    }
-
-    .modal-content {
-        max-height: 95vh;
-    }
-
-    .modal-header,
-    .modal-body,
-    .modal-footer {
-        padding: 1.25rem;
-    }
-
-    .modal-links {
-        flex-direction: column;
-    }
-}
+ 
 
 @media (max-width: 480px) {
-    body {
-        padding: 20px 15px;
+    .research-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
     }
 
-    .project-content {
-        padding: 1.25rem;
+    .research-header {
+        flex-direction: column;
+        align-items: flex-start;
     }
 
-    .section-header {
-        margin-bottom: 1.75rem;
+    .research-icon {
+        margin-right: 0;
+        margin-bottom: 10px;
     }
 
-    .project-button,
-    .back-button,
-    .modal-link {
-        padding: 0.5rem 1.25rem;
-        min-width: 120px;
-        font-size: 0.8125rem;
+    .modal-content {
+        max-width: 98%;
     }
 
-    .filter-button {
-        padding: 0.4375rem 1rem;
-        min-width: 80px;
-        font-size: 0.75rem;
+    .modal-header {
+        flex-direction: column;
+        align-items: flex-start;
     }
 
-    .project-title {
-        font-size: 1rem;
+    .modal-meta {
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .filter-container {
+        justify-content: center;
     }
 
-    .project-description {
-        font-size: 0.8125rem;
+    .modal-content {
+        padding: 15px;
     }
 
-    .project-image {
-        height: 140px;
+    .modal-title {
+        font-size: 1.2rem;
+    }
+
+    .modal-body {
+        font-size: 0.9rem;
     }
 }
