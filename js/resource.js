@@ -4,43 +4,23 @@ const resourceContent = {
     icon: "📝",
     title: "Machine Learning Tutorial Resource Hub",
     content: `
-                    <h3>Introduction to Machine Learning</h3>
-                    <p>Machine learning is a subset of artificial intelligence that enables systems to learn and improve from experience without being explicitly programmed. This tutorial covers the fundamentals of machine learning, including supervised learning, unsupervised learning, and reinforcement learning.</p>
+                    <p>Welcome to the Machine Learning Tutorial Resource Hub a curated collection of quality tutorials, guides, and references to help you learn and explore the field of machine learning. This resource is designed to support learners at various levels by providing access to tutorials covering essential topics, algorithms, tools, and real-world applications. Whether you're just starting out or expanding your knowledge, this hub offers a centralized place to discover valuable learning materials and deepen your understanding of machine learning.</p>
                     
-                    <h3>Supervised Learning</h3>
-                    <p>Supervised learning is the most common type of machine learning. In supervised learning, the algorithm learns from labeled training data, and makes predictions based on that data. Common supervised learning algorithms include linear regression, logistic regression, decision trees, random forests, and support vector machines.</p>
+                    <h3>YouTube-Based Machine Learning Learning Resource</h3>
+                    <p>1. Sebastian Raschka
+                        <a href="https://www.youtube.com/watch?v=OgK8JFjkSto&list=PLTKMiZHVd_2KyGirGEvKlniaWeLOHhUF3" target="_blank">Intro to Machine Learning and Statistical Pattern Classification Course</a> <br>
+                    2. UofU Data Science: 
+                        <a href="https://www.youtube.com/watch?v=G4RhudIawVY&list=PLbuogVdPnkCo06Fs1LketYTz3f61BxcnL" target="_blank">Machine Learning (Spring 2025)</a><br>
+                    3. UofU Data Science: 
+                        <a href="https://www.youtube.com/watch?v=hPsvYcI9fnE&list=PLbuogVdPnkCr-ANNi5GZid3MvSkzm_wnM" target="_blank">Machine Learning (Spring 2024)</a>
+                    </p>
                     
-                    <h3>Unsupervised Learning</h3>
-                    <p>Unsupervised learning deals with unlabeled data. The algorithm tries to find patterns and relationships in the data without any prior training. Common unsupervised learning techniques include clustering, dimensionality reduction, and association rule learning.</p>
-                    
-                    <h3>Reinforcement Learning</h3>
-                    <p>Reinforcement learning is a type of machine learning where an agent learns to make decisions by performing actions in an environment to maximize cumulative reward. It's commonly used in robotics, gaming, and navigation systems.</p>
-                    
-                    <h3>Neural Networks and Deep Learning</h3>
-                    <p>Neural networks are computing systems inspired by the biological neural networks that constitute animal brains. Deep learning is a subset of machine learning that uses neural networks with multiple layers (deep neural networks) to model complex patterns in data.</p>
-                    
-                    <h3>Practical Applications</h3>
-                    <p>Machine learning has numerous applications across various industries:</p>
-                    <ul>
-                        <li>Healthcare: Disease diagnosis, drug discovery, personalized treatment</li>
-                        <li>Finance: Fraud detection, algorithmic trading, risk assessment</li>
-                        <li>Retail: Recommendation systems, demand forecasting, customer segmentation</li>
-                        <li>Transportation: Autonomous vehicles, traffic prediction, route optimization</li>
-                        <li>Manufacturing: Quality control, predictive maintenance, supply chain optimization</li>
-                    </ul>
-                    
-                    <h3>Getting Started with Machine Learning</h3>
-                    <p>To get started with machine learning, you'll need:</p>
-                    <ol>
-                        <li>A good understanding of mathematics (linear algebra, calculus, statistics)</li>
-                        <li>Programming skills (Python is the most popular language for ML)</li>
-                        <li>Familiarity with ML libraries and frameworks (scikit-learn, TensorFlow, PyTorch)</li>
-                        <li>Access to datasets for training and testing</li>
-                        <li>Computational resources (GPU for deep learning)</li>
-                    </ol>
-                    
-                    <h3>Conclusion</h3>
-                    <p>Machine learning is a rapidly evolving field with enormous potential to transform industries and solve complex problems. By understanding the fundamentals and continuously learning new techniques, you can harness the power of machine learning to create innovative solutions.</p>
+                    <h3>Machine Learning Lectures by University Professors</h3>
+                    <p>1. Sebastian Raschka
+                        <a href="https://www.youtube.com/watch?v=OgK8JFjkSto&list=PLTKMiZHVd_2KyGirGEvKlniaWeLOHhUF3" target="_blank">Intro to Machine Learning and Statistical Pattern Classification Course</a> <br>
+                    2. UofU Data Science: 
+                        <a href="https://www.youtube.com/watch?v=G4RhudIawVY&list=PLbuogVdPnkCo06Fs1LketYTz3f61BxcnL" target="_blank">Machine Learning (Spring 2025)</a>
+                    </p><br>
                 `,
   },
   "ui-ux-principles": {
