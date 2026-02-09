@@ -144,8 +144,10 @@
 
 .project-footer {
     display: flex;
-    justify-content: flex-end;
+    /* justify-content: flex-end; */
+    justify-content: space-between;
     margin-top: auto;
+    align-items: center;
     padding-top: 15px;
     border-top: 1px solid #eee;
 }
